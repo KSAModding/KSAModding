@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#reverse-engineering-notes" class="md-skip">
+        <a href="#reverse-engineering" class="md-skip">
           Skip to content
         </a>
       
@@ -1067,6 +1067,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reverse Engineering Notes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1083,6 +1101,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-ilspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using ILSpy
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1429,6 +1477,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-ilspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using ILSpy
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1447,20 +1514,21 @@
   
 
 
-<h1 id="reverse-engineering-notes">Reverse Engineering Notes<a class="headerlink" href="#reverse-engineering-notes" title="Permanent link">&para;</a></h1>
-<p>This section is for <strong>advanced users</strong> interested in understanding KSA internals beyond the officially documented APIs.</p>
-<p>Important guidelines:</p>
-<ul>
-<li>Respect the game's EULA and local laws.</li>
-<li>Avoid distributing proprietary game code or assets.</li>
-<li>Focus on <strong>documentation and analysis</strong>, not leaks.</li>
-</ul>
-<p>Example topics:</p>
-<ul>
-<li>Observed data structures in memory or save files.</li>
-<li>Hypotheses about how certain systems are implemented.</li>
-<li>Tools and workflows used to inspect or debug behavior.</li>
-</ul>
+<h1 id="reverse-engineering">Reverse Engineering<a class="headerlink" href="#reverse-engineering" title="Permanent link">&para;</a></h1>
+<p>For advanced modders who want to dig deeper into how KSA works internally.</p>
+<h2 id="using-ilspy">Using ILSpy<a class="headerlink" href="#using-ilspy" title="Permanent link">&para;</a></h2>
+<p><a href="https://github.com/icsharpcode/ILSpy">ILSpy</a> is a free .NET decompiler. You can use it to browse KSA's code:</p>
+<ol>
+<li>Download ILSpy</li>
+<li>Open <code>KSA.dll</code> from <code>C:\Users\[YourName]\AppData\Local\Programs\Kitten Space Agency\</code></li>
+<li>Browse the code to see how things work</li>
+</ol>
+<p>This lets you find:
+- What XML attributes are actually supported
+- Internal class structures
+- How vehicles and parts are loaded
+- Available properties and methods</p>
+<p><strong>Other tools:</strong> dnSpy (debugger + decompiler), dotPeek, Process Monitor</p>
 
 
 
