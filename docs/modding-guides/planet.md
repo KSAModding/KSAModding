@@ -5,11 +5,9 @@ This guide explains how to add custom planets to the game.
 
 ## Requirements
 Requirements:
-
 - GIMP or any other image editing tool that can export .dds files in BC5 format
 
 ## File Locations
-
 - **Game Directory**: `C:\Users\[YourName]\AppData\Local\Programs\Kitten Space Agency\`
 - **Textures**: `Content/Core/Textures`
 - **Planet Definitions**: `Content/Core/Astronomicals.xml`
@@ -915,7 +913,7 @@ Pluto Template (for Small Terrestrail Bodies):
         <LongitudeOfAscendingNode Degrees="55" />
         <ArgumentOfPeriapsis Degrees="0" />
         <MeanAnomalyAtEpoch Degrees="0" />
-        <MeanRadius Km="6" />
+        <MeanRadius Km="600" />
         <Mass Kg="12166330000000000" />
         <Color R="0.941176" G="0.901961" B="0.54902" />
         <Diffuse Path="Textures/Pluto_Diffuse.dds" Category="Terrain"/>
@@ -926,3 +924,114 @@ Pluto Template (for Small Terrestrail Bodies):
         </Height>
     </TerrestrialBody>
 ```
+
+
+## Parts of the Planet Block
+
+### Types of Planets
+This defines what type of planet it is
+
+#### TerrestrialBody
+ - Example: ```<TerrestrialBody Id="Pluto" Parent="Sol">```
+ - TerrestrialBody: This defines the planet as not having an atmosphere
+ - Pluto: The ID/Name of the planet
+ - Sol: The body the planet orbits
+
+#### AtmosphericBody
+ - Example: ```<AtmosphericBody Id="Earth" Parent="Sol">```
+ - AtmosphericBody: This defines the planet as having an atmosphere. This is used for both gas giants and atmospheric planets
+ - Earth: The ID/Name of the planet
+ - Sol: The body the planet orbits
+
+### Orbital Specifications
+This defines how the object orbits its parent body
+
+#### SemiMajorAxis
+ - Supported Units (in Ascending Order): M, Km, Gm, Au, Ly
+ - Example: ```<SemiMajorAxis Km="	100000.327" />```
+ - The SemiMajorAxis is the longest radius of the orbit
+
+#### Inclination
+ - Supported Units: Degrees
+ - Example: ```<Inclination Degrees="1" />```
+ - The Inclination is the angle at which the object orbits relative to the plane the object rotates
+
+#### Eccentricity
+ - Supported Units: Value
+ - Example: ```<Eccentricity Value="0.5" />```
+ - Eccentricity is the amount that the object's orbit differs from a circle. A value of 0 would be a perfect circle, and a value of 1 would go juse outside the SOI.
+
+#### LongitudeOfAscendingNode
+ - Supported Units: Degrees
+ - Example: ```<LongitudeOfAscendingNode Degrees="55" />```
+ - The LongitudeOfAscendingNode is an orbital element that measures the angle from a reference direction to the point where an orbit crosses a reference plane in an upward direction (from south to north)
+
+#### ArgumentOfPeriapsis
+ - Supported Units: Degrees
+ - Example: ```<ArgumentOfPeriapsis Degrees="3" />```
+ - The ArgumentOfPeriapsis is the point in the orbital plane between the Periapsis and Ascending Node
+
+#### MeanAnomalyAtEpoch
+ - Supported Units: Degrees
+ - Example: ```<MeanAnomalyAtEpoch Degrees="86.37" />```
+ - The MeanAnomalyAtEpoch is the the position of an object in its orbit at a particular moment in time, known as the epoch
+
+### Body Specifications
+This is defining how the object is shaped. Includes it's mass, radius, and height map
+
+
+#### MeanRadius
+ - Supported Units (in Ascending Order): M, Km. Others, however not recommended, are Gm, Au, Ly
+ - Example: ```<MeanRadius Km="60" />```
+ - The MeanRadius is the average distance from the center of a planet to its surface. Can also be used as equatorial radius
+
+#### Mass
+ - Supported Units (in Ascending Order): Kg, Zg, Lunas, Earths, Jupiters, Sols
+ - Example: ```<Mass Zg="1.216633" />```
+ - The Mass of an object determines the gravity and SOI of an object. Wrong masses will result in wrong gravities and SOIs
+
+#### Height
+ - Requires a texture
+ - Supported texture formats: JPG, PNG, DDS (BC5 Format), HTX2
+ - Example:
+```xml
+        <Height Path="Textures/Pluto_Height.jpg" Category="Terrain">
+            <Maximum Km="3.8734"/>
+            <Minimum Km="-0.3869"/>
+        </Height>
+```
+ - Path: This can be any path in your textures folder
+ - Maximum: Highest point on the surface
+ - Minimum: Lowest point on the surface
+
+#### Normal
+ - Requires a texture
+ - Supported texture formats: JPG, PNG, DDS (BC5 Format)
+ - Example: ```<Normal Path="Textures/Pluto_Normal.dds" Category="Terrain"/>```
+  - Path: This can be any path in your textures folder
+
+### Cosmetic
+This is just how the planet looks, only required part is the Diffuse
+
+#### Diffuse
+ - Color of the planet
+ - Requires a texture
+ - Supported texture formats: JPG, PNG, DDS (most formats)
+ - Example: ```<Diffuse Path="Textures/Pluto_Diffuse.dds" Category="Terrain"/>```
+ - Path: This can be any path in your textures folder
+
+#### Color
+ - The color of the planet's orbit path
+ - Example: ```<Color R="0.941176" G="0.901961" B="0.54902" />```
+ - R: Red color, RGB 0-1
+ - G: Green color, RGB 0-1
+ - B: Blue color, RGB 0-1
+
+### Atmosphere
+TBA
+
+### Oceans
+TBA
+
+### Clouds
+TBA
