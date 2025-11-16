@@ -21,7 +21,7 @@ This is where the game executable and core content live.
 **`KSA.dll`** - Main game code (C# assembly)
 - Can be decompiled with ILSpy or dnSpy
 - Contains game logic, rendering, physics
-
+ 
 **`Brutal.dll`** - Engine/framework code
 - Underlying game engine
 - Rendering, UI, input handling
