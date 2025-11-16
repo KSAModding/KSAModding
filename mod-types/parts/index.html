@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#part-mods" class="md-skip">
+        <a href="#kitten-space-agency-parts-modding-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -638,6 +638,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parts
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -654,6 +672,402 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-locations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File Locations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-prepare-your-3d-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Prepare Your 3D Model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 1: Prepare Your 3D Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-export-to-glb-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Export to GLB Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-optimize-file-size-optional-but-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Optimize File Size (Optional but Recommended)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-split-multi-part-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Split Multi-Part Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-prepare-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Prepare Textures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2: Prepare Textures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-required-texture-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Required Texture Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-create-placeholder-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Create Placeholder Textures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-copy-textures-to-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Copy Textures to Game
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-register-mesh-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Register Mesh Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-create-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Create Materials
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-define-parts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Define Parts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 5: Define Parts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-single-part-vehicle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simple Single-Part Vehicle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-part-vehicle-body-head-legs-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Part Vehicle (Body + Head + Legs example)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-add-rcs-thrusters-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Add RCS Thrusters (Optional)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-create-vehicle-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7: Create Vehicle Definition
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 7: Create Vehicle Definition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-part-vehicle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Single-Part Vehicle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-part-vehicle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Part Vehicle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-add-vehicle-to-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8: Add Vehicle to System
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 8: Add Vehicle to System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-earthonly-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For EarthOnly System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-solar-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Solar System
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9: Test
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#game-crashes-on-load" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Game Crashes on Load
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-not-visible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Not Visible
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#only-part-of-model-shows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Only Part of Model Shows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blackmissing-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Black/Missing Textures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcs-not-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RCS Not Working
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-fixing-glb-scene-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced: Fixing GLB Scene References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1429,6 +1843,391 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-locations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File Locations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-prepare-your-3d-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Prepare Your 3D Model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 1: Prepare Your 3D Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-export-to-glb-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Export to GLB Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-optimize-file-size-optional-but-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Optimize File Size (Optional but Recommended)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-split-multi-part-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Split Multi-Part Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-prepare-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Prepare Textures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2: Prepare Textures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-required-texture-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Required Texture Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-create-placeholder-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Create Placeholder Textures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-copy-textures-to-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Copy Textures to Game
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-register-mesh-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Register Mesh Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-create-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Create Materials
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-define-parts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Define Parts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 5: Define Parts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-single-part-vehicle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simple Single-Part Vehicle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-part-vehicle-body-head-legs-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Part Vehicle (Body + Head + Legs example)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-add-rcs-thrusters-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Add RCS Thrusters (Optional)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-create-vehicle-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7: Create Vehicle Definition
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 7: Create Vehicle Definition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-part-vehicle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Single-Part Vehicle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-part-vehicle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Part Vehicle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-add-vehicle-to-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8: Add Vehicle to System
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 8: Add Vehicle to System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-earthonly-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For EarthOnly System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-solar-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Solar System
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9: Test
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#game-crashes-on-load" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Game Crashes on Load
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-not-visible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Not Visible
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#only-part-of-model-shows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Only Part of Model Shows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blackmissing-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Black/Missing Textures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcs-not-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RCS Not Working
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-fixing-glb-scene-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced: Fixing GLB Scene References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1447,16 +2246,310 @@
   
 
 
-<h1 id="part-mods">Part Mods<a class="headerlink" href="#part-mods" title="Permanent link">&para;</a></h1>
-<p>Part mods add or modify physical components used in rockets, spacecraft, or infrastructure.</p>
-<p>Topics to cover here:</p>
+<h1 id="kitten-space-agency-parts-modding-guide">Kitten Space Agency - Parts Modding Guide<a class="headerlink" href="#kitten-space-agency-parts-modding-guide" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>This guide explains how to add custom 3D models as vehicles/parts in Kitten Space Agency (KSA).</p>
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
 <ul>
-<li>How parts are defined in config files.</li>
-<li>How parts reference meshes, colliders, textures, and audio.</li>
-<li>Mass, thrust, ISP, and other physical parameters.</li>
-<li>Attachment points and orientation conventions.</li>
-<li>Best practices for performance and balance.</li>
+<li>Blender (for 3D model preparation)</li>
+<li>Python with PIL/Pillow (for texture creation)</li>
+<li>Text editor for XML editing</li>
+<li>Your 3D model in a format Blender can import (FBX, OBJ, etc.)</li>
 </ul>
+<h2 id="file-locations">File Locations<a class="headerlink" href="#file-locations" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Game Directory</strong>: <code>C:\Users\[YourName]\AppData\Local\Programs\Kitten Space Agency\</code></li>
+<li><strong>Meshes</strong>: <code>Content\Core\Meshes\</code></li>
+<li><strong>Textures</strong>: <code>Content\Core\Textures\</code></li>
+<li><strong>Part Definitions</strong>: <code>Content\Core\PartAssets.xml</code></li>
+<li><strong>Vehicle Definitions</strong>: <code>Content\Core\Astronomicals.xml</code></li>
+<li><strong>System Files</strong>: <code>Content\Core\EarthOnly.xml</code>, <code>Content\Core\SolSystem.xml</code></li>
+</ul>
+<h2 id="step-1-prepare-your-3d-model">Step 1: Prepare Your 3D Model<a class="headerlink" href="#step-1-prepare-your-3d-model" title="Permanent link">&para;</a></h2>
+<h3 id="11-export-to-glb-format">1.1 Export to GLB Format<a class="headerlink" href="#11-export-to-glb-format" title="Permanent link">&para;</a></h3>
+<p>KSA uses GLB (GLTF 2.0 binary) format for meshes.</p>
+<p><strong>In Blender:</strong></p>
+<ol>
+<li>Import your model (File &gt; Import)</li>
+<li>Select all objects (A key)</li>
+<li>Apply all modifiers if needed</li>
+<li><strong>Important</strong>: Check vertex attributes - model MUST have:<ul>
+<li>POSITION</li>
+<li>NORMAL</li>
+<li>TEXCOORD_0 (UV coordinates)</li>
+</ul>
+</li>
+<li>File &gt; Export &gt; glTF 2.0 (.glb)</li>
+<li>Export settings:<ul>
+<li>Format: <strong>GLB (binary)</strong></li>
+<li>Include: Selected Objects only (or everything if you want)</li>
+<li>Transform: +Y Up</li>
+<li><strong>DO NOT</strong> embed textures</li>
+</ul>
+</li>
+<li>Save as <code>your_model.glb</code></li>
+</ol>
+<h3 id="12-optimize-file-size-optional-but-recommended">1.2 Optimize File Size (Optional but Recommended)<a class="headerlink" href="#12-optimize-file-size-optional-but-recommended" title="Permanent link">&para;</a></h3>
+<ol>
+<li>In Blender Edit Mode, select all (A)</li>
+<li>Add Decimate Modifier</li>
+<li>Set Ratio: 0.2-0.3 (reduces polygons by 70-80%)</li>
+<li>Apply modifier</li>
+<li>Re-export</li>
+</ol>
+<h3 id="13-split-multi-part-models">1.3 Split Multi-Part Models<a class="headerlink" href="#13-split-multi-part-models" title="Permanent link">&para;</a></h3>
+<p>KSA only renders the <strong>first primitive per mesh</strong>. If your model has multiple parts, you need to split them into separate GLB files.</p>
+<p><strong>Split in Blender:</strong></p>
+<ol>
+<li>Select your model</li>
+<li>Edit Mode (Tab)</li>
+<li>Select faces for one part (L key over connected faces)</li>
+<li>Separate (P &gt; Selection)</li>
+<li>Repeat for each part</li>
+<li>Export each part as separate GLB file</li>
+</ol>
+<h2 id="step-2-prepare-textures">Step 2: Prepare Textures<a class="headerlink" href="#step-2-prepare-textures" title="Permanent link">&para;</a></h2>
+<h3 id="21-required-texture-types">2.1 Required Texture Types<a class="headerlink" href="#21-required-texture-types" title="Permanent link">&para;</a></h3>
+<p>KSA uses PBR (Physically Based Rendering) materials with 3 texture types:</p>
+<ol>
+<li><strong>Diffuse</strong> (Base Color/Albedo) - Required</li>
+<li>The main color/texture map</li>
+<li>Format: PNG or DDS</li>
+<li>
+<p>RGB channels</p>
+</li>
+<li>
+<p><strong>Normal</strong> (Tangent Space) - Required</p>
+</li>
+<li>Height/bump information</li>
+<li>Format: PNG or DDS</li>
+<li>
+<p>RGB: (128, 128, 255) = flat normal (no bumps)</p>
+</li>
+<li>
+<p><strong>RoughMetalAo</strong> - Required</p>
+</li>
+<li>Combined texture with 3 properties:</li>
+<li>Red channel: Roughness (0=smooth, 255=rough)</li>
+<li>Green channel: Metallic (0=non-metal, 255=metal)</li>
+<li>Blue channel: Ambient Occlusion (shadows)</li>
+<li>Format: PNG or DDS</li>
+</ol>
+<h3 id="22-create-placeholder-textures">2.2 Create Placeholder Textures<a class="headerlink" href="#22-create-placeholder-textures" title="Permanent link">&para;</a></h3>
+<p>If you don't have normal or RoughMetalAo textures, you need to create placeholder ones.</p>
+<p><strong>Flat Normal Map:</strong>
+- Create a 512x512 PNG image filled with RGB color (128, 128, 255) - this is a flat blue color that represents no bumps
+- Save as <code>your_model_normal.png</code></p>
+<p><strong>Neutral RoughMetalAo Map:</strong>
+- Create a 512x512 PNG image filled with RGB color (128, 0, 255)
+- Red channel (128) = medium roughness
+- Green channel (0) = not metallic
+- Blue channel (255) = full ambient occlusion
+- Save as <code>your_model_roughmetalao.png</code></p>
+<p>You can create these in Photoshop, GIMP, or any image editor.</p>
+<h3 id="23-copy-textures-to-game">2.3 Copy Textures to Game<a class="headerlink" href="#23-copy-textures-to-game" title="Permanent link">&para;</a></h3>
+<p>Copy all texture files (diffuse, normal, and RoughMetalAo) to:</p>
+<p><code>C:\Users\[YourName]\AppData\Local\Programs\Kitten Space Agency\Content\Core\Textures\</code></p>
+<h2 id="step-3-register-mesh-files">Step 3: Register Mesh Files<a class="headerlink" href="#step-3-register-mesh-files" title="Permanent link">&para;</a></h2>
+<p>Edit <code>PartAssets.xml</code> (lines 1-10 area):</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;MeshFile</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelMesh&quot;</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Meshes/your_model.glb&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+</code></pre></div>
+<p>If you have multiple parts:
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;MeshFile</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodyMesh&quot;</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Meshes/your_body.glb&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;MeshFile</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadMesh&quot;</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Meshes/your_head.glb&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;MeshFile</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourLegsMesh&quot;</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Meshes/your_legs.glb&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+</code></pre></div></p>
+<h2 id="step-4-create-materials">Step 4: Create Materials<a class="headerlink" href="#step-4-create-materials" title="Permanent link">&para;</a></h2>
+<p>In <code>PartAssets.xml</code> (after mesh definitions):</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;PbrMaterial</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelMat&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Diffuse</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/your_model_diffuse.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Normal</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/your_model_normal.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;RoughMetalAo</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/your_model_roughmetalao.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/PbrMaterial&gt;</span>
+</code></pre></div>
+<p>For multiple parts with different textures, create multiple materials:
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;PbrMaterial</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodyMat&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Diffuse</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/your_body_diffuse.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Normal</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/flat_normal.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;RoughMetalAo</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/neutral_roughmetalao.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/PbrMaterial&gt;</span>
+
+<span class="nt">&lt;PbrMaterial</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadMat&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Diffuse</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/your_head_diffuse.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Normal</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/flat_normal.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;RoughMetalAo</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/neutral_roughmetalao.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/PbrMaterial&gt;</span>
+</code></pre></div></p>
+<h2 id="step-5-define-parts">Step 5: Define Parts<a class="headerlink" href="#step-5-define-parts" title="Permanent link">&para;</a></h2>
+<p>In <code>PartAssets.xml</code> (search for other <code>&lt;Part Id=</code> definitions as reference):</p>
+<h3 id="simple-single-part-vehicle">Simple Single-Part Vehicle<a class="headerlink" href="#simple-single-part-vehicle" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelPart&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelSubPart&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelSubPartModel&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelMesh&quot;</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelMat&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/SubPartModel&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/SubPart&gt;</span>
+<span class="nt">&lt;/Part&gt;</span>
+</code></pre></div>
+<h3 id="multi-part-vehicle-body-head-legs-example">Multi-Part Vehicle (Body + Head + Legs example)<a class="headerlink" href="#multi-part-vehicle-body-head-legs-example" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodyPart&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodySubPart&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodyModel&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodyMesh&quot;</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodyMat&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/SubPartModel&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/SubPart&gt;</span>
+<span class="nt">&lt;/Part&gt;</span>
+
+<span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadPart&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadSubPart&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadModel&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadMesh&quot;</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadMat&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/SubPartModel&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/SubPart&gt;</span>
+<span class="nt">&lt;/Part&gt;</span>
+
+<span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourLegsPart&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourLegsSubPart&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourLegsModel&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourLegsMesh&quot;</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourLegsMat&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/SubPartModel&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/SubPart&gt;</span>
+<span class="nt">&lt;/Part&gt;</span>
+</code></pre></div>
+<h2 id="step-6-add-rcs-thrusters-optional">Step 6: Add RCS Thrusters (Optional)<a class="headerlink" href="#step-6-add-rcs-thrusters-optional" title="Permanent link">&para;</a></h2>
+<p>Add thrusters to any <code>&lt;SubPart&gt;</code> section for attitude control:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelPart&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelSubPart&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelSubPartModel&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelMesh&quot;</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelMat&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/SubPartModel&gt;</span>
+
+<span class="w">        </span><span class="cm">&lt;!-- Rotation Control --&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Thruster</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YawLeft&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Location</span><span class="w"> </span><span class="na">X=</span><span class="s">&quot;-0.2&quot;</span><span class="w"> </span><span class="na">Y=</span><span class="s">&quot;-0.15&quot;</span><span class="w"> </span><span class="na">Z=</span><span class="s">&quot;0.0&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;ExhaustDirection</span><span class="w"> </span><span class="na">X=</span><span class="s">&quot;0.0&quot;</span><span class="w"> </span><span class="na">Y=</span><span class="s">&quot;1.0&quot;</span><span class="w"> </span><span class="na">Z=</span><span class="s">&quot;0.0&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;ControlMap</span><span class="w"> </span><span class="na">CSV=</span><span class="s">&quot;YawLeft&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Thrust</span><span class="w"> </span><span class="na">N=</span><span class="s">&quot;150&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;SpecificImpulse</span><span class="w"> </span><span class="na">Seconds=</span><span class="s">&quot;220&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;MinimumPulseTime</span><span class="w"> </span><span class="na">Seconds=</span><span class="s">&quot;0.008&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;VolumetricExhaust</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;MmuRcsVac&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;SoundEvent</span><span class="w"> </span><span class="na">Action=</span><span class="s">&quot;On&quot;</span><span class="w"> </span><span class="na">SoundId=</span><span class="s">&quot;DefaultRcsThruster&quot;</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;ThrusterLight</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;false&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/Thruster&gt;</span>
+
+<span class="w">        </span><span class="cm">&lt;!-- Add more thrusters for full 6-DOF control --&gt;</span>
+<span class="w">        </span><span class="cm">&lt;!-- See PartAssets.xml KSPBackpackUpPart for complete example --&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/SubPart&gt;</span>
+<span class="nt">&lt;/Part&gt;</span>
+</code></pre></div>
+<p><strong>Thruster Coordinate System:</strong>
+- X = Forward/Back (forward is +X)
+- Y = Left/Right (right is +Y)
+- Z = Up/Down (up is +Z)</p>
+<p><strong>Control Maps Available:</strong>
+- Rotation: <code>YawLeft</code>, <code>YawRight</code>, <code>PitchUp</code>, <code>PitchDown</code>, <code>RollLeft</code>, <code>RollRight</code>
+- Translation: <code>TranslateForward</code>, <code>TranslateBack</code>, <code>TranslateLeft</code>, <code>TranslateRight</code>, <code>TranslateUp</code>, <code>TranslateDown</code></p>
+<h2 id="step-7-create-vehicle-definition">Step 7: Create Vehicle Definition<a class="headerlink" href="#step-7-create-vehicle-definition" title="Permanent link">&para;</a></h2>
+<p>Edit <code>Astronomicals.xml</code> (find similar vehicle definitions as reference):</p>
+<h3 id="single-part-vehicle">Single-Part Vehicle<a class="headerlink" href="#single-part-vehicle" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;Vehicle</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourVehicle&quot;</span><span class="w"> </span><span class="na">Parent=</span><span class="s">&quot;Earth&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;Navball&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;Altitude&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;GameTime&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;PitchYawRoll&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;AutopilotSettings&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;BurnControl&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;RendezvousControl&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;WindSound</span><span class="w"> </span><span class="na">SoundId=</span><span class="s">&quot;AtmosphericMovement&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;RootPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelPart&quot;</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- Orbital Parameters --&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SemiMajorAxis</span><span class="w"> </span><span class="na">Km=</span><span class="s">&quot;6713&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Inclination</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;28.87&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Eccentricity</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;0.0077&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;LongitudeOfAscendingNode</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;65&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ArgumentOfPeriapsis</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;35&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- Physical Properties --&gt;</span>
+<span class="w">    </span><span class="nt">&lt;MeanRadius</span><span class="w"> </span><span class="na">M=</span><span class="s">&quot;2.0&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;MassSpecificPMI</span><span class="w"> </span><span class="na">X=</span><span class="s">&quot;1.5&quot;</span><span class="w"> </span><span class="na">Y=</span><span class="s">&quot;3.0&quot;</span><span class="w"> </span><span class="na">Z=</span><span class="s">&quot;3.0&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Mass</span><span class="w"> </span><span class="na">Kg=</span><span class="s">&quot;5000&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;PropellantMass</span><span class="w"> </span><span class="na">Kg=</span><span class="s">&quot;500&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Color</span><span class="w"> </span><span class="na">R=</span><span class="s">&quot;0.95&quot;</span><span class="w"> </span><span class="na">G=</span><span class="s">&quot;0.33&quot;</span><span class="w"> </span><span class="na">B=</span><span class="s">&quot;0.33&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- RCS Sound (if you added thrusters) --&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SoundEvent</span><span class="w"> </span><span class="na">Action=</span><span class="s">&quot;Rcs&quot;</span><span class="w"> </span><span class="na">SoundId=</span><span class="s">&quot;DefaultRcsThruster&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/Vehicle&gt;</span>
+</code></pre></div>
+<h3 id="multi-part-vehicle">Multi-Part Vehicle<a class="headerlink" href="#multi-part-vehicle" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;Vehicle</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourVehicle&quot;</span><span class="w"> </span><span class="na">Parent=</span><span class="s">&quot;Earth&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="cm">&lt;!-- ... same canvases and settings ... --&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;RootPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodyPart&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadPart&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourLegsPart&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/RootPart&gt;</span>
+
+<span class="w">    </span><span class="cm">&lt;!-- ... orbital and physical parameters ... --&gt;</span>
+<span class="nt">&lt;/Vehicle&gt;</span>
+</code></pre></div>
+<h2 id="step-8-add-vehicle-to-system">Step 8: Add Vehicle to System<a class="headerlink" href="#step-8-add-vehicle-to-system" title="Permanent link">&para;</a></h2>
+<h3 id="for-earthonly-system">For EarthOnly System<a class="headerlink" href="#for-earthonly-system" title="Permanent link">&para;</a></h3>
+<p>Edit <code>EarthOnly.xml</code>, add before <code>&lt;/System&gt;</code>:
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;LoadFromLibrary</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourVehicle&quot;</span><span class="w"> </span><span class="na">Parent=</span><span class="s">&quot;Earth&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</code></pre></div></p>
+<h3 id="for-solar-system">For Solar System<a class="headerlink" href="#for-solar-system" title="Permanent link">&para;</a></h3>
+<p>Edit <code>SolSystem.xml</code>, add near other Earth vehicles:
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;LoadFromLibrary</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourVehicle&quot;</span><span class="w"> </span><span class="na">Parent=</span><span class="s">&quot;Earth&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</code></pre></div></p>
+<h2 id="step-9-test">Step 9: Test<a class="headerlink" href="#step-9-test" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Save all XML files</li>
+<li>Launch Kitten Space Agency</li>
+<li>Check Tracking Station - your vehicle should appear in orbit</li>
+<li>Select it and switch to it</li>
+<li>Test RCS controls (N to toggle RCS, Q/E for roll, W/S for pitch, A/D for yaw)</li>
+</ol>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<h3 id="game-crashes-on-load">Game Crashes on Load<a class="headerlink" href="#game-crashes-on-load" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Missing Normal/RoughMetalAo textures</strong>: All three texture types are REQUIRED</li>
+<li><strong>Invalid GLB file</strong>: Check that your GLB has proper vertex attributes (POSITION, NORMAL, TEXCOORD_0)</li>
+<li><strong>XML syntax error</strong>: Validate your XML changes</li>
+</ul>
+<h3 id="model-not-visible">Model Not Visible<a class="headerlink" href="#model-not-visible" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Scene node issue</strong>: GLB scene must reference the correct node</li>
+<li><strong>Scale too small/large</strong>: Check your model scale in Blender before export</li>
+<li><strong>Wrong mesh path</strong>: Verify <code>Path="Meshes/your_model.glb"</code> matches actual filename</li>
+</ul>
+<h3 id="only-part-of-model-shows">Only Part of Model Shows<a class="headerlink" href="#only-part-of-model-shows" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Multi-primitive mesh</strong>: KSA only renders first primitive - split your model into separate files</li>
+<li><strong>Child parts not attached</strong>: Check RootPart hierarchy in Astronomicals.xml</li>
+</ul>
+<h3 id="blackmissing-textures">Black/Missing Textures<a class="headerlink" href="#blackmissing-textures" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Inverted normals</strong>: In Blender, select all faces &gt; Shift+N (recalculate normals)</li>
+<li><strong>Wrong texture path</strong>: Verify texture filenames match exactly in PbrMaterial definitions</li>
+<li><strong>Missing textures</strong>: Check all three texture files are in Textures folder</li>
+</ul>
+<h3 id="rcs-not-working">RCS Not Working<a class="headerlink" href="#rcs-not-working" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>RCS not enabled</strong>: Press N key in-game to toggle RCS</li>
+<li><strong>Wrong exhaust directions</strong>: Check ExhaustDirection vectors are correct</li>
+<li><strong>Insufficient thrust</strong>: Increase <code>Thrust N="150"</code> value</li>
+<li><strong>No propellant</strong>: Check <code>&lt;PropellantMass Kg="500" /&gt;</code> is set</li>
+</ul>
+<h2 id="advanced-fixing-glb-scene-references">Advanced: Fixing GLB Scene References<a class="headerlink" href="#advanced-fixing-glb-scene-references" title="Permanent link">&para;</a></h2>
+<p>If your model doesn't appear in-game, the GLB file's scene might be referencing the wrong node. This happens when Blender exports the scene pointing to an empty node instead of the node containing your mesh.</p>
+<p>The scene reference needs to point to the node that has the mesh attached. You can use tools like glTF Viewer or custom scripts to inspect and fix the scene node references in your GLB file.</p>
 
 
 
