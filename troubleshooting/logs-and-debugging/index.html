@@ -1265,6 +1265,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logs and Debugging
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1281,6 +1299,97 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#finding-log-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finding Log Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-log-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading Log Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-error-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Error Patterns
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Error Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nullreferenceexception-in-subpartmodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NullReferenceException in SubPartModel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-not-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Not Loading
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xml-parse-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XML Parse Errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1429,6 +1538,86 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#finding-log-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finding Log Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-log-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading Log Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-error-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Error Patterns
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Error Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nullreferenceexception-in-subpartmodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NullReferenceException in SubPartModel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-not-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Not Loading
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xml-parse-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XML Parse Errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1448,14 +1637,35 @@
 
 
 <h1 id="logs-and-debugging">Logs and Debugging<a class="headerlink" href="#logs-and-debugging" title="Permanent link">&para;</a></h1>
-<p>Knowing how to find and read KSA's logs is essential for modding.</p>
-<p>Topics:</p>
+<h2 id="finding-log-files">Finding Log Files<a class="headerlink" href="#finding-log-files" title="Permanent link">&para;</a></h2>
+<p>KSA stores its log files in your Documents folder:</p>
+<p><strong>Location:</strong> <code>C:\Users\[YourName]\Documents\My Games\Kitten Space Agency\Logs\</code></p>
+<p>The main log file is <code>Brutal.log</code>, which gets updated as you play. Older logs are automatically archived in the <code>Archives</code> subfolder with timestamps.</p>
+<h2 id="reading-log-files">Reading Log Files<a class="headerlink" href="#reading-log-files" title="Permanent link">&para;</a></h2>
+<p>Open <code>Brutal.log</code> in any text editor (Notepad, VS Code, etc.) to view the log.</p>
+<p>The log file contains useful information for debugging:</p>
 <ul>
-<li>Log file locations on each platform.</li>
-<li>Log verbosity and debug modes (if available).</li>
-<li>Searching logs for common problems.</li>
-<li>Techniques for instrumenting your mods for better diagnostics.</li>
+<li><strong>Loading errors</strong>: Look for lines containing "ERROR" or "Exception"</li>
+<li><strong>Asset loading</strong>: Search for your mesh/texture filenames to see if they loaded successfully</li>
+<li><strong>XML parsing errors</strong>: Check for "XML" or "Parse" related errors</li>
+<li><strong>Instantiation issues</strong>: Look for "instantiated" or "Vehicle" mentions</li>
 </ul>
+<h2 id="common-error-patterns">Common Error Patterns<a class="headerlink" href="#common-error-patterns" title="Permanent link">&para;</a></h2>
+<h3 id="nullreferenceexception-in-subpartmodel">NullReferenceException in SubPartModel<a class="headerlink" href="#nullreferenceexception-in-subpartmodel" title="Permanent link">&para;</a></h3>
+<p><strong>Error:</strong> <code>NullReferenceException at SubPartModel..ctor</code></p>
+<p><strong>Cause:</strong> Missing texture files (Normal or RoughMetalAo)</p>
+<p><strong>Solution:</strong> Ensure all three texture types (Diffuse, Normal, RoughMetalAo) are specified in your PbrMaterial definition</p>
+<h3 id="model-not-loading">Model Not Loading<a class="headerlink" href="#model-not-loading" title="Permanent link">&para;</a></h3>
+<p><strong>Search log for:</strong> Your mesh filename (e.g., "your_model.glb")</p>
+<p><strong>If not found:</strong> Check the file path in PartAssets.xml matches the actual filename</p>
+<p><strong>If found with errors:</strong> Check the GLB file format and vertex attributes</p>
+<h3 id="xml-parse-errors">XML Parse Errors<a class="headerlink" href="#xml-parse-errors" title="Permanent link">&para;</a></h3>
+<p><strong>Error:</strong> Lines mentioning XML parsing or schema validation</p>
+<p><strong>Cause:</strong> Syntax error in XML files (missing closing tags, invalid attributes)</p>
+<p><strong>Solution:</strong> Validate your XML syntax - common issues:
+- Missing closing tags <code>&lt;/Part&gt;</code>, <code>&lt;/SubPart&gt;</code>, etc.
+- Misspelled attribute names
+- Unclosed quotes in attribute values</p>
 
 
 
