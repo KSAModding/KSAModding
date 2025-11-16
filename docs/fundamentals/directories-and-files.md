@@ -1,9 +1,29 @@
 # Game Directories and File Layout
 
-Understanding how KSA organizes its files is essential for modding safely and effectively.
+## Installation Directory
 
-This page will document:
+**Location:** `C:\Users\[YourName]\AppData\Local\Programs\Kitten Space Agency\`
 
-- The installation directory layout.
-- Where user data, saves, and mods live.
-- Which folders are safe to modify directly (if any) and which should be left alone.
+### Core Directory
+
+Where all the game assets live:
+
+- **Meshes** - GLB 3D model files
+- **Textures** - PNG/DDS texture files
+- **PartAssets.xml** - Parts, meshes, materials
+- **Astronomicals.xml** - Vehicles and celestial bodies
+- **EarthOnly.xml** - Earth-only system
+- **SolSystem.xml** - Solar system
+
+### Game Code
+
+- **KSA.dll** - Main game code (decompile with ILSpy)
+- **Brutal.dll** - Engine code
+
+## Logs and Saves Directory
+
+**Location:** `C:\Users\[YourName]\Documents\My Games\Kitten Space Agency\`
+
+- **Logs** - `Brutal.log` and archived logs
+- **Saves** - Save game files
+ 

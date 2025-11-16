@@ -43,24 +43,12 @@ nav:
       - Modeling Pipeline: pipelines-tools/modeling-pipeline.md
       - Texture Pipeline: pipelines-tools/texture-pipeline.md
       - Tools Index: pipelines-tools/tools-index.md
-  - Reference:
-      - Config Keys Overview: reference/config-keys-overview.md
-      - Physics and Performance: reference/physics-and-performance.md
   - Advanced & Internals:
       - Reverse Engineering Notes: advanced-internals/reverse-engineering.md
-      - Save File Structure: advanced-internals/save-file-structure.md
-      - Experimental Features: advanced-internals/experimental-features.md
-      - Code Docs:
-        - Brutal:
-          - Numerics:
-            - bool2: advanced-internals/code-docs/Brutal/Numerics/bool2.md
-  - Tutorials: tutorials/index.md
   - Troubleshooting:
-      - Common Errors: troubleshooting/common-errors.md
       - Logs and Debugging: troubleshooting/logs-and-debugging.md
   - Meta:
       - Documentation Style Guide: meta/style-guide.md
-      - Adding To Code Docs: meta/code-doc-guide.md
       - Versioning Policy: meta/versioning-policy.md
 
 plugins:
