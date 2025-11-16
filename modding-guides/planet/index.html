@@ -1048,6 +1048,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Atmosphere">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#physical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visual
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Full Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -2195,6 +2234,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Atmosphere">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#physical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visual
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Full Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -3272,7 +3350,67 @@ Pluto Template (for Small Terrestrail Bodies):
 <li>B: Blue color, RGB 0-1</li>
 </ul>
 <h3 id="atmosphere">Atmosphere<a class="headerlink" href="#atmosphere" title="Permanent link">&para;</a></h3>
-<p>TBA</p>
+<p>The atmosphere block can only be used for atmospheric bodies. The atmosphere block contains 2 sections, physical and visual.</p>
+<h4 id="physical">Physical<a class="headerlink" href="#physical" title="Permanent link">&para;</a></h4>
+<p>This is obviously required, as without it your atmosphere won't do anything.</p>
+<p>The following text is an example of a physical atmosphere:
+<div class="highlight"><pre><span></span><code><span class="w">        </span><span class="nt">&lt;Atmosphere&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Physical&gt;</span>
+<span class="w">                </span><span class="nt">&lt;SeaLevelPressure</span><span class="w"> </span><span class="na">Atm=</span><span class="s">&quot;1.0&quot;</span><span class="nt">/&gt;</span>
+<span class="w">                </span><span class="nt">&lt;SeaLevelDensity</span><span class="w"> </span><span class="na">KgPerM3=</span><span class="s">&quot;0.16&quot;</span><span class="nt">/&gt;</span>
+<span class="w">                </span><span class="nt">&lt;ScaleHeight</span><span class="w"> </span><span class="na">Km=</span><span class="s">&quot;75&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;/Physical&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/Atmosphere&gt;</span>
+</code></pre></div>
+SeaLevelPressure: This is the pressure of the atmosphere at sea level. I'm not sure if it currently does anything. Uses units Atm (Earth Atmospheric Pressure).</p>
+<p>SeaLevelDensity: This is the density of the atmosphere at sea level. If it is higher than the density of your vessel, your vessel will float above a certain point. Uses units KgPerM3 (Kilograms per cubic Meter).</p>
+<p>ScaleHeight: This is the height at which your atmosphere will have 0 pressure and 0 density. Uses all units for 1 dimensional measurement that are implemented into the game.</p>
+<h4 id="visual">Visual<a class="headerlink" href="#visual" title="Permanent link">&para;</a></h4>
+<p>This determines the color, light reflection, and overall look of the atmosphere. Without it, the atmosphere will not be visible.</p>
+<p>The following text is an example of a visual atmosphere:
+<div class="highlight"><pre><span></span><code><span class="w">        </span><span class="nt">&lt;Atmosphere&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Visual&gt;</span>
+<span class="w">                </span><span class="nt">&lt;RayleighScattering&gt;</span>
+<span class="w">                    </span><span class="nt">&lt;Coefficients</span><span class="w"> </span><span class="na">R=</span><span class="s">&quot;1.8e-4&quot;</span><span class="w"> </span><span class="na">G=</span><span class="s">&quot;1.8e-4&quot;</span><span class="w"> </span><span class="na">B=</span><span class="s">&quot;1.1e-4&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">                    </span><span class="nt">&lt;ScaleHeight</span><span class="w"> </span><span class="na">Km=</span><span class="s">&quot;650&quot;</span><span class="nt">/&gt;</span>
+<span class="w">                </span><span class="nt">&lt;/RayleighScattering&gt;</span>
+<span class="w">                </span><span class="nt">&lt;MieScattering&gt;</span>
+<span class="w">                    </span><span class="nt">&lt;Coefficients</span><span class="w"> </span><span class="na">R=</span><span class="s">&quot;4e-4&quot;</span><span class="w"> </span><span class="na">G=</span><span class="s">&quot;4e-4&quot;</span><span class="w"> </span><span class="na">B=</span><span class="s">&quot;4e-4&quot;</span><span class="nt">/&gt;</span>
+<span class="w">                    </span><span class="nt">&lt;ScaleHeight</span><span class="w"> </span><span class="na">Km=</span><span class="s">&quot;100&quot;</span><span class="nt">/&gt;</span>
+<span class="w">                    </span><span class="nt">&lt;PhaseFunctionAsymmetry</span><span class="w"> </span><span class="na">X=</span><span class="s">&quot;0.1&quot;</span><span class="w"> </span><span class="na">Y=</span><span class="s">&quot;0.1&quot;</span><span class="w"> </span><span class="na">Z=</span><span class="s">&quot;0.1&quot;</span><span class="nt">/&gt;</span>
+<span class="w">                </span><span class="nt">&lt;/MieScattering&gt;</span>
+<span class="w">            </span><span class="nt">&lt;/Visual&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/Atmosphere&gt;</span>
+</code></pre></div>
+RayleighScattering:
+ - This is the light scattering in the upper atmosphere
+ - Coefficients: This is the color. Higher numbers will show denser and less transparent. Uses RGB 0-1.
+ - ScaleHeight: The height at which the atmosphere will no longer be visible</p>
+<p>MieScattering:
+ - This is the light scattering in the lower atmosphere
+ - Coefficients: This is the color. Higher numbers will show denser and less transparent. Uses RGB 0-1.
+ - ScaleHeight: The height at which the atmosphere will no longer be visible
+ - PhaseFunctionAsymmetry: This makes light bounce in different differections. For example, a higher X value will make light more likely to bounce in the X direction</p>
+<h4 id="full-example">Full Example<a class="headerlink" href="#full-example" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="w">        </span><span class="nt">&lt;Atmosphere&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Visual&gt;</span>
+<span class="w">                </span><span class="nt">&lt;RayleighScattering&gt;</span>
+<span class="w">                    </span><span class="nt">&lt;Coefficients</span><span class="w"> </span><span class="na">R=</span><span class="s">&quot;1.8e-4&quot;</span><span class="w"> </span><span class="na">G=</span><span class="s">&quot;1.8e-4&quot;</span><span class="w"> </span><span class="na">B=</span><span class="s">&quot;1.1e-4&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">                    </span><span class="nt">&lt;ScaleHeight</span><span class="w"> </span><span class="na">Km=</span><span class="s">&quot;650&quot;</span><span class="nt">/&gt;</span>
+<span class="w">                </span><span class="nt">&lt;/RayleighScattering&gt;</span>
+<span class="w">                </span><span class="nt">&lt;MieScattering&gt;</span>
+<span class="w">                    </span><span class="nt">&lt;Coefficients</span><span class="w"> </span><span class="na">R=</span><span class="s">&quot;4e-4&quot;</span><span class="w"> </span><span class="na">G=</span><span class="s">&quot;4e-4&quot;</span><span class="w"> </span><span class="na">B=</span><span class="s">&quot;4e-4&quot;</span><span class="nt">/&gt;</span>
+<span class="w">                    </span><span class="nt">&lt;ScaleHeight</span><span class="w"> </span><span class="na">Km=</span><span class="s">&quot;100&quot;</span><span class="nt">/&gt;</span>
+<span class="w">                    </span><span class="nt">&lt;PhaseFunctionAsymmetry</span><span class="w"> </span><span class="na">X=</span><span class="s">&quot;0.1&quot;</span><span class="w"> </span><span class="na">Y=</span><span class="s">&quot;0.1&quot;</span><span class="w"> </span><span class="na">Z=</span><span class="s">&quot;0.1&quot;</span><span class="nt">/&gt;</span>
+<span class="w">                </span><span class="nt">&lt;/MieScattering&gt;</span>
+<span class="w">            </span><span class="nt">&lt;/Visual&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Physical&gt;</span>
+<span class="w">                </span><span class="nt">&lt;SeaLevelPressure</span><span class="w"> </span><span class="na">Atm=</span><span class="s">&quot;1.0&quot;</span><span class="nt">/&gt;</span>
+<span class="w">                </span><span class="nt">&lt;SeaLevelDensity</span><span class="w"> </span><span class="na">KgPerM3=</span><span class="s">&quot;0.16&quot;</span><span class="nt">/&gt;</span>
+<span class="w">                </span><span class="nt">&lt;ScaleHeight</span><span class="w"> </span><span class="na">Km=</span><span class="s">&quot;75&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;/Physical&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/Atmosphere&gt;</span>
+</code></pre></div>
 <h3 id="oceans">Oceans<a class="headerlink" href="#oceans" title="Permanent link">&para;</a></h3>
 <p>TBA</p>
 <h3 id="clouds">Clouds<a class="headerlink" href="#clouds" title="Permanent link">&para;</a></h3>
