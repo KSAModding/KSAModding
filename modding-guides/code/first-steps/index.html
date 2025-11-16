@@ -1923,21 +1923,27 @@
 <img alt="Install Lib.Harmony" src="/KSAModding/assets/images/modding-guides/code/install-harmony.png" /></li>
 </ol>
 <h2 id="step-2-creating-a-istarmapmod-class">Step 2: Creating a IStarMapMod class<a class="headerlink" href="#step-2-creating-a-istarmapmod-class" title="Permanent link">&para;</a></h2>
-<p>StarMap automatically loads the first class that implements IStarMapMod and has the same name as its dll. For more info about the dll see <a href="">The compilation section</a> <!-- TODO: add section --></p>
+<p>StarMap automatically loads the class with the same name as the .dll file and that has the <code>[StarMapMod]</code> attribute</p>
 <p>Our first step will be creating this class. Our example will be using the name <code>FirstMod</code> for the mod.</p>
 <h3 id="creating-the-class">Creating the class<a class="headerlink" href="#creating-the-class" title="Permanent link">&para;</a></h3>
 <p>Create a class under the namespace FirstMod with the name FirstMod. And let it inherit from IStarMapMod</p>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">StarMap.API</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">KSA</span><span class="p">;</span>
 
-<span class="k">namespace</span><span class="w"> </span><span class="nn">FirstMod</span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">SASMod</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">FirstMod</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">IStarMapMod</span>
+<span class="w">    </span><span class="na">[StarMapMod]</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">SASMod</span>
 <span class="w">    </span><span class="p">{</span>
 
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>IStarMapMod requires you to implement 3 functions and one member (There is currently a typo in StarMap: OnImmediateLoad should for now be written as OnImmediatLoad until the fix is accepted)</p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+The api exposes a couple of attributes but for this simple hello world example we only need one:
+<code>[StarMapImmediateLoad]</code>. The function marked with this attribute will be run when the mod is loaded. The function this attribute is assigned to does need to take in <code>Mod definingMod</code> as a parameter.</p>
+<p>=======
+IStarMapMod requires you to implement 3 functions and one member (There is currently a typo in StarMap: OnImmediateLoad should for now be written as OnImmediatLoad until the fix is accepted)</p>
 <ul>
 <li><code>public void OnImmediateLoad()</code></li>
 <li><code>public void OnFullyLoaded()</code></li>
@@ -1945,12 +1951,33 @@
 <li><code>public bool ImmediateUnload</code></li>
 </ul>
 <p>So lets do that next</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>be0a6f8cfbc059ae0e6df8c867d0a1208dfe185a</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">StarMap.API</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">KSA</span><span class="p">;</span>
 
-<span class="k">namespace</span><span class="w"> </span><span class="nn">FirstMod</span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">SASMod</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">FirstMod</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">IStarMapMod</span>
+<span class="w">    </span><span class="na">[StarMapMod]</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">SASMod</span>
 <span class="w">    </span><span class="p">{</span>
+<span class="o">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span><span class="w"> </span><span class="n">HEAD</span>
+<span class="w">        </span><span class="na">[StarMapImmediateLoad]</span>
+<span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Init</span><span class="p">(</span><span class="n">Mod</span><span class="w"> </span><span class="n">definingMod</span><span class="p">)</span>
+<span class="o">=======</span>
 <span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ImmediateUnload</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 <span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnImmediateLoad</span><span class="p">()</span>
 <span class="w">        </span><span class="p">{</span>
@@ -1963,6 +1990,7 @@
 <span class="w">        </span><span class="p">}</span>
 
 <span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Unload</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span><span class="w"> </span><span class="n">be0a6f8cfbc059ae0e6df8c867d0a1208dfe185a</span>
 <span class="w">        </span><span class="p">{</span>
 
 <span class="w">        </span><span class="p">}</span>
@@ -1972,8 +2000,9 @@
 <p>Lets make a simple hello world program now.</p>
 <p>Just add a <code>Console.WriteLine("Hello World!")</code></p>
 <p>Inside FirstMod:
-<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnFullyLoaded</span><span class="p">()</span>
-<span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="na">[StarMapImmediateLoad]</span>
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Init</span><span class="p">(</span><span class="n">Mod</span><span class="w"> </span><span class="n">definingMod</span><span class="p">)</span>
+<span class="p">{</span><span class="w">   </span>
 <span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div></p>
