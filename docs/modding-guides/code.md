@@ -78,6 +78,15 @@ We will have to add a custom Package Source to nuget to be able to use StarMap
 
 ### Setting up Harmony
 
+1. Under Package Source select `nuget.org` again
+2. Go to the `Browse` tab
+3. Search for `harmony`
+4. Select `Lib.Harmony`
+5. Press `Install`
+6. Wait for the instal to finish
+![Install Lib.Harmony](/KSAModding/assets/images/modding-guides/code/install-harmony.png)
+
+
 
 ## Step 2: Creating a IStarMapMod class
 
