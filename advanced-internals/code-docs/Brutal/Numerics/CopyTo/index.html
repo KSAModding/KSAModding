@@ -10,31 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://ksamodding.github.io/KSAModding/getting-started/installing-mods/">
+        <link rel="canonical" href="https://ksamodding.github.io/KSAModding/advanced-internals/code-docs/Brutal/Numerics/CopyTo/">
       
       
-        <link rel="prev" href="../install-tools/">
+        <link rel="prev" href="../bool2/">
       
       
-        <link rel="next" href="../modding-etiquette/">
+        <link rel="next" href="../../../../../troubleshooting/logs-and-debugging/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>Installing Mods (StarMap) - KSA Modding Wiki (Unofficial)</title>
+        <title>CopyTo - KSA Modding Wiki (Unofficial)</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installing-mods-with-starmap" class="md-skip">
+        <a href="#struct-brutalnumericsbool2copyto" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="KSA Modding Wiki (Unofficial)" class="md-header__button md-logo" aria-label="KSA Modding Wiki (Unofficial)" data-md-component="logo">
+    <a href="../../../../.." title="KSA Modding Wiki (Unofficial)" class="md-header__button md-logo" aria-label="KSA Modding Wiki (Unofficial)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installing Mods (StarMap)
+              CopyTo
             
           </span>
         </div>
@@ -232,7 +232,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="KSA Modding Wiki (Unofficial)" class="md-nav__button md-logo" aria-label="KSA Modding Wiki (Unofficial)" data-md-component="logo">
+    <a href="../../../../.." title="KSA Modding Wiki (Unofficial)" class="md-nav__button md-logo" aria-label="KSA Modding Wiki (Unofficial)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -262,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   
@@ -286,8 +286,6 @@
       
   
   
-    
-  
   
   
     
@@ -300,11 +298,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -325,7 +323,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -343,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../../../../../getting-started/overview/" class="md-nav__link">
         
   
   
@@ -371,7 +369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../install-tools/" class="md-nav__link">
+      <a href="../../../../../getting-started/install-tools/" class="md-nav__link">
         
   
   
@@ -396,37 +394,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Installing Mods (StarMap)
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../../getting-started/installing-mods/" class="md-nav__link">
         
   
   
@@ -442,59 +413,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-install-mods" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How to install mods
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#method-1-ksa-mod-loader" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Method 1: KSA Mod Loader
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#method-2-manual" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Method 2: Manual
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -507,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modding-etiquette/" class="md-nav__link">
+      <a href="../../../../../getting-started/modding-etiquette/" class="md-nav__link">
         
   
   
@@ -594,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentals/directories-and-files/" class="md-nav__link">
+      <a href="../../../../../fundamentals/directories-and-files/" class="md-nav__link">
         
   
   
@@ -622,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentals/data-formats-overview/" class="md-nav__link">
+      <a href="../../../../../fundamentals/data-formats-overview/" class="md-nav__link">
         
   
   
@@ -650,7 +568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentals/coordinates-and-units/" class="md-nav__link">
+      <a href="../../../../../fundamentals/coordinates-and-units/" class="md-nav__link">
         
   
   
@@ -737,7 +655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modding-guides/parts/" class="md-nav__link">
+      <a href="../../../../../modding-guides/parts/" class="md-nav__link">
         
   
   
@@ -765,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modding-guides/planet/" class="md-nav__link">
+      <a href="../../../../../modding-guides/planet/" class="md-nav__link">
         
   
   
@@ -793,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modding-guides/system/" class="md-nav__link">
+      <a href="../../../../../modding-guides/system/" class="md-nav__link">
         
   
   
@@ -870,7 +788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modding-guides/code/first-steps/" class="md-nav__link">
+      <a href="../../../../../modding-guides/code/first-steps/" class="md-nav__link">
         
   
   
@@ -965,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pipelines-tools/modeling-pipeline/" class="md-nav__link">
+      <a href="../../../../../pipelines-tools/modeling-pipeline/" class="md-nav__link">
         
   
   
@@ -993,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pipelines-tools/texture-pipeline/" class="md-nav__link">
+      <a href="../../../../../pipelines-tools/texture-pipeline/" class="md-nav__link">
         
   
   
@@ -1021,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pipelines-tools/tools-index/" class="md-nav__link">
+      <a href="../../../../../pipelines-tools/tools-index/" class="md-nav__link">
         
   
   
@@ -1053,8 +971,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -1065,11 +985,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
@@ -1090,7 +1010,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1108,7 +1028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced-internals/reverse-engineering/" class="md-nav__link">
+      <a href="../../../../reverse-engineering/" class="md-nav__link">
         
   
   
@@ -1133,6 +1053,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1142,11 +1064,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" checked>
         
           
           <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
@@ -1167,7 +1089,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1182,6 +1104,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1191,11 +1115,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_6_2_1" id="__nav_6_2_1_label" tabindex="0">
@@ -1216,7 +1140,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_2_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1231,6 +1155,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1240,11 +1166,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_1_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_1_1" checked>
         
           
           <label class="md-nav__link" for="__nav_6_2_1_1" id="__nav_6_2_1_1_label" tabindex="0">
@@ -1265,7 +1191,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_1_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_1_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_2_1_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1280,6 +1206,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1289,11 +1217,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_1_1_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_1_1_1" checked>
         
           
           <label class="md-nav__link" for="__nav_6_2_1_1_1" id="__nav_6_2_1_1_1_label" tabindex="0">
@@ -1314,7 +1242,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_6_2_1_1_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_6_2_1_1_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_2_1_1_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1332,7 +1260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced-internals/code-docs/Brutal/Numerics/bool2/" class="md-nav__link">
+      <a href="../bool2/" class="md-nav__link">
         
   
   
@@ -1357,10 +1285,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../advanced-internals/code-docs/Brutal/Numerics/CopyTo/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CopyTo
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1376,6 +1331,76 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#function-prototypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Function Prototypes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Function Prototypes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#void-copytobool-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        void CopyTo(bool[] array)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#void-copytobool-array-int-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        void CopyTo(bool[] array, int index)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#void-copytospanbool-destination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        void CopyTo(Span&lt;bool&gt; destination)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1479,7 +1504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/logs-and-debugging/" class="md-nav__link">
+      <a href="../../../../../troubleshooting/logs-and-debugging/" class="md-nav__link">
         
   
   
@@ -1566,7 +1591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../meta/style-guide/" class="md-nav__link">
+      <a href="../../../../../meta/style-guide/" class="md-nav__link">
         
   
   
@@ -1594,7 +1619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../meta/versioning-policy/" class="md-nav__link">
+      <a href="../../../../../meta/versioning-policy/" class="md-nav__link">
         
   
   
@@ -1622,7 +1647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../meta/code-doc-guide/" class="md-nav__link">
+      <a href="../../../../../meta/code-doc-guide/" class="md-nav__link">
         
   
   
@@ -1677,35 +1702,52 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-install-mods" class="md-nav__link">
+  <a href="#function-prototypes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How to install mods
+        Function Prototypes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Function Prototypes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#void-copytobool-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        void CopyTo(bool[] array)
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#method-1-ksa-mod-loader" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#void-copytobool-array-int-index" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Method 1: KSA Mod Loader
+        void CopyTo(bool[] array, int index)
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#method-2-manual" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#void-copytospanbool-destination" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Method 2: Manual
+        void CopyTo(Span&lt;bool&gt; destination)
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1729,36 +1771,36 @@
   
 
 
-<h1 id="installing-mods-with-starmap">Installing mods with StarMap<a class="headerlink" href="#installing-mods-with-starmap" title="Permanent link">&para;</a></h1>
-<p>This page covers how to install mods that work with StarMap.</p>
-<p>First make sure you installed StarMap via this guide: <a href="/KSAModding/getting-started/install-tools/#starmap-ksa-code-loader">StarMap installation guide</a></p>
-<h2 id="how-to-install-mods">How to install mods<a class="headerlink" href="#how-to-install-mods" title="Permanent link">&para;</a></h2>
-<h2 id="method-1-ksa-mod-loader">Method 1: KSA Mod Loader<a class="headerlink" href="#method-1-ksa-mod-loader" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Download the zip file for the mod.</li>
-<li>Copy and paste the zip file into the <code>ModSetup</code> folder of KSA Mod Loader</li>
-<li>Run KSA Mod Loader and select option "2" to install.</li>
-</ol>
-<h2 id="method-2-manual">Method 2: Manual<a class="headerlink" href="#method-2-manual" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Download the mod's zip that contains the class library dll as well as any dependencies.</li>
-<li>Extract the zip folder so that the .dll file is inside a folder with the same nam as the .dll file.
-    <div class="highlight"><pre><span></span><code>    StarMap.ExampleMod
-    └── StarMap.ExampleMod.dll
-    └── ...
-</code></pre></div></li>
-<li>Put this folder inside of the game content files: <code>"KSAInstallLocation/Content/</code>, This folder should also contain the <code>Core</code> mod folder.</li>
-<li>Lastly the mod needs to be added to the manifest.toml in the <code>"KSAInstallLocation"/Content/</code> folder, the id needs to match the name of the folder, the .dll file, the name variable inside mod.toml.
-<div class="highlight"><pre><span></span><code>[[mods]]
-id= &quot;core&quot;
-enabled = true
-
-[[mods]]
-id = &quot;[mod name]&quot;
-enabled = true
-</code></pre></div></li>
-<li>When now loading the game via <code>StarMap.exe</code> or <code>StarMapLoader.exe</code>, the mod should be loaded and run.</li>
-</ol>
+<p><sub><sup>Tested with: <strong>KSA Version 2025.11.4.2791</strong></sup></sub></p>
+<h1 id="struct-brutalnumericsbool2copyto">struct Brutal.Numerics.bool2.CopyTo<a class="headerlink" href="#struct-brutalnumericsbool2copyto" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Namespace:</strong> <code>Brutal.Numerics</code><br />
+<strong>Assembly:</strong> <code>Brutal.Core.Numerics.dll</code></p>
+</blockquote>
+<p>Copies the components of the instance into a provided array or span.<br />
+Depending on the overload, copying begins at index <code>0</code>, a specified index, or into a <code>Span&lt;bool&gt;</code>.</p>
+<h2 id="function-prototypes">Function Prototypes<a class="headerlink" href="#function-prototypes" title="Permanent link">&para;</a></h2>
+<h3 id="void-copytobool-array"><code>void CopyTo(bool[] array)</code><a class="headerlink" href="#void-copytobool-array" title="Permanent link">&para;</a></h3>
+<p>Copies the components into an array starting at index <code>0</code>.<br />
+The target array must have a length of <strong>at least 2</strong>.</p>
+<p><strong>Parameters:</strong>  </p>
+<ul>
+<li><code>array</code> — The destination array that will receive the components.</li>
+</ul>
+<h3 id="void-copytobool-array-int-index"><code>void CopyTo(bool[] array, int index)</code><a class="headerlink" href="#void-copytobool-array-int-index" title="Permanent link">&para;</a></h3>
+<p>Copies the components into an array starting at the specified <code>index</code>.</p>
+<p><strong>Parameters:</strong>  </p>
+<ul>
+<li><code>array</code> — The destination array that will receive the components.  </li>
+<li><code>index</code> — The starting index in the array where copying begins.s</li>
+</ul>
+<h3 id="void-copytospanbool-destination"><code>void CopyTo(Span&lt;bool&gt; destination)</code><a class="headerlink" href="#void-copytospanbool-destination" title="Permanent link">&para;</a></h3>
+<p>Copies the components into a <code>Span&lt;bool&gt;</code>.<br />
+The destination span must have a length of <strong>at least 2</strong>.</p>
+<p><strong>Parameters:</strong>  </p>
+<ul>
+<li><code>destination</code> — The span that will receive the components.</li>
+</ul>
 
 
 
@@ -1808,10 +1850,10 @@ enabled = true
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
   </body>
