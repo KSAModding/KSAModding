@@ -1,5 +1,5 @@
 <sub><sup>Tested with: **KSA Version 2025.11.5.2819**</sup></sub>
-# struct Brutal.Numerics.bool2
+# struct KSA.FlightComputer
 > **Namespace:** `KSA`  
 > **Assembly:** `KSA.dll`
 
