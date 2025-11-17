@@ -2,7 +2,7 @@
 
 This page lays out some guidlines for creating a code documentation page.
 You can see an example here:
-[bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/)
+[bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/bool2/)
 
 Make sure to always follow the [general style guide](/KSAModding/meta/style-guide/) on top of these guidlines.
 
@@ -98,10 +98,10 @@ After the Namespace and Assembly, provide a short description for that specific 
 If you want to help users get up and running quickly, include a small example of how to use the specific function or class.
 
 ### Function prototype (Method)
-After the description, add a section that lists all function protoypes for a function. In case of class or struct list the constructors instead. For a detailed example go to the [bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/) or the [CopyTo example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/CopyTo/).
+After the description, add a section that lists all function protoypes for a function. In case of class or struct list the constructors instead. For a detailed example go to the [bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/bool2/) or the [CopyTo example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/CopyTo/).
 
 ### Members (classes and structs)
-When writing documentation for classes or structs, if it has public members add a section for those as well. For a detailed example go to the [bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/).
+When writing documentation for classes or structs, if it has public members add a section for those as well. For a detailed example go to the [bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/bool2/).
 
 ### Operators
-When writing documentation for classes or structs, if it has public operators add a section for those as well. For a detailed example go to the [bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/).
+When writing documentation for classes or structs, if it has public operators add a section for those as well. For a detailed example go to the [bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/bool2/).
