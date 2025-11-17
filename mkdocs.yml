@@ -50,7 +50,9 @@ nav:
       - Code Docs:
         - Brutal:
           - Numerics:
-            - bool2: advanced-internals/code-docs/Brutal/Numerics/bool2.md
+            - bool2: 
+              - Overview: advanced-internals/code-docs/Brutal/Numerics/bool2.md
+              - CopyTo: advanced-internals/code-docs/Brutal/Numerics/CopyTo.md
   - Troubleshooting:
       - Logs and Debugging: troubleshooting/logs-and-debugging.md
   - Meta:
