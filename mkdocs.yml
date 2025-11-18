@@ -65,7 +65,6 @@ nav:
               - Significant Variables: ksa.dll/classes/significant_classes.md
               - Class Types: ksa.dll/classes/class_types.md
               - Implementing Classes: ksa.dll/classes/implementing_classes.md
-              -  :
               - Units: ksa.dll/variables/units.md
               - Vessels: ksa.dll/variables/vessel.md
   - Troubleshooting:
