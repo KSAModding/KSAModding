@@ -10,29 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://ksamodding.github.io/KSAModding/meta/code-doc-guide/">
+        <link rel="canonical" href="https://ksamodding.github.io/KSAModding/ksa.dll/classes/implementing_classes/">
       
       
-        <link rel="prev" href="../versioning-policy/">
+        <link rel="prev" href="../class_types/">
       
+      
+        <link rel="next" href="../../variables/units/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>Adding To Code Docs - KSA Modding Wiki (Unofficial)</title>
+        <title>Implementing Classes - KSA Modding Wiki (Unofficial)</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#code-documentation-guidelines" class="md-skip">
+        <a href="#implementing-classes" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="KSA Modding Wiki (Unofficial)" class="md-header__button md-logo" aria-label="KSA Modding Wiki (Unofficial)" data-md-component="logo">
+    <a href="../../.." title="KSA Modding Wiki (Unofficial)" class="md-header__button md-logo" aria-label="KSA Modding Wiki (Unofficial)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Adding To Code Docs
+              Implementing Classes
             
           </span>
         </div>
@@ -230,7 +232,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="KSA Modding Wiki (Unofficial)" class="md-nav__button md-logo" aria-label="KSA Modding Wiki (Unofficial)" data-md-component="logo">
+    <a href="../../.." title="KSA Modding Wiki (Unofficial)" class="md-nav__button md-logo" aria-label="KSA Modding Wiki (Unofficial)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -260,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -339,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/overview/" class="md-nav__link">
+      <a href="../../../getting-started/overview/" class="md-nav__link">
         
   
   
@@ -367,7 +369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/install-tools/" class="md-nav__link">
+      <a href="../../../getting-started/install-tools/" class="md-nav__link">
         
   
   
@@ -395,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/installing-mods/" class="md-nav__link">
+      <a href="../../../getting-started/installing-mods/" class="md-nav__link">
         
   
   
@@ -423,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/modding-etiquette/" class="md-nav__link">
+      <a href="../../../getting-started/modding-etiquette/" class="md-nav__link">
         
   
   
@@ -510,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentals/directories-and-files/" class="md-nav__link">
+      <a href="../../../fundamentals/directories-and-files/" class="md-nav__link">
         
   
   
@@ -538,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentals/data-formats-overview/" class="md-nav__link">
+      <a href="../../../fundamentals/data-formats-overview/" class="md-nav__link">
         
   
   
@@ -566,7 +568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentals/coordinates-and-units/" class="md-nav__link">
+      <a href="../../../fundamentals/coordinates-and-units/" class="md-nav__link">
         
   
   
@@ -653,7 +655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modding-guides/parts/" class="md-nav__link">
+      <a href="../../../modding-guides/parts/" class="md-nav__link">
         
   
   
@@ -681,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modding-guides/planet/" class="md-nav__link">
+      <a href="../../../modding-guides/planet/" class="md-nav__link">
         
   
   
@@ -709,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modding-guides/system/" class="md-nav__link">
+      <a href="../../../modding-guides/system/" class="md-nav__link">
         
   
   
@@ -786,7 +788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modding-guides/code/first-steps/" class="md-nav__link">
+      <a href="../../../modding-guides/code/first-steps/" class="md-nav__link">
         
   
   
@@ -881,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pipelines-tools/modeling-pipeline/" class="md-nav__link">
+      <a href="../../../pipelines-tools/modeling-pipeline/" class="md-nav__link">
         
   
   
@@ -909,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pipelines-tools/texture-pipeline/" class="md-nav__link">
+      <a href="../../../pipelines-tools/texture-pipeline/" class="md-nav__link">
         
   
   
@@ -937,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pipelines-tools/tools-index/" class="md-nav__link">
+      <a href="../../../pipelines-tools/tools-index/" class="md-nav__link">
         
   
   
@@ -969,8 +971,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -981,11 +985,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
@@ -1006,7 +1010,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1024,7 +1028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced-internals/reverse-engineering/" class="md-nav__link">
+      <a href="../../../advanced-internals/reverse-engineering/" class="md-nav__link">
         
   
   
@@ -1049,6 +1053,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1058,11 +1064,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" checked>
         
           
           <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
@@ -1083,7 +1089,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1248,7 +1254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced-internals/code-docs/Brutal/Numerics/bool2/bool2/" class="md-nav__link">
+      <a href="../../../advanced-internals/code-docs/Brutal/Numerics/bool2/bool2/" class="md-nav__link">
         
   
   
@@ -1276,7 +1282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced-internals/code-docs/Brutal/Numerics/bool2/CopyTo/" class="md-nav__link">
+      <a href="../../../advanced-internals/code-docs/Brutal/Numerics/bool2/CopyTo/" class="md-nav__link">
         
   
   
@@ -1426,7 +1432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced-internals/code-docs/KSA/FlightComputer/FlightComputer/" class="md-nav__link">
+      <a href="../../../advanced-internals/code-docs/KSA/FlightComputer/FlightComputer/" class="md-nav__link">
         
   
   
@@ -1467,6 +1473,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1476,11 +1484,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_6_2_3" id="__nav_6_2_3_label" tabindex="0">
@@ -1501,7 +1509,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_2_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1519,7 +1527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ksa.dll/ksa_dll/" class="md-nav__link">
+      <a href="../../ksa_dll/" class="md-nav__link">
         
   
   
@@ -1544,6 +1552,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1553,11 +1563,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_6_2_3_2" id="__nav_6_2_3_2_label" tabindex="0">
@@ -1578,7 +1588,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_2_3_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1593,6 +1603,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1602,11 +1614,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_3_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_3_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_6_2_3_2_1" id="__nav_6_2_3_2_1_label" tabindex="0">
@@ -1627,7 +1639,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_6_2_3_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_6_2_3_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_2_3_2_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1645,7 +1657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ksa.dll/classes/significant_classes/" class="md-nav__link">
+      <a href="../significant_classes/" class="md-nav__link">
         
   
   
@@ -1673,7 +1685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ksa.dll/classes/class_types/" class="md-nav__link">
+      <a href="../class_types/" class="md-nav__link">
         
   
   
@@ -1698,10 +1710,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../ksa.dll/classes/implementing_classes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1717,6 +1738,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1729,7 +1751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ksa.dll/variables/units/" class="md-nav__link">
+      <a href="../../variables/units/" class="md-nav__link">
         
   
   
@@ -1757,7 +1779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ksa.dll/variables/vessel/" class="md-nav__link">
+      <a href="../../variables/vessel/" class="md-nav__link">
         
   
   
@@ -1876,7 +1898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/logs-and-debugging/" class="md-nav__link">
+      <a href="../../../troubleshooting/logs-and-debugging/" class="md-nav__link">
         
   
   
@@ -1908,8 +1930,6 @@
       
   
   
-    
-  
   
   
     
@@ -1922,11 +1942,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
@@ -1947,7 +1967,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1965,7 +1985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../style-guide/" class="md-nav__link">
+      <a href="../../../meta/style-guide/" class="md-nav__link">
         
   
   
@@ -1993,7 +2013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../versioning-policy/" class="md-nav__link">
+      <a href="../../../meta/versioning-policy/" class="md-nav__link">
         
   
   
@@ -2018,37 +2038,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Adding To Code Docs
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../meta/code-doc-guide/" class="md-nav__link">
         
   
   
@@ -2064,265 +2057,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#general-guidline" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        General guidline
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes-on-incomplete-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Notes on incomplete documentation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#page-location" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Page Location
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Page Location">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#classes-and-structs-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Classes and Structs (Objects)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Classes and Structs (Objects)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#bool2-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        bool2 Example
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Methods
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#bool2copytobool-array" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        bool2.CopyTo(bool[] array)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Structure
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#page-title" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Page title
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Page title">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#bool2-example_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        bool2 Example
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bool2copytobool-array-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        bool2.CopyTo(bool[] array) Example
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#last-tested-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Last tested version
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#namespace-and-assembly" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Namespace and Assembly
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#short-description" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Short description
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-example-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Code example (optional)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#function-prototype-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Function prototype (Method)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#members-classes-and-structs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Members (classes and structs)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#methods-classes-and-structs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Methods (classes and structs)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Operators
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2355,253 +2089,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#general-guidline" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        General guidline
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes-on-incomplete-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Notes on incomplete documentation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#page-location" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Page Location
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Page Location">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#classes-and-structs-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Classes and Structs (Objects)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Classes and Structs (Objects)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#bool2-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        bool2 Example
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Methods
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#bool2copytobool-array" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        bool2.CopyTo(bool[] array)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Structure
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#page-title" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Page title
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Page title">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#bool2-example_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        bool2 Example
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bool2copytobool-array-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        bool2.CopyTo(bool[] array) Example
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#last-tested-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Last tested version
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#namespace-and-assembly" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Namespace and Assembly
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#short-description" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Short description
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-example-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Code example (optional)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#function-prototype-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Function prototype (Method)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#members-classes-and-structs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Members (classes and structs)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#methods-classes-and-structs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Methods (classes and structs)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Operators
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2620,80 +2107,9 @@
   
 
 
-<h1 id="code-documentation-guidelines">Code Documentation Guidelines<a class="headerlink" href="#code-documentation-guidelines" title="Permanent link">&para;</a></h1>
-<p>This page lays out some guidlines for creating a code documentation page.
-You can see an example here:
-<a href="/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/bool2/">bool2 example</a></p>
-<p>Make sure to always follow the <a href="/KSAModding/meta/style-guide/">general style guide</a> on top of these guidlines.</p>
-<h2 id="general-guidline">General guidline<a class="headerlink" href="#general-guidline" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Pages only cover one function or datatype at a time</li>
-</ul>
-<h2 id="notes-on-incomplete-documentation">Notes on incomplete documentation<a class="headerlink" href="#notes-on-incomplete-documentation" title="Permanent link">&para;</a></h2>
-<p>Writing documentation for a full class can take A LOT of time. We do not expect you to do this all in one pull request (Incomplete documentation is better than no documentation). If you have figured out how a class works and don't feel like adding all methods just add the warning template after the short description. Same for methods, if you have only done one of the function prototypes just add the warning template and you or someone else can complete it later.</p>
-<p><strong>Template:</strong>
-<div class="highlight"><pre><span></span><code>!!! warning &quot;Documentation Incomplete&quot;
-    This documentation page is not finished yet. Some sections or method pages may still be missing.
-</code></pre></div></p>
-<h2 id="page-location">Page Location<a class="headerlink" href="#page-location" title="Permanent link">&para;</a></h2>
-<p>In the docs we differentiate between 2 doc types.</p>
-<ol>
-<li>Overarching Classes and Structs</li>
-<li>Methods (Inside Classes or Structs) and Standalone Functions</li>
-</ol>
-<h3 id="classes-and-structs-objects">Classes and Structs (Objects)<a class="headerlink" href="#classes-and-structs-objects" title="Permanent link">&para;</a></h3>
-<p>As Objects will almost always have methods we will place the Object data in an Overview page 
-Every page should be placed in a folder structure that matches its namespace and Object name.</p>
-<h4 id="bool2-example">bool2 Example<a class="headerlink" href="#bool2-example" title="Permanent link">&para;</a></h4>
-<p>The page for the struct <strong><code>Brutal.Numerics.bool2</code></strong> should be located under <strong>Code Docs</strong> like this:</p>
-<div class="highlight"><pre><span></span><code>Code Docs
-└── Brutal
-    └── Numerics
-        └── bool2
-            └── Overview
-</code></pre></div>
-<h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h3>
-<p>Classes can have multiple methods so each method will be contained in its own page. If you have multiple methods with the same name they are contained in the same page. This is done to make searching easier.</p>
-<h4 id="bool2copytobool-array">bool2.CopyTo(bool[] array)<a class="headerlink" href="#bool2copytobool-array" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>Code Docs
-└── Brutal
-    └── Numerics
-        └── bool2
-            └── Overview
-            └── CopyTo
-</code></pre></div>
-<h2 id="structure">Structure<a class="headerlink" href="#structure" title="Permanent link">&para;</a></h2>
-<h3 id="page-title">Page title<a class="headerlink" href="#page-title" title="Permanent link">&para;</a></h3>
-<p>The title of the page should always include the full namespace type and class if applicable.</p>
-<p>Parameters should net yet be added to the title</p>
-<h4 id="bool2-example_1">bool2 Example<a class="headerlink" href="#bool2-example_1" title="Permanent link">&para;</a></h4>
-<p><strong><code>struct Brutal.Numerics.bool2</code></strong></p>
-<h4 id="bool2copytobool-array-example">bool2.CopyTo(bool[] array) Example<a class="headerlink" href="#bool2copytobool-array-example" title="Permanent link">&para;</a></h4>
-<p><strong><code>void Brutal.Numerics.bool2.CopyTo</code></strong></p>
-<h3 id="last-tested-version">Last tested version<a class="headerlink" href="#last-tested-version" title="Permanent link">&para;</a></h3>
-<p>To keep everyone on the same page, always include a version tag above the page title like this.
-<div class="highlight"><pre><span></span><code>&lt;sub&gt;&lt;sup&gt;Tested with: <span class="gs">**KSA Version 2025.11.4.2791**</span>&lt;/sup&gt;&lt;/sub&gt;
-<span class="gh"># Title</span>
-</code></pre></div></p>
-<h3 id="namespace-and-assembly">Namespace and Assembly<a class="headerlink" href="#namespace-and-assembly" title="Permanent link">&para;</a></h3>
-<p>After the title, add a box in the following style containing the namesapce and dll assembly.</p>
-<hr />
-<p>Example for bool2:
-<div class="highlight"><pre><span></span><code><span class="k">&gt; </span><span class="ge">**Namespace:** `Brutal.Numerics`  </span>
-<span class="k">&gt; </span><span class="ge">**Assembly:** `Brutal.Core.Numerics.dll`</span>
-</code></pre></div></p>
-<h3 id="short-description">Short description<a class="headerlink" href="#short-description" title="Permanent link">&para;</a></h3>
-<p>After the Namespace and Assembly, provide a short description for that specific code element.</p>
-<h3 id="code-example-optional">Code example (optional)<a class="headerlink" href="#code-example-optional" title="Permanent link">&para;</a></h3>
-<p>If you want to help users get up and running quickly, include a small example of how to use the specific function or class.</p>
-<h3 id="function-prototype-method">Function prototype (Method)<a class="headerlink" href="#function-prototype-method" title="Permanent link">&para;</a></h3>
-<p>After the description, add a section that lists all function protoypes for a function. In case of class or struct list the constructors instead. For a detailed example go to the <a href="/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/bool2/">bool2 example</a> or the <a href="/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/CopyTo/">CopyTo example</a>.</p>
-<h3 id="members-classes-and-structs">Members (classes and structs)<a class="headerlink" href="#members-classes-and-structs" title="Permanent link">&para;</a></h3>
-<p>When writing documentation for classes or structs, if it has public members add a section for those as well. For a detailed example go to the <a href="/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/bool2/">bool2 example</a>.</p>
-<h3 id="methods-classes-and-structs">Methods (classes and structs)<a class="headerlink" href="#methods-classes-and-structs" title="Permanent link">&para;</a></h3>
-<p>For classes and structs the methods are located in separate pages so after the members include a section that contains a list of methods and links to them. For a detailed example go to <a href="/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/bool2/">bool2 example</a></p>
-<h3 id="operators">Operators<a class="headerlink" href="#operators" title="Permanent link">&para;</a></h3>
-<p>When writing documentation for classes or structs, if it has public operators add a section for those as well. For a detailed example go to the <a href="/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/bool2/">bool2 example</a>.</p>
+<h1 id="implementing-classes">Implementing Classes<a class="headerlink" href="#implementing-classes" title="Permanent link">&para;</a></h1>
+<p>If a class contains another class withing it, it can be stacked by including a period in between the 2 classes</p>
+<p>Example: Object.MeanRadius</p>
 
 
 
@@ -2743,10 +2159,10 @@ Every page should be placed in a folder structure that matches its namespace and
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
   </body>
