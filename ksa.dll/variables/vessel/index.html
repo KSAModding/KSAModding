@@ -1461,6 +1461,91 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_2_2" id="__nav_6_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vehicle
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vehicle
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../advanced-internals/code-docs/KSA/Vehicle/Vehicle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1840,17 +1925,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#misc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Misc
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#bodyvessel-variables-related-to-movement" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2199,17 +2273,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#misc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Misc
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#bodyvessel-variables-related-to-movement" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2265,42 +2328,28 @@
 <h1 id="vessels">Vessels<a class="headerlink" href="#vessels" title="Permanent link">&para;</a></h1>
 <h2 id="disclaimer">Disclaimer<a class="headerlink" href="#disclaimer" title="Permanent link">&para;</a></h2>
 <p>More variables are needed, as not all variables are in here yet, just the important ones</p>
-<h2 id="misc">Misc<a class="headerlink" href="#misc" title="Permanent link">&para;</a></h2>
-<ul>
-<li>bool: Vehicle._showOrbit</li>
-<li>double: Vehicle.AudibleDistance</li>
-<li>AstonomicalTemplate: Vehicle.BodyTemplate</li>
-<li>List: Vehicle.ChildList</li>
-</ul>
 <h2 id="bodyvessel-variables-related-to-movement">Body/Vessel Variables Related to Movement<a class="headerlink" href="#bodyvessel-variables-related-to-movement" title="Permanent link">&para;</a></h2>
 <ul>
-<li>double3: Vehicle.Orbit.AccelerationBody</li>
-<li>double: Vehicle.KinematicMeasurements.AngularAccelerationBody</li>
 <li>double: Vehicle.Orbit.Apoapsis</li>
 <li>double: Vehicle.Orbit.Eccentricity</li>
 <li>double: Vehicle.Orbit.Inclination</li>
 <li>double: Vehicle.Orbit.LongitudeOfAscendingNode</li>
-<li>Orbit: Vehicle.Orbit.Orbit</li>
-<li>KinematicMeasurements: Vehicle.KinematicMeasurements</li>
-<li>double: Vehicle.LastKinematicStates.PropellantMass</li>
-<li>double: Vehicle.Orbit.SemiMajorAxis</li>
+<li>
+<p>Orbit: Vehicle.Orbit.Orbit</p>
+</li>
+<li>
+<p>double: Vehicle.Orbit.SemiMajorAxis</p>
+</li>
 <li>double: Vehicle.Orbit.SemiMinorAxis</li>
-<li>bool: Vehicle.Program.ControlledVehicle?.Target</li>
 <li>double: Vehicle.Orbit.Period</li>
 </ul>
 <h2 id="bodyvessel-specs">Body/Vessel Specs<a class="headerlink" href="#bodyvessel-specs" title="Permanent link">&para;</a></h2>
 <ul>
 <li>bool: Vehicle.IsTarget</li>
 <li>string: Vehicle.Class</li>
-<li>FlightPlan: Vehicle.FlightPlan</li>
-<li>BurnPlan: Vehicle.BurnPlan</li>
-<li>double: Vehicle.BoundingSphereRadius</li>
-<li>NavBallData (readonly): Vehicle._navBallData</li>
 </ul>
 <h2 id="time">Time<a class="headerlink" href="#time" title="Permanent link">&para;</a></h2>
 <ul>
-<li>SimTime: Vehicle.NextApoapsisTime</li>
-<li>SimTime: Vehicle.NextPeriapsisTime</li>
 <li>SimTime: Vehicle.Orbit.GetElapsedTimeSincePeriapsis</li>
 <li>SimTime: Vehicle.Orbit.TimeAtPeriapsis</li>
 </ul>
