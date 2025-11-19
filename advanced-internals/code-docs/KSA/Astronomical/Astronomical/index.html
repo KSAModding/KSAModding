@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://ksamodding.github.io/KSAModding/advanced-internals/code-docs/KSA/FlightComputer/FlightComputer/">
+        <link rel="canonical" href="https://ksamodding.github.io/KSAModding/advanced-internals/code-docs/KSA/Astronomical/Astronomical/">
       
       
-        <link rel="prev" href="../../Astronomical/Astronomical/">
+        <link rel="prev" href="../../../Brutal/Numerics/bool2/CopyTo/">
       
       
-        <link rel="next" href="../../Vehicle/Vehicle/">
+        <link rel="next" href="../../FlightComputer/FlightComputer/">
       
       
         
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#class-ksaflightcomputer" class="md-skip">
+        <a href="#class-ksaastronomical" class="md-skip">
           Skip to content
         </a>
       
@@ -1410,6 +1410,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1419,11 +1421,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_6_2_2_1" id="__nav_6_2_2_1_label" tabindex="0">
@@ -1444,99 +1446,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_2_2_1">
             <span class="md-nav__icon md-icon"></span>
             
   
     Astronomical
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Astronomical/Astronomical/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_2_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_6_2_2_2" id="__nav_6_2_2_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FlightComputer
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_2_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6_2_2_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    FlightComputer
   
 
           </label>
@@ -1609,10 +1524,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#code-example-optional" class="md-nav__link">
+  <a href="#code-example" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Code Example (Optional)
+        Code Example
       
     </span>
   </a>
@@ -1632,21 +1547,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#flightcomputer" class="md-nav__link">
+  <a href="#astronomicalcelestialsystem-system-astronomicaltemplate-bodytemplate-string-id" class="md-nav__link">
     <span class="md-ellipsis">
       
-        FlightComputer()
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#flightcomputerflightcomputer-existing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        FlightComputer(FlightComputer existing)
+        Astronomical(CelestialSystem system, AstronomicalTemplate bodyTemplate, string id = "")
       
     </span>
   </a>
@@ -1671,10 +1575,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#modes-state" class="md-nav__link">
+  <a href="#render-properties" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Modes &amp; State
+        Render Properties
       
     </span>
   </a>
@@ -1682,10 +1586,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#control-parameters" class="md-nav__link">
+  <a href="#imgui-and-ui" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Control Parameters
+        ImGui and UI
       
     </span>
   </a>
@@ -1693,10 +1597,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#burn" class="md-nav__link">
+  <a href="#physical-attributes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Burn
+        Physical Attributes
       
     </span>
   </a>
@@ -1704,21 +1608,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vehicle-state-configuration" class="md-nav__link">
+  <a href="#miscellaneous" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vehicle State &amp; Configuration
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rcs-control-state" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        RCS Control State
+        Miscellaneous
       
     </span>
   </a>
@@ -1743,10 +1636,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#saving-loading" class="md-nav__link">
+  <a href="#physical-properties" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Saving &amp; Loading
+        Physical Properties
       
     </span>
   </a>
@@ -1754,10 +1647,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vehicle-configuration" class="md-nav__link">
+  <a href="#string-formating" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vehicle Configuration
+        String Formating
       
     </span>
   </a>
@@ -1765,10 +1658,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#attitude-rotation-control" class="md-nav__link">
+  <a href="#rendering" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Attitude / Rotation Control
+        Rendering
       
     </span>
   </a>
@@ -1776,54 +1669,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#burn-control" class="md-nav__link">
+  <a href="#bodytemplate" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Burn Control
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#control-computation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Control Computation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#switching-line-guidance-math" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Switching Line &amp; Guidance Math
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#user-interaction" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        User Interaction
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#burn-plan-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Burn Plan Management
+        BodyTemplate
       
     </span>
   </a>
@@ -1850,6 +1699,91 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_2_2" id="__nav_6_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FlightComputer
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    FlightComputer
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FlightComputer/FlightComputer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -2567,10 +2501,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#code-example-optional" class="md-nav__link">
+  <a href="#code-example" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Code Example (Optional)
+        Code Example
       
     </span>
   </a>
@@ -2590,21 +2524,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#flightcomputer" class="md-nav__link">
+  <a href="#astronomicalcelestialsystem-system-astronomicaltemplate-bodytemplate-string-id" class="md-nav__link">
     <span class="md-ellipsis">
       
-        FlightComputer()
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#flightcomputerflightcomputer-existing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        FlightComputer(FlightComputer existing)
+        Astronomical(CelestialSystem system, AstronomicalTemplate bodyTemplate, string id = "")
       
     </span>
   </a>
@@ -2629,10 +2552,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#modes-state" class="md-nav__link">
+  <a href="#render-properties" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Modes &amp; State
+        Render Properties
       
     </span>
   </a>
@@ -2640,10 +2563,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#control-parameters" class="md-nav__link">
+  <a href="#imgui-and-ui" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Control Parameters
+        ImGui and UI
       
     </span>
   </a>
@@ -2651,10 +2574,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#burn" class="md-nav__link">
+  <a href="#physical-attributes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Burn
+        Physical Attributes
       
     </span>
   </a>
@@ -2662,21 +2585,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vehicle-state-configuration" class="md-nav__link">
+  <a href="#miscellaneous" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vehicle State &amp; Configuration
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rcs-control-state" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        RCS Control State
+        Miscellaneous
       
     </span>
   </a>
@@ -2701,10 +2613,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#saving-loading" class="md-nav__link">
+  <a href="#physical-properties" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Saving &amp; Loading
+        Physical Properties
       
     </span>
   </a>
@@ -2712,10 +2624,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vehicle-configuration" class="md-nav__link">
+  <a href="#string-formating" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vehicle Configuration
+        String Formating
       
     </span>
   </a>
@@ -2723,10 +2635,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#attitude-rotation-control" class="md-nav__link">
+  <a href="#rendering" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Attitude / Rotation Control
+        Rendering
       
     </span>
   </a>
@@ -2734,54 +2646,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#burn-control" class="md-nav__link">
+  <a href="#bodytemplate" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Burn Control
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#control-computation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Control Computation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#switching-line-guidance-math" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Switching Line &amp; Guidance Math
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#user-interaction" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        User Interaction
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#burn-plan-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Burn Plan Management
+        BodyTemplate
       
     </span>
   </a>
@@ -2824,154 +2692,129 @@
   
 
 
-<p><sub><sup>Tested with: <strong>KSA Version 2025.11.5.2819</strong></sup></sub></p>
-<h1 id="class-ksaflightcomputer">class KSA.FlightComputer<a class="headerlink" href="#class-ksaflightcomputer" title="Permanent link">&para;</a></h1>
+<p><sub><sup>Tested with: <strong>KSA Version 2025.11.6.2829</strong></sup></sub></p>
+<h1 id="class-ksaastronomical">class KSA.Astronomical<a class="headerlink" href="#class-ksaastronomical" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p><strong>Namespace:</strong> <code>KSA</code><br />
 <strong>Assembly:</strong> <code>KSA.dll</code></p>
 </blockquote>
-<p>The FlightComputer class manages all automated and semi-automated control logic for a vessel.
-It is responsible for attitude control, burn planning and execution, manual &amp; pulse-mode RCS control, and integrating navigation measurements to generate actuator outputs.</p>
-<p>A FlightComputer also tracks a vessel’s configuration (such as thruster authority, torque/force capability, and engine performance), allowing it to compute rotation rates, deadbands, flip times, and burn durations accurately.</p>
-<p>This class is typically owned by a Vehicle object and is updated once per simulation step.</p>
+<p>The <code>Astronomical</code> class represents any orbiting or flying object in the Universe include the star.</p>
+<blockquote>
+<p>examples: Stars, Planets, Moons, Asteriods, and Vehicles.</p>
+</blockquote>
+<p>It integrates orbital properties, physical properties, rendering, and more into one high-level object.</p>
+<p>An <code>Astronomical</code> has its own <strong>Children Astronomicals</strong>, <strong>Class</strong>, <strong>orbit</strong>, <strong>MeshData</strong>, <strong>Id</strong>, <strong>SphereOfInfluence</strong>, and <strong>Physical Properties</strong>. 
+It has methods for Rendering builtin as well as methods to get the different refernce frames. 
+The <strong>Class</strong> attribute for the Astronomical tells you which type of Astronomical it is.</p>
 <div class="admonition warning">
 <p class="admonition-title">Documentation Incomplete</p>
-<p>This documentation page is not finished yet. Some sections or method pages may still be missing.</p>
+<p>This documentation page is not finished yet. Some sections or method pages may  be missing, incomplete, or incorrect.</p>
 </div>
-<h2 id="code-example-optional">Code Example (Optional)<a class="headerlink" href="#code-example-optional" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1">// Accessing a vessel’s flight computer</span>
-<span class="kt">var</span><span class="w"> </span><span class="n">fc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">activeVessel</span><span class="p">.</span><span class="n">FlightComputer</span><span class="p">;</span>
+<h2 id="code-example">Code Example<a class="headerlink" href="#code-example" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1">// Gets the current CelestialSystem (Star System)</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">celestialSystem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">KSA</span><span class="p">.</span><span class="n">Universe</span><span class="p">.</span><span class="n">CelestialSystem</span><span class="p">;</span>
 
-<span class="c1">// Switch to auto attitude mode and track prograde</span>
-<span class="n">fc</span><span class="p">.</span><span class="n">TrackTarget</span><span class="p">(</span><span class="n">FlightComputerAttitudeTrackTarget</span><span class="p">.</span><span class="n">Prograde</span><span class="p">);</span>
+<span class="c1">// Gets a list of all the Astronomicals in the CelestialSystem</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">astronomicalList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">celestialSystem</span><span class="p">.</span><span class="n">All</span><span class="p">.</span><span class="n">GetList</span><span class="p">();</span>
 
-<span class="c1">// Set burn mode to auto</span>
-<span class="n">fc</span><span class="p">.</span><span class="n">ToggleBurnMode</span><span class="p">();</span>
-
-<span class="c1">// Update the control output</span>
-<span class="n">fc</span><span class="p">.</span><span class="n">ComputeControl</span><span class="p">(</span><span class="k">ref</span><span class="w"> </span><span class="n">nav</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">inputs</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">outputs</span><span class="p">);</span>
+<span class="c1">// Prints out the Id (name) of each Astronomical</span>
+<span class="k">foreach</span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">astro</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">astronomicalList</span><span class="p">)</span><span class="w"> </span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Astronomical Name: {astro.Id}&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
-<hr />
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h2>
-<h3 id="flightcomputer"><code>FlightComputer()</code><a class="headerlink" href="#flightcomputer" title="Permanent link">&para;</a></h3>
-<p>Creates a new instance with default values and an empty <code>BurnPlan</code>.</p>
-<h3 id="flightcomputerflightcomputer-existing"><code>FlightComputer(FlightComputer existing)</code><a class="headerlink" href="#flightcomputerflightcomputer-existing" title="Permanent link">&para;</a></h3>
-<p>Creates a deep copy of an existing flight computer, cloning:</p>
+<h3 id="astronomicalcelestialsystem-system-astronomicaltemplate-bodytemplate-string-id">Astronomical(CelestialSystem system, AstronomicalTemplate bodyTemplate, string id = "")<a class="headerlink" href="#astronomicalcelestialsystem-system-astronomicaltemplate-bodytemplate-string-id" title="Permanent link">&para;</a></h3>
+<p>Creates a new Astronomical in the given CelestialSystem with the name given by <code>id</code>, in the format given by the AstronomicalTemplate.
+The Constructor Initalizes:</p>
 <ul>
-<li>Burn and attitude modes</li>
-<li>Target and deadband values</li>
-<li>Rates, masses, configuration</li>
-<li>Burn plan</li>
-<li>Vehicle configuration info</li>
+<li>Id (name) from the given <code>id</code></li>
+<li>SphereOfInfluence from the <code>BodyTemplate</code></li>
+<li><strong>byte4</strong> color value from the <code>BodyTemplate</code></li>
+<li>The CelestialSystem the Astronomical is in from <code>system</code></li>
+<li>OrbitView</li>
 </ul>
-<hr />
 <h2 id="public-members">Public Members<a class="headerlink" href="#public-members" title="Permanent link">&para;</a></h2>
-<h3 id="modes-state">Modes &amp; State<a class="headerlink" href="#modes-state" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Note:</strong> This section lists only the major public members. Many additional fields and properties exist; method-level documentation will link to them individually.</p>
+</blockquote>
+<p>This section will assume all members are public. Any additional add-ons like <strong>readonly</strong> or <strong>protected</strong> will be included in the list entry. Any member that has an inital value that doesn't change will also be shown.</p>
+<h3 id="render-properties">Render Properties<a class="headerlink" href="#render-properties" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>FlightComputerBurnMode BurnMode</code></li>
-<li><code>FlightComputerAttitudeMode AttitudeMode</code></li>
-<li><code>VehicleReferenceFrame AttitudeFrame</code></li>
-<li><code>FlightComputerAttitudeTrackTarget AttitudeTrackTarget</code></li>
-<li><code>double3 CustomAttitudeTarget</code></li>
+<li><code>bool ShowAxes</code></li>
+<li><code>CelestialRenderData RenderData</code></li>
+<li><code>ProceduralModifiersRenderData? TerrainModifiersRenderData</code></li>
+<li><code>byte4 OrbitColor =&gt; bodyTemplate.OrbitColor</code></li>
+<li><code>VkDescriptorSet TextureSet</code></li>
+<li><code>VkDescriptorSet[] MeshSets = Array.Empty&lt;VkDescriptorSet&gt;()</code></li>
+<li><code>bool RenderDataLoaded</code></li>
+<li><code>const double MINIMUM_FOLLOWING_DISTANCE = 500000.0</code></li>
+<li><code>static float SpriteDistanceScale = 1f</code></li>
+<li><code>protected const double NearSurfaceOffset = 1.0</code></li>
+<li><code>byte4 SoiColor</code></li>
 </ul>
-<h3 id="control-parameters">Control Parameters<a class="headerlink" href="#control-parameters" title="Permanent link">&para;</a></h3>
+<h3 id="imgui-and-ui">ImGui and UI<a class="headerlink" href="#imgui-and-ui" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>float AngleDeadband</code></li>
-<li><code>float RateLimit</code></li>
-<li><code>FlightComputerRollMode RollMode</code></li>
-<li><code>AttitudeTarget AttitudeTarget</code></li>
-<li><code>DeadbandState[] DeadbandStates</code></li>
+<li><code>const ImGuiWindowFlags INFOBOX_FLAGS</code></li>
+<li><code>bool ShowCelestialWindow</code></li>
+<li><code>readonly struct UiContext</code><blockquote>
+<p><strong>Note:</strong> <code>UiContext</code> should contain its own subpage as it contains a lot of useful information.</p>
+</blockquote>
+</li>
 </ul>
-<h3 id="burn">Burn<a class="headerlink" href="#burn" title="Permanent link">&para;</a></h3>
+<h3 id="physical-attributes">Physical Attributes<a class="headerlink" href="#physical-attributes" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>BurnTarget? Burn</code></li>
-<li><code>BurnPlan BurnPlan { get; }</code></li>
+<li><code>virtual string Id</code></li>
+<li><code>virtual uint Hash</code></li>
+<li><code>virtual string Class</code></li>
+<li><code>CelestialSystem System</code></li>
+<li><code>bool Rotates =&gt; bodyTemplate.RotationPeriod.Seconds &gt; 0.0</code></li>
+<li><code>double MeanRadius =&gt; bodyTemplate.MeanRadiusRef</code></li>
+<li><code>double Mass =&gt; bodyTemplate.Mass</code></li>
+<li><code>double TerrainScale =&gt; bodyTemplate.TerrainScale</code></li>
+<li><code>double SphereOfInfluence</code></li>
 </ul>
-<h3 id="vehicle-state-configuration">Vehicle State &amp; Configuration<a class="headerlink" href="#vehicle-state-configuration" title="Permanent link">&para;</a></h3>
+<h3 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>float3 Pmi</code></li>
-<li><code>float InertMass</code></li>
-<li><code>float PropellantMass</code></li>
-<li><code>float TotalMass</code> <em>(calculated)</em></li>
-<li><code>float TotalAcceleration</code></li>
-<li><code>VehicleConfigInfo VehicleConfig { get; private set; }</code></li>
-</ul>
-<h3 id="rcs-control-state">RCS Control State<a class="headerlink" href="#rcs-control-state" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>SimTime LastThrusterPulseTime</code></li>
-<li><code>float3 RcsTorqueAuthority</code></li>
-<li><code>float3 AngleTurnaround</code></li>
-<li><code>float3 RateDeadband</code></li>
-<li><code>float3 ErrorAngles</code></li>
-<li><code>float3 ErrorRates</code></li>
-<li><code>float ConservativeFlipTime</code></li>
-<li><code>float DetumbleRateLimit</code></li>
+<li><code>readonly List&lt;Astronomical&gt; Children = new List&lt;Astronomical&gt;()</code></li>
+<li><code>protected readonly AstronomicalTemplate bodyTemplate</code></li>
+<li><code>OrbitView OrbitView</code></li>
+<li><code>abstract AstronomicalTemplate BodyTemplate</code></li>
 </ul>
 <h2 id="method-pages-overview">Method Pages (Overview)<a class="headerlink" href="#method-pages-overview" title="Permanent link">&para;</a></h2>
-<p>The following methods have dedicated pages:</p>
-<h3 id="saving-loading">Saving &amp; Loading<a class="headerlink" href="#saving-loading" title="Permanent link">&para;</a></h3>
+<p>This is a list of some of the public methods in Astronomical.</p>
+<h3 id="physical-properties">Physical Properties<a class="headerlink" href="#physical-properties" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>DeserializeSave(...)</code></li>
-<li><code>SerializeSave()</code></li>
+<li><code>StateVectors GetStateVectorsAt(SimTime gameTime)</code></li>
+<li><code>double DistanceTo(Astronomical body)</code></li>
+<li><code>bool IsMoon()</code></li>
+<li><code>bool IsStar()</code></li>
+<li><code>bool HasOrbit()</code></li>
+<li><code>double GetNearSurfaceRadius()</code></li>
+<li><code>double GetAngularVelocity()</code></li>
+<li><code>bool HasChildren()</code></li>
 </ul>
-<h3 id="vehicle-configuration">Vehicle Configuration<a class="headerlink" href="#vehicle-configuration" title="Permanent link">&para;</a></h3>
+<h3 id="string-formating">String Formating<a class="headerlink" href="#string-formating" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>ReadUpdatedVehicleConfiguration(...)</code></li>
+<li><code>void ToConsole();</code></li>
+<li><code>TableString.Row ToRow()</code></li>
 </ul>
-<h3 id="attitude-rotation-control">Attitude / Rotation Control<a class="headerlink" href="#attitude-rotation-control" title="Permanent link">&para;</a></h3>
+<h3 id="rendering">Rendering<a class="headerlink" href="#rendering" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>SetNullRot(...)</code></li>
-<li><code>SetInertialNullRot()</code></li>
-<li><code>UpdateAttitudeError(...)</code></li>
-<li><code>UpdateAttitudeRateError(...)</code></li>
-<li><code>UpdateAttitudeTrackError(...)</code></li>
+<li><code>void UpdatePerFrameData()</code></li>
+<li><code>void UpdatePerFrameDataTree()</code></li>
+<li><code>bool DrawUi(Viewport inViewport)</code></li>
+<li><code>void DrawCelestialWindow(Viewport inViewPort)</code></li>
+<li><code>void DrawCelestialWindowData()</code></li>
+<li><code>void SetPbrMaterial()</code></li>
 </ul>
-<h3 id="burn-control">Burn Control<a class="headerlink" href="#burn-control" title="Permanent link">&para;</a></h3>
+<h3 id="bodytemplate">BodyTemplate<a class="headerlink" href="#bodytemplate" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>ComputeBurnControl(...)</code></li>
-<li><code>UpdateBurnTarget(...)</code></li>
-<li><code>LoadBurn(...)</code></li>
-<li><code>UnloadBurn()</code></li>
-<li><code>UpdateBurn(...)</code></li>
-</ul>
-<h3 id="control-computation">Control Computation<a class="headerlink" href="#control-computation" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>ComputeControl(...)</code></li>
-<li><code>ComputeRcsPulseControl(...)</code></li>
-<li><code>ComputeRcsRateControl(...)</code></li>
-<li><code>ComputeRcsTrackControl(...)</code></li>
-<li><code>SelectJetsToFire(...)</code></li>
-</ul>
-<h3 id="switching-line-guidance-math">Switching Line &amp; Guidance Math<a class="headerlink" href="#switching-line-guidance-math" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>EvaluateParabolicPhaseLine(...)</code></li>
-<li><code>EvaluateParabolicPhaseLineInverse(...)</code></li>
-<li><code>EvaluateTargetLine(...)</code></li>
-<li><code>EvaluateLowerSwitchingLine(...)</code></li>
-<li><code>EvaluateUpperSwitchingLine(...)</code></li>
-<li><code>EvaluateSwitchingLine(...)</code></li>
-<li><code>EvaluateSwitchingLineViolationAngle(...)</code></li>
-</ul>
-<h3 id="user-interaction">User Interaction<a class="headerlink" href="#user-interaction" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>TrackTarget(...)</code></li>
-<li><code>RateHold(...)</code></li>
-<li><code>IsTrackingTarget(...)</code></li>
-<li><code>IsRateHolding(...)</code></li>
-<li><code>ToggleThrustMode()</code></li>
-<li><code>ToggleAttitudeMode()</code></li>
-<li><code>ToggleBurnMode()</code></li>
-<li><code>Handle(...)</code></li>
-</ul>
-<h3 id="burn-plan-management">Burn Plan Management<a class="headerlink" href="#burn-plan-management" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>CalculateNewFlightPlans(...)</code></li>
-<li><code>AddBurn(...)</code></li>
-<li><code>RemoveBurn(...)</code></li>
-<li><code>BurnUpdated(...)</code></li>
+<li><code>void AppendAttributesTo(TreeString tree)</code></li>
+<li><code>void AppendTo(TreeString tree)</code></li>
 </ul>
 <h2 id="operators">Operators<a class="headerlink" href="#operators" title="Permanent link">&para;</a></h2>
-<p>This class does not define any custom operators.</p>
+<p>This class does <strong>not</strong> define any custom operators.</p>
 
 
 
