@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#code" class="md-skip">
+        <a href="#getting-started-with-writing-code-for-ksa" class="md-skip">
           Skip to content
         </a>
       
@@ -952,15 +952,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-creating-a-istarmapmod-class" class="md-nav__link">
+  <a href="#step-2-adding-dependencies" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: Creating a IStarMapMod class
+        Step 2: Adding dependencies
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Step 2: Creating a IStarMapMod class">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-creating-a-mod-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Creating a Mod class
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3: Creating a Mod class">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -980,10 +991,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-creating-modtoml" class="md-nav__link">
+  <a href="#step-4-creating-modtoml" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3: Creating mod.toml
+        Step 4: Creating mod.toml
       
     </span>
   </a>
@@ -991,10 +1002,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-compiling" class="md-nav__link">
+  <a href="#step-5-compiling" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 4: Compiling
+        Step 5: Compiling
       
     </span>
   </a>
@@ -2434,15 +2445,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-creating-a-istarmapmod-class" class="md-nav__link">
+  <a href="#step-2-adding-dependencies" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: Creating a IStarMapMod class
+        Step 2: Adding dependencies
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Step 2: Creating a IStarMapMod class">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-creating-a-mod-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Creating a Mod class
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3: Creating a Mod class">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2462,10 +2484,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-creating-modtoml" class="md-nav__link">
+  <a href="#step-4-creating-modtoml" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3: Creating mod.toml
+        Step 4: Creating mod.toml
       
     </span>
   </a>
@@ -2473,10 +2495,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-compiling" class="md-nav__link">
+  <a href="#step-5-compiling" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 4: Compiling
+        Step 5: Compiling
       
     </span>
   </a>
@@ -2503,7 +2525,7 @@
   
 
 
-<h1 id="code">Code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h1>
+<h1 id="getting-started-with-writing-code-for-ksa">Getting started with writing Code for KSA<a class="headerlink" href="#getting-started-with-writing-code-for-ksa" title="Permanent link">&para;</a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Unofficial project</p>
 <p>There is currently no official way to add custom code to Kitten Space Agency. The tools used in this guide are developed by the community. They are not affiliated with or endorsed by the KSA developers.</p>
@@ -2601,7 +2623,22 @@
 <li>Wait for the instal to finish
 <img alt="Install Lib.Harmony" src="/KSAModding/assets/images/modding-guides/code/install-harmony.png" /></li>
 </ol>
-<h2 id="step-2-creating-a-istarmapmod-class">Step 2: Creating a IStarMapMod class<a class="headerlink" href="#step-2-creating-a-istarmapmod-class" title="Permanent link">&para;</a></h2>
+<h2 id="step-2-adding-dependencies">Step 2: Adding dependencies<a class="headerlink" href="#step-2-adding-dependencies" title="Permanent link">&para;</a></h2>
+<p>When using StarMap to mod the game you will eventually need external resources from the game itself called assemblies or .dll files. For a basic mod you only need one dependency: KSA.dll. So this first-steps guide will do just that.</p>
+<ol>
+<li>Right click on dependencies</li>
+<li>
+<p>Press Add Project Reference
+<img alt="add project reference" src="/KSAModding/assets/images/modding-guides/code/add-project-reference.png" /></p>
+</li>
+<li>
+<p>Press Browse</p>
+</li>
+<li>Now go to the KSA install directory (default: C:\Program Files\Kitten Space Agency) and find KSA.dll, Select it and click add</li>
+<li>Press OK
+<img alt="alt text" src="/KSAModding/assets/images/modding-guides/code/browse-for-reference.png" /></li>
+</ol>
+<h2 id="step-3-creating-a-mod-class">Step 3: Creating a Mod class<a class="headerlink" href="#step-3-creating-a-mod-class" title="Permanent link">&para;</a></h2>
 <p>StarMap automatically loads the class with the same name as the .dll file and that has the <code>[StarMapMod]</code> attribute</p>
 <p>Our first step will be creating this class. Our example will be using the name <code>FirstMod</code> for the mod.</p>
 <h3 id="creating-the-class">Creating the class<a class="headerlink" href="#creating-the-class" title="Permanent link">&para;</a></h3>
@@ -2619,7 +2656,9 @@
 </code></pre></div>
 <p>The api exposes a couple of attributes but for this simple hello world example we only need one:
 <code>[StarMapImmediateLoad]</code>. The function marked with this attribute will be run when the mod is loaded. The function this attribute is assigned to does need to take in <code>Mod definingMod</code> as a parameter.</p>
+<p>The <code>Mod</code> class needs the <code>KSA</code> namespace (found in KSA.dll) so we will add <code>using KSA</code> on the top of the file.</p>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">StarMap.API</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">KSA</span><span class="p">;</span>
 
 <span class="k">namespace</span><span class="w"> </span><span class="nn">FirstMod</span>
 <span class="p">{</span>
@@ -2643,7 +2682,7 @@
 <span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div></p>
-<h2 id="step-3-creating-modtoml">Step 3: Creating mod.toml<a class="headerlink" href="#step-3-creating-modtoml" title="Permanent link">&para;</a></h2>
+<h2 id="step-4-creating-modtoml">Step 4: Creating mod.toml<a class="headerlink" href="#step-4-creating-modtoml" title="Permanent link">&para;</a></h2>
 <p>A mod should always have a mod.toml file so it can be identified by StarMap. Lets Create that file.</p>
 <ol>
 <li>Create a new file in Visual Studio and call it <code>mod.toml</code>.</li>
@@ -2657,7 +2696,7 @@
 </li>
 <li>Under properties there is a field called <code>Copy To Output Directory</code> set it to <code>Copy always</code>.</li>
 </ol>
-<h2 id="step-4-compiling">Step 4: Compiling<a class="headerlink" href="#step-4-compiling" title="Permanent link">&para;</a></h2>
+<h2 id="step-5-compiling">Step 5: Compiling<a class="headerlink" href="#step-5-compiling" title="Permanent link">&para;</a></h2>
 <p>If you did all steps correctly simply right clicking the project and selecting <code>Build</code> should build the files.</p>
 <p>The compiled files will now be in the following directory: <code>projectdir\FirstMod\bin\Debug\net9.0</code>.
 Now follow the <a href="/KSAModding/getting-started/installing-mods/">installation guide</a> to test your brand new mod. If you did all the steps correctly you should see <code>Hello World!</code> in the console output of StarMap.exe.</p>
