@@ -20,6 +20,8 @@ Currently the most popular way to create mods is by using [StarMap](https://gith
 
 Before starting this guide it is recommended to set up the example mod and running it to verify StarMap is working. You can find a guide [here](/KSAModding/getting-started/installing-mods/) and an example mod [here](https://github.com/StarMapLoader/StarMap-ExampleMods/releases/tag/0.1.4)
 
+*THIS GUIDE USES STARMAP 0.2.x MAKE SURE YOU HAVE THE CORRECT VERSION*
+
 ### Creating the Visual Studio project
 1. Create a new visual studio project by pressing `Create a new project`.
 ![Press create project](/KSAModding/assets/images/modding-guides/code/create-project.png)
