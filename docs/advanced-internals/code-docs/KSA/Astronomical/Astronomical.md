@@ -16,7 +16,7 @@ The **Class** attribute for the Astronomical tells you which type of Astronomica
 !!! warning "Documentation Incomplete"
     This documentation page is not finished yet. Some sections or method pages may  be missing, incomplete, or incorrect.
 
-## Code Example (Optional)
+## Code Example
 ```csharp
 // Gets the current CelestialSystem (Star System)
 var celestialSystem = KSA.Universe.CelestialSystem;
