@@ -17,7 +17,7 @@ Most gameplay-visible behaviors—thrust, rotation, orbit updates, burn nodes, n
 
 
 
-## Code Example (Optional)
+## Code Example
 
 ```csharp
 // Get the current controlled rocket
