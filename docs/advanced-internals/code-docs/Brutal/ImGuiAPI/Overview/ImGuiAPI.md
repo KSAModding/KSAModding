@@ -59,15 +59,15 @@ ImGui.End();
 
 This will create a Empty Window with the title `My First Window`. 
 
-![alt text](<First Window.png>)
+![alt text](<Assets/Media/First Window.png>)
 
 Which can also be collapsed,
 
-![alt text](<Collapsed Window.png>)
+![alt text](<Assets/Media/Collapsed Window.png>)
 
 This window is also resizable in both the horizontal and vertical,
 
-![alt text](<Resized Window.png>)
+![alt text](<Assets/Media/Resized Window.png>)
 
 ### Closeable Window
 
@@ -92,11 +92,11 @@ public void AfterGUI()
 
 And the window will now look like this.
 
-![alt text](<Closeable Window.png>)
+![alt text](<Assets/Media/Closeable Window.png>)
 
 You can now see that there is an `X` button at the top right of the window and when pressed the window is fully closed.
 
-![alt text](<Closed Window.png>)
+![alt text](<Assets/Media/Closed Window.png>)
 
 Not very much to see there now.
 
@@ -140,7 +140,7 @@ public void AfterGUI()
 
 The window should now have no title and not be resizable.
 
-![alt text](<Customized Window.png>)
+![alt text](<Assets/Media/Customized Window.png>)
 
 > You can tell the window is not resizable as it does not have the small blue triangle in the bottom right corner of the window.
 
@@ -150,11 +150,11 @@ As a result of not having a title bar the window is no longer collapsible throug
 
 Below are some common errors that you may experience when creating a window.
 
-![alt text](<Missing End Error.png>)
+![alt text](<Assets/Media/Missing End Error.png>)
 
 > This error appears when you are missing `ImGui.End()` in your code or it is in an unreachable state. One common mistake is putting the `ImGui.End()` inside the if-statement that your `ImGui.Begin()` is the conditional for. Another common mistake is not having enough `ImGui.End()` statements as each unique `Begin()` statement must match up with one unique `End()` statement.  
 
-![alt text](<Calling End Too Many Times.png>)
+![alt text](<Assets/Media/Calling End Too Many Times.png>)
 
 > This error appears when you are missing `ImGui.Begin()` in your code or it is in an unreachable state. One common mistake is having too many `ImGui.End()` statements as each unique `Begin()` statement must match up with one unique `End()` statement.
 
