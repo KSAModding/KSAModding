@@ -29,7 +29,7 @@ using StarMap.API;
 public class ImGuiExample
 {
     [StarMapAfterGui]
-    public void AfterGUI()
+    public void AfterGUI(double dt)
     {
         // ImGui code or function calls go here
     }
@@ -77,7 +77,7 @@ One thing to notice is that `My First Window` is not fully closeable, it can be 
 private bool showWindow = true;
 
 [StarMapAfterGui]
-public void AfterGUI()
+public void AfterGUI(double dt)
 {
     if(!showWindow) return;
 
@@ -108,7 +108,7 @@ Not very much to see there now.
 To further customize your ImGui window, you can use `ImGuiWindowFlags`. These are ways to specify what you want your window to be or how to behave. If you want all the information on each of the flags, visit the ImGuiWindowFlags page.
 
 !!! warning "Page Not Created"
-    As of 11/20/2025, the time this page was created, the ImGuiWindowFlags page does not exist. Sorry about that.
+    As of 11/20/2025, the time this page was created, the `ImGuiWindowFlags` page does not exist. Sorry about that.
 
 By default, the `ImGui.Begin()` method has a `ImGuiWindowFlags` flag value of `None`.
 
@@ -126,7 +126,7 @@ We will now use two new flag values, `NoResize` and `NoTitleBar`. These flags ca
 private bool showWindow = true;
 
 [StarMapAfterGui]
-public void AfterGUI()
+public void AfterGUI(double dt)
 {
     if(!showWindow) return;
 

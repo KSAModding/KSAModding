@@ -52,6 +52,7 @@ nav:
         - Brutal:
           - ImGuiAPI:
             - Overview: advanced-internals/code-docs/Brutal/ImGuiAPI/Overview/ImGuiAPI.md
+            - Text Elements: advanced-internals/code-docs/Brutal/ImGuiAPI/ImGuiText/ImGuiText.md
           - Numerics:
             - bool2: 
               - Overview: advanced-internals/code-docs/Brutal/Numerics/bool2/bool2.md
