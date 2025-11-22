@@ -16,7 +16,7 @@
         <link rel="prev" href="../../../../../reverse-engineering/">
       
       
-        <link rel="next" href="../../../Numerics/bool2/bool2/">
+        <link rel="next" href="../../ImGuiText/ImGuiText/">
       
       
         
@@ -1410,6 +1410,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ImGuiText/ImGuiText/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Text Elements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2667,7 +2695,7 @@
 <span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ImGuiExample</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="na">[StarMapAfterGui]</span>
-<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">AfterGUI</span><span class="p">()</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">AfterGUI</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">dt</span><span class="p">)</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="c1">// ImGui code or function calls go here</span>
 <span class="w">    </span><span class="p">}</span>
@@ -2700,7 +2728,7 @@
 <div class="highlight"><pre><span></span><code><span class="k">private</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">showWindow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
 
 <span class="na">[StarMapAfterGui]</span>
-<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">AfterGUI</span><span class="p">()</span>
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">AfterGUI</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">dt</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">showWindow</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
 
@@ -2725,7 +2753,7 @@
 <p>To further customize your ImGui window, you can use <code>ImGuiWindowFlags</code>. These are ways to specify what you want your window to be or how to behave. If you want all the information on each of the flags, visit the ImGuiWindowFlags page.</p>
 <div class="admonition warning">
 <p class="admonition-title">Page Not Created</p>
-<p>As of 11/20/2025, the time this page was created, the ImGuiWindowFlags page does not exist. Sorry about that.</p>
+<p>As of 11/20/2025, the time this page was created, the <code>ImGuiWindowFlags</code> page does not exist. Sorry about that.</p>
 </div>
 <p>By default, the <code>ImGui.Begin()</code> method has a <code>ImGuiWindowFlags</code> flag value of <code>None</code>.</p>
 <blockquote>
@@ -2744,7 +2772,7 @@
 <div class="highlight"><pre><span></span><code><span class="k">private</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">showWindow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
 
 <span class="na">[StarMapAfterGui]</span>
-<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">AfterGUI</span><span class="p">()</span>
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">AfterGUI</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">dt</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">showWindow</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
 
