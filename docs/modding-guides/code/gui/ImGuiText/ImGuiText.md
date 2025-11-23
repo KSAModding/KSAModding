@@ -1,9 +1,7 @@
 <sub><sup>Tested with: **KSA Version 2025.11.8.2847**</sup></sub>
 
-# Namespace Brutal.ImGuiAPI
+# Adding text to your GUI window
 
-> **Namespace:** `Brutal.ImGuiAPI`  
-> **Assembly:** `Brutal.ImGui.dll`
 
 This page will be the next example and explanation of the KSA/Brutal ImGuiAPI. The topics of this page is text elements.
 !!! warning "Documentation Incomplete"

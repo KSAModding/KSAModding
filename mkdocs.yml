@@ -46,6 +46,9 @@ nav:
         - Input:
           - Keyboard Input: modding-guides/code/input/keyboard-input.md
         - Creating and Playing Audio: modding-guides/audio.md
+        - GUI:
+            - Getting Stated: modding-guides/code/gui/getting-started/ImGuiAPI.md
+            - Text Elements: modding-guides/code/gui/ImGuiText/ImGuiText.md
   - Pipelines & Tools:
       - Modeling Pipeline: pipelines-tools/modeling-pipeline.md
       - Texture Pipeline: pipelines-tools/texture-pipeline.md
@@ -54,9 +57,6 @@ nav:
       - Reverse Engineering Notes: advanced-internals/reverse-engineering.md
       - Code Docs:
         - Brutal:
-          - ImGuiAPI:
-            - Overview: advanced-internals/code-docs/Brutal/ImGuiAPI/Overview/ImGuiAPI.md
-            - Text Elements: advanced-internals/code-docs/Brutal/ImGuiAPI/ImGuiText/ImGuiText.md
           - Numerics:
             - bool2: 
               - Overview: advanced-internals/code-docs/Brutal/Numerics/bool2/bool2.md
