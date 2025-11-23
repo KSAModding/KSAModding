@@ -6,11 +6,11 @@ KSA stores its log files in your Documents folder:
 
 **Location:** `C:\Users\[YourName]\Documents\My Games\Kitten Space Agency\Logs\`
 
-The main log file is `Brutal.log`, which gets updated as you play. Older logs are automatically archived in the `Archives` subfolder with timestamps.
+The main log file is `KittenSpaceAgency.log`, which gets updated as you play. Older logs are automatically archived in the `Archives` subfolder with timestamps.
 
 ## Reading Log Files
 
-Open `Brutal.log` in any text editor (Notepad, VS Code, etc.) to view the log.
+Open `KittenSpaceAgency.log` in any text editor (Notepad, VS Code, etc.) to view the log.
 
 The log file contains useful information for debugging:
 
