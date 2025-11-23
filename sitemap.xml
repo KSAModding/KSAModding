@@ -9,14 +9,6 @@
          <lastmod>2025-11-23</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/advanced-internals/code-docs/Brutal/ImGuiAPI/ImGuiText/ImGuiText/</loc>
-         <lastmod>2025-11-23</lastmod>
-    </url>
-    <url>
-         <loc>https://ksamodding.github.io/KSAModding/advanced-internals/code-docs/Brutal/ImGuiAPI/Overview/ImGuiAPI/</loc>
-         <lastmod>2025-11-23</lastmod>
-    </url>
-    <url>
          <loc>https://ksamodding.github.io/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/CopyTo/</loc>
          <lastmod>2025-11-23</lastmod>
     </url>
@@ -122,6 +114,14 @@
     </url>
     <url>
          <loc>https://ksamodding.github.io/KSAModding/modding-guides/code/harmony/</loc>
+         <lastmod>2025-11-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ksamodding.github.io/KSAModding/modding-guides/code/gui/ImGuiText/ImGuiText/</loc>
+         <lastmod>2025-11-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ksamodding.github.io/KSAModding/modding-guides/code/gui/getting-started/ImGuiAPI/</loc>
          <lastmod>2025-11-23</lastmod>
     </url>
     <url>
