@@ -1,6 +1,6 @@
 <sub><sup>Tested with: **KSA Version 2025.11.8.2847**</sup></sub>
 
-# Adding Guis to KSA
+# Adding GUIs to KSA
 
 
 The Namespace `Brutual.ImGuiAPI` is Brutal's implementation of an Immediate-mode Graphical user interface (ImGui). 

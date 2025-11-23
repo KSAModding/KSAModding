@@ -45,7 +45,7 @@ nav:
         - Harmony: modding-guides/code/harmony.md
         - Input:
           - Keyboard Input: modding-guides/code/input/keyboard-input.md
-        - Gui:
+        - GUI:
             - Getting Stated: modding-guides/code/gui/getting-started/ImGuiAPI.md
             - Text Elements: modding-guides/code/gui/ImGuiText/ImGuiText.md
   - Pipelines & Tools:

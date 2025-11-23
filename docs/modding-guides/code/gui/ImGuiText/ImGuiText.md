@@ -1,6 +1,6 @@
 <sub><sup>Tested with: **KSA Version 2025.11.8.2847**</sup></sub>
 
-# Adding text to your ImGui window
+# Adding text to your GUI window
 
 
 This page will be the next example and explanation of the KSA/Brutal ImGuiAPI. The topics of this page is text elements.
