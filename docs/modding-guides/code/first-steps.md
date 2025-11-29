@@ -20,7 +20,7 @@ Currently the most popular way to create mods is by using [StarMap](https://gith
 
 Before starting this guide it is recommended to set up the example mod and running it to verify StarMap is working. You can find a guide [here](/KSAModding/getting-started/installing-mods/) and an example mod [here](https://github.com/StarMapLoader/StarMap-ExampleMods/releases/tag/0.1.4)
 
-*THIS GUIDE USES STARMAP 0.2.x MAKE SURE YOU HAVE THE CORRECT VERSION*
+*THIS GUIDE USES STARMAP 0.3.x MAKE SURE YOU HAVE THE CORRECT VERSION*
 
 ### Creating the Visual Studio project
 1. Create a new visual studio project by pressing `Create a new project`.
@@ -36,9 +36,9 @@ Before starting this guide it is recommended to set up the example mod and runni
 3. Press next
 ![Enter FirstMod as the project name and chose a project location](/KSAModding/assets/images/modding-guides/code/project-details.png)
 
-1. Select .NET version 9 (Standard Term Support)
+1. Select .NET version 10 (Long Term Support)
 2. Press create
-![Select .NET version 9 (Standard Term Support)](/KSAModding/assets/images/modding-guides/code/select-dotnet-version.png)
+![Select .NET version 10 (Long Term Support)](/KSAModding/assets/images/modding-guides/code/select-dotnet-version.png)
 
 ### Setting up StarMap
 Now that we have a working Visual Studio project it is time to setup StarMap. For this step you will need the [previously mentioned](#prerequisites) github access key so make sure you have that ready.
