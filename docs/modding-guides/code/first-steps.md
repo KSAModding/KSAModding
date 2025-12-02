@@ -9,7 +9,7 @@ This guide explains how to add custom code execution to Kitten Space Agency.
 ## Prerequisites
 To develop mods using visual studio you need the following prerequisites
 
-- Any [Visual Studio](https://visualstudio.microsoft.com/downloads/) version with c# .NET 9 development tools installed.
+- Any [Visual Studio](https://visualstudio.microsoft.com/downloads/) version with c# .NET 10 development tools installed. A fresh install of Visual Studio 2026 includes .NET 10 by default. Visual Studio Community edition is free.
 - A github account
 - [A github access token with access to package registries](https://docs.github.com/en/packages/learn-github-packages/about-permissions-for-github-packages#about-scopes-and-permissions-for-package-registries)
 
