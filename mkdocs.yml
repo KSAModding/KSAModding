@@ -47,7 +47,7 @@ nav:
           - Keyboard Input: modding-guides/code/input/keyboard-input.md
         - Creating and Playing Audio: modding-guides/audio.md
         - GUI:
-            - Getting Stated: modding-guides/code/gui/getting-started/ImGuiAPI.md
+            - Getting Started: modding-guides/code/gui/getting-started/ImGuiAPI.md
             - Text Elements: modding-guides/code/gui/ImGuiText/ImGuiText.md
   - Pipelines & Tools:
       - Modeling Pipeline: pipelines-tools/modeling-pipeline.md
