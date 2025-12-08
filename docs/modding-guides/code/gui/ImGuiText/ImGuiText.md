@@ -3,7 +3,7 @@
 # Adding text to your GUI window
 
 
-This page will be the next example and explanation of the KSA/Brutal ImGuiAPI. The topics of this page is text elements.
+This page will be the next example and explanation of the KSA/Brutal ImGuiAPI. The topic of this page is text elements.
 !!! warning "Documentation Incomplete"
     This documentation page is not finished yet. Some sections or method pages may  be missing, incomplete, or incorrect.
 
@@ -11,7 +11,7 @@ This page will be the next example and explanation of the KSA/Brutal ImGuiAPI. T
 
 ### Prerequisites
 
-To begin you will need the basic setup from the overview page, or if you have your own code, a ImGui window created with `ImGui.Begin()` and `ImGui.End()`. We are not going to use any `ImGuiWindowFlags` to start.
+To begin, you will need the basic setup from the overview page, or if you have your own code, an ImGui window created with `ImGui.Begin()` and `ImGui.End()`. We are not going to use any `ImGuiWindowFlags` to start.
 
 The code below will be used as the starting point for this page.
 
@@ -52,7 +52,7 @@ This code will create a window looking like this.
 
 ### Adding Text
 
-To add text to you window, all you need is is `ImGui.Text()` inside the if-statement where your `ImGui.Begin()` is. Inside the `()` you put the text string you wish to display.
+To add text to your window, all you need is `ImGui.Text()` inside the if-statement where your `ImGui.Begin()` is. Inside the `()` you put the text string you wish to display.
 
 ```csharp
 if(ImGui.Begin("Text Window", ref ShowWindow))
@@ -66,7 +66,7 @@ The above code will now display a line of text saying `Hello World!`.
 
 ![alt text](<Hello World.png>)
 
-Note that the text will be cutoff if the window is resized to no longer fit the text.
+Note that the text will be cut off if the window is resized to no longer fit the text.
 
 ![alt text](<Text Cutoff.png>)
 
@@ -118,9 +118,9 @@ This will make `Hello World!` Blue and `Current Vehicle [Vehicle Name]` Green.
 
 ### Conclusion
 
-Now that you know how to use some basic text, I would recommend trying out using logic to dynmically change what text is being shown and/or what color the text is.
+Now that you know how to use some basic text, I would recommend trying out using logic to dynamically change what text is being shown and/or what color the text is.
 
-The next section will go into more specalized styling of text.
+The next section will go into more specialized styling of text.
 
 ## Stylized Text
 
@@ -137,7 +137,7 @@ The prerequisites are the same as the above prerequisites. [Prerequisites](#prer
 
 ### Wrapping Text
 
-To start, we will add a wrapping text line. This line will wrap around the edge and start on the next line if the window is resized to no longer fix the text.
+To start, we will add a wrapping text line. This line will wrap around the edge and start on the next line if the window is resized to no longer fit the text.
 
 ```csharp
 if(ImGui.Begin("Text Window", ref ShowWindow))
@@ -173,11 +173,11 @@ The code will display this,
 
 ![alt text](<Disabled Text.png>)
 
-The text appears a dark shade of grey but has not other special properties like this.
+The text appears a dark shade of grey, but has no other special properties.
 
 ### Bullet Text
 
-There is also a way to make bullet points using text. These will automatically handle bullet point formating.
+There is also a way to make bullet points using text. These will automatically handle bullet point formatting.
 
 ```csharp
 if(ImGui.Begin("Text Window", ref ShowWindow))
@@ -193,11 +193,11 @@ The code will display this,
 
 ![alt text](<Bullet Text.png>)
 
-You can now make To-Do list and much more.
+You can now make a To-Do list and much more.
 
 ### Labeled Text
 
-You can also have text have a labeled put before the text. By default, this will have the label locked to the right side of the window or container it is in, and the text locked to the left side. The middle will be empty space.
+You can also have text have a label put before the text. By default, this will have the label locked to the right side of the window or container it is in, and the text locked to the left side. The middle will be empty space.
 
 ```csharp
 if(ImGui.Begin("Text Window", ref ShowWindow))
@@ -231,7 +231,7 @@ The prerequisites are the same as the first prerequisites. [Prerequisites](#prer
 
 ### Link Text
 
-This type of text just looks like a link, however clicking on the text will not take you to a website as thetext doesn't take in a URL. However, it does return `true` when clicked so you can use it as a psuedo button.
+This type of text just looks like a link, however clicking on the text will not take you to a website as the text doesn't take in a URL. However, it does return `true` when clicked so you can use it as a pseudo button.
 
 ```csharp
 private bool ShowHiddenText = false;
@@ -258,7 +258,7 @@ and when the button is clicked,
 
 ### Actual Links
 
-This next text element will let you put actual URL links into your window. The link does return `true` when clicked so you can also use it in logic one again.
+This next text element will let you put actual URL links into your window. The link does return `true` when clicked so you can also use it in logic once again.
 
 ```csharp
 private bool ShowHiddenText = false;
@@ -275,7 +275,7 @@ if(ImGui.Begin("Text Window", ref ShowWindow))
 ImGui.End();
 ```
 
-The above code will create an actual link the to KSAModding GitHub page, the host of this Wiki.
+The above code will create an actual link to the KSAModding GitHub page, the host of this Wiki.
 
 ![alt text](<Actual Link.png>)
 
@@ -287,9 +287,9 @@ And when clicked,
 
 ### Conclusion
 
-You now know more ways to format you text and can start creating unique GUIs. The next section will talk about how to organize your text more.
+You now know more ways to format your text and can start creating unique GUIs. The next section will talk about how to organize your text more.
 
-## Seperators
+## Separators
 
 ### Prerequisites
 
@@ -297,56 +297,56 @@ The prerequisites are the same as the first prerequisites. [Prerequisites](#prer
 
 ### Methods
 
-* `void ImGui.Seperator()`
-* `void ImGui.SeperatorText(ImString label)`
+* `void ImGui.Separator()`
+* `void ImGui.SeparatorText(ImString label)`
 
-### Basic Seperator
+### Basic Separator
 
-This seperator just creates a thin horizontal line across the window or container.
+This separator just creates a thin horizontal line across the window or container.
 
 ```csharp
 private bool ShowHiddenText = false;
 
 if(ImGui.Begin("Text Window", ref ShowWindow))
 {
-    ImGui.Text("Above the Seperator");
+    ImGui.Text("Above the Separator");
     ImGui.Separator();
-    ImGui.Text("Below the Seperator");
+    ImGui.Text("Below the Separator");
 }
 ImGui.End();
 ```
 
 This code displays,
 
-![alt text](<Seperator.png>)
+![alt text](<Separator.png>)
 
 This is useful for making certain sections of your text as well as making areas easier to read.
 
-### Text Seperator
+### Text Separator
 
-This seperator is similar to the basic seperator as it has a line across the middle. However, in the line there is text added to the seperator.
+This separator is similar to the basic separator as it has a line across the middle. However, in the line there is text added to the separator.
 
 ```csharp
 private bool ShowHiddenText = false;
 
 if(ImGui.Begin("Text Window", ref ShowWindow))
 {
-    ImGui.Text("Above the Seperator");
+    ImGui.Text("Above the Separator");
     ImGui.SeparatorText("You Shall Not Pass!!");
-    ImGui.Text("Below the Seperator");
+    ImGui.Text("Below the Separator");
 }
 ImGui.End();
 ```
 
 The code displays,
 
-![alt text](<Text Seperator.png>)
+![alt text](<Text Separator.png>)
 
-This can be used to add more style to your seperators.
+This can be used to add more style to your separators.
 
 ### Conclusion
 
-You now know how to organize your text neatly. However this isn't every option available. To see more options, check out the `TreeNode` and `Collapsing Header` pages.
+You now know how to organize your text neatly. However, this isn't every option available. To see more options, check out the `TreeNode` and `Collapsing Header` pages.
 !!! warning "Page Not Created"
     As of 11/22/2025, the time this page was created, the `TreeNode` and `Collapsing Header` pages do not exist. Sorry about that.
 
