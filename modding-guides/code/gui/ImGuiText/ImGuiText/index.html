@@ -1047,7 +1047,7 @@
   <span class="md-ellipsis">
     
   
-    Getting Stated
+    Getting Started
   
 
     
@@ -1355,15 +1355,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#seperators" class="md-nav__link">
+  <a href="#separators" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Seperators
+        Separators
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Seperators">
+    <nav class="md-nav" aria-label="Separators">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1389,10 +1389,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#basic-seperator" class="md-nav__link">
+  <a href="#basic-separator" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Basic Seperator
+        Basic Separator
       
     </span>
   </a>
@@ -1400,10 +1400,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#text-seperator" class="md-nav__link">
+  <a href="#text-separator" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Text Seperator
+        Text Separator
       
     </span>
   </a>
@@ -3118,15 +3118,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#seperators" class="md-nav__link">
+  <a href="#separators" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Seperators
+        Separators
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Seperators">
+    <nav class="md-nav" aria-label="Separators">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3152,10 +3152,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#basic-seperator" class="md-nav__link">
+  <a href="#basic-separator" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Basic Seperator
+        Basic Separator
       
     </span>
   </a>
@@ -3163,10 +3163,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#text-seperator" class="md-nav__link">
+  <a href="#text-separator" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Text Seperator
+        Text Separator
       
     </span>
   </a>
@@ -3222,14 +3222,14 @@
 
 <p><sub><sup>Tested with: <strong>KSA Version 2025.11.8.2847</strong></sup></sub></p>
 <h1 id="adding-text-to-your-gui-window">Adding text to your GUI window<a class="headerlink" href="#adding-text-to-your-gui-window" title="Permanent link">&para;</a></h1>
-<p>This page will be the next example and explanation of the KSA/Brutal ImGuiAPI. The topics of this page is text elements.</p>
+<p>This page will be the next example and explanation of the KSA/Brutal ImGuiAPI. The topic of this page is text elements.</p>
 <div class="admonition warning">
 <p class="admonition-title">Documentation Incomplete</p>
 <p>This documentation page is not finished yet. Some sections or method pages may  be missing, incomplete, or incorrect.</p>
 </div>
 <h2 id="basic-text">Basic Text<a class="headerlink" href="#basic-text" title="Permanent link">&para;</a></h2>
 <h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
-<p>To begin you will need the basic setup from the overview page, or if you have your own code, a ImGui window created with <code>ImGui.Begin()</code> and <code>ImGui.End()</code>. We are not going to use any <code>ImGuiWindowFlags</code> to start.</p>
+<p>To begin, you will need the basic setup from the overview page, or if you have your own code, an ImGui window created with <code>ImGui.Begin()</code> and <code>ImGui.End()</code>. We are not going to use any <code>ImGuiWindowFlags</code> to start.</p>
 <p>The code below will be used as the starting point for this page.</p>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">StarMap.API</span><span class="p">;</span>
 <span class="k">using</span><span class="w"> </span><span class="nn">Brutal.ImGuiAPI</span><span class="p">;</span>
@@ -3263,7 +3263,7 @@
 <li><code>void ImGui.TextColored(in float4 col, ImString text)</code></li>
 </ul>
 <h3 id="adding-text">Adding Text<a class="headerlink" href="#adding-text" title="Permanent link">&para;</a></h3>
-<p>To add text to you window, all you need is is <code>ImGui.Text()</code> inside the if-statement where your <code>ImGui.Begin()</code> is. Inside the <code>()</code> you put the text string you wish to display.</p>
+<p>To add text to your window, all you need is <code>ImGui.Text()</code> inside the if-statement where your <code>ImGui.Begin()</code> is. Inside the <code>()</code> you put the text string you wish to display.</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
@@ -3272,7 +3272,7 @@
 </code></pre></div>
 <p>The above code will now display a line of text saying <code>Hello World!</code>.</p>
 <p><img alt="alt text" src="../Hello%20World.png" /></p>
-<p>Note that the text will be cutoff if the window is resized to no longer fit the text.</p>
+<p>Note that the text will be cut off if the window is resized to no longer fit the text.</p>
 <p><img alt="alt text" src="../Text%20Cutoff.png" /></p>
 <p>With <code>ImGui.Text()</code> you can also use formatted strings to display information as the code is executed every frame, so the formatted string values will also be updated.</p>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">KSA</span><span class="p">;</span>
@@ -3309,8 +3309,8 @@
 <p>This will make <code>Hello World!</code> Blue and <code>Current Vehicle [Vehicle Name]</code> Green.</p>
 <p><img alt="alt text" src="../Colored%20Text.png" /></p>
 <h3 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h3>
-<p>Now that you know how to use some basic text, I would recommend trying out using logic to dynmically change what text is being shown and/or what color the text is.</p>
-<p>The next section will go into more specalized styling of text.</p>
+<p>Now that you know how to use some basic text, I would recommend trying out using logic to dynamically change what text is being shown and/or what color the text is.</p>
+<p>The next section will go into more specialized styling of text.</p>
 <h2 id="stylized-text">Stylized Text<a class="headerlink" href="#stylized-text" title="Permanent link">&para;</a></h2>
 <h3 id="prerequisites_1">Prerequisites<a class="headerlink" href="#prerequisites_1" title="Permanent link">&para;</a></h3>
 <p>The prerequisites are the same as the above prerequisites. <a href="#prerequisites">Prerequisites</a></p>
@@ -3322,7 +3322,7 @@
 <li><code>void ImGui.LabelText(ImString label, ImString text)</code></li>
 </ul>
 <h3 id="wrapping-text">Wrapping Text<a class="headerlink" href="#wrapping-text" title="Permanent link">&para;</a></h3>
-<p>To start, we will add a wrapping text line. This line will wrap around the edge and start on the next line if the window is resized to no longer fix the text.</p>
+<p>To start, we will add a wrapping text line. This line will wrap around the edge and start on the next line if the window is resized to no longer fit the text.</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">TextWrapped</span><span class="p">(</span><span class="s">&quot;This is a long text string to test TextWrapped.&quot;</span><span class="p">);</span>
@@ -3345,9 +3345,9 @@
 </code></pre></div>
 <p>The code will display this,</p>
 <p><img alt="alt text" src="../Disabled%20Text.png" /></p>
-<p>The text appears a dark shade of grey but has not other special properties like this.</p>
+<p>The text appears a dark shade of grey, but has no other special properties.</p>
 <h3 id="bullet-text">Bullet Text<a class="headerlink" href="#bullet-text" title="Permanent link">&para;</a></h3>
-<p>There is also a way to make bullet points using text. These will automatically handle bullet point formating.</p>
+<p>There is also a way to make bullet points using text. These will automatically handle bullet point formatting.</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">BulletText</span><span class="p">(</span><span class="s">&quot;Do this 1st&quot;</span><span class="p">);</span>
@@ -3358,9 +3358,9 @@
 </code></pre></div>
 <p>The code will display this,</p>
 <p><img alt="alt text" src="../Bullet%20Text.png" /></p>
-<p>You can now make To-Do list and much more.</p>
+<p>You can now make a To-Do list and much more.</p>
 <h3 id="labeled-text">Labeled Text<a class="headerlink" href="#labeled-text" title="Permanent link">&para;</a></h3>
-<p>You can also have text have a labeled put before the text. By default, this will have the label locked to the right side of the window or container it is in, and the text locked to the left side. The middle will be empty space.</p>
+<p>You can also have text have a label put before the text. By default, this will have the label locked to the right side of the window or container it is in, and the text locked to the left side. The middle will be empty space.</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">LabelText</span><span class="p">(</span><span class="s">&quot;Universe&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">KSA</span><span class="p">.</span><span class="n">Universe</span><span class="p">.</span><span class="n">CurrentSystem</span><span class="p">.</span><span class="n">Id</span><span class="p">);</span>
@@ -3384,7 +3384,7 @@
 <li><code>bool ImGui.TextLinkOpenURL(ImString label, [ImString url = default])</code></li>
 </ul>
 <h3 id="link-text">Link Text<a class="headerlink" href="#link-text" title="Permanent link">&para;</a></h3>
-<p>This type of text just looks like a link, however clicking on the text will not take you to a website as thetext doesn't take in a URL. However, it does return <code>true</code> when clicked so you can use it as a psuedo button.</p>
+<p>This type of text just looks like a link, however clicking on the text will not take you to a website as the text doesn't take in a URL. However, it does return <code>true</code> when clicked so you can use it as a pseudo button.</p>
 <div class="highlight"><pre><span></span><code><span class="k">private</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ShowHiddenText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 
 <span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
@@ -3403,7 +3403,7 @@
 <p>and when the button is clicked,</p>
 <p><img alt="alt text" src="../Hidden%20Text.png" /></p>
 <h3 id="actual-links">Actual Links<a class="headerlink" href="#actual-links" title="Permanent link">&para;</a></h3>
-<p>This next text element will let you put actual URL links into your window. The link does return <code>true</code> when clicked so you can also use it in logic one again.</p>
+<p>This next text element will let you put actual URL links into your window. The link does return <code>true</code> when clicked so you can also use it in logic once again.</p>
 <div class="highlight"><pre><span></span><code><span class="k">private</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ShowHiddenText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 
 <span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
@@ -3417,53 +3417,53 @@
 <span class="p">}</span>
 <span class="n">ImGui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
 </code></pre></div>
-<p>The above code will create an actual link the to KSAModding GitHub page, the host of this Wiki.</p>
+<p>The above code will create an actual link to the KSAModding GitHub page, the host of this Wiki.</p>
 <p><img alt="alt text" src="../Actual%20Link.png" /></p>
 <p>And when clicked,</p>
 <p><img alt="alt text" src="../KSAModding%20GitHub.png" /></p>
 <p><img alt="alt text" src="../Hidden%20Text%20Two.png" /></p>
 <h3 id="conclusion_1">Conclusion<a class="headerlink" href="#conclusion_1" title="Permanent link">&para;</a></h3>
-<p>You now know more ways to format you text and can start creating unique GUIs. The next section will talk about how to organize your text more.</p>
-<h2 id="seperators">Seperators<a class="headerlink" href="#seperators" title="Permanent link">&para;</a></h2>
+<p>You now know more ways to format your text and can start creating unique GUIs. The next section will talk about how to organize your text more.</p>
+<h2 id="separators">Separators<a class="headerlink" href="#separators" title="Permanent link">&para;</a></h2>
 <h3 id="prerequisites_3">Prerequisites<a class="headerlink" href="#prerequisites_3" title="Permanent link">&para;</a></h3>
 <p>The prerequisites are the same as the first prerequisites. <a href="#prerequisites">Prerequisites</a></p>
 <h3 id="methods_3">Methods<a class="headerlink" href="#methods_3" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>void ImGui.Seperator()</code></li>
-<li><code>void ImGui.SeperatorText(ImString label)</code></li>
+<li><code>void ImGui.Separator()</code></li>
+<li><code>void ImGui.SeparatorText(ImString label)</code></li>
 </ul>
-<h3 id="basic-seperator">Basic Seperator<a class="headerlink" href="#basic-seperator" title="Permanent link">&para;</a></h3>
-<p>This seperator just creates a thin horizontal line across the window or container.</p>
+<h3 id="basic-separator">Basic Separator<a class="headerlink" href="#basic-separator" title="Permanent link">&para;</a></h3>
+<p>This separator just creates a thin horizontal line across the window or container.</p>
 <div class="highlight"><pre><span></span><code><span class="k">private</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ShowHiddenText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 
 <span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Above the Seperator&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Above the Separator&quot;</span><span class="p">);</span>
 <span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Separator</span><span class="p">();</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Below the Seperator&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Below the Separator&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="n">ImGui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
 </code></pre></div>
 <p>This code displays,</p>
-<p><img alt="alt text" src="../Seperator.png" /></p>
+<p><img alt="alt text" src="../Separator.png" /></p>
 <p>This is useful for making certain sections of your text as well as making areas easier to read.</p>
-<h3 id="text-seperator">Text Seperator<a class="headerlink" href="#text-seperator" title="Permanent link">&para;</a></h3>
-<p>This seperator is similar to the basic seperator as it has a line across the middle. However, in the line there is text added to the seperator.</p>
+<h3 id="text-separator">Text Separator<a class="headerlink" href="#text-separator" title="Permanent link">&para;</a></h3>
+<p>This separator is similar to the basic separator as it has a line across the middle. However, in the line there is text added to the separator.</p>
 <div class="highlight"><pre><span></span><code><span class="k">private</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ShowHiddenText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 
 <span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Above the Seperator&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Above the Separator&quot;</span><span class="p">);</span>
 <span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">SeparatorText</span><span class="p">(</span><span class="s">&quot;You Shall Not Pass!!&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Below the Seperator&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Below the Separator&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="n">ImGui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
 </code></pre></div>
 <p>The code displays,</p>
-<p><img alt="alt text" src="../Text%20Seperator.png" /></p>
-<p>This can be used to add more style to your seperators.</p>
+<p><img alt="alt text" src="../Text%20Separator.png" /></p>
+<p>This can be used to add more style to your separators.</p>
 <h3 id="conclusion_2">Conclusion<a class="headerlink" href="#conclusion_2" title="Permanent link">&para;</a></h3>
-<p>You now know how to organize your text neatly. However this isn't every option available. To see more options, check out the <code>TreeNode</code> and <code>Collapsing Header</code> pages.</p>
+<p>You now know how to organize your text neatly. However, this isn't every option available. To see more options, check out the <code>TreeNode</code> and <code>Collapsing Header</code> pages.</p>
 <div class="admonition warning">
 <p class="admonition-title">Page Not Created</p>
 <p>As of 11/22/2025, the time this page was created, the <code>TreeNode</code> and <code>Collapsing Header</code> pages do not exist. Sorry about that.</p>
