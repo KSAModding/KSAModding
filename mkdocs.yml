@@ -36,6 +36,8 @@ nav:
       - Data Formats Overview: fundamentals/data-formats-overview.md
       - Coordinates and Units: fundamentals/coordinates-and-units.md
   - Modding Guides:
+      - XML: xml/main.md
+        - Assets: xml/assets.md
       - Parts: modding-guides/parts.md
       - Planets: modding-guides/planet.md
       - System: modding-guides/system.md
