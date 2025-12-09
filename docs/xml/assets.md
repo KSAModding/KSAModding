@@ -68,3 +68,30 @@ Descendants:
   - `<Eccentricity Value="0.0077" />`: Specifies the eccentricity of the planet's orbit. (0 - circular, 1 - line)
   - `<LongitudeOfAscendingNode Degrees="60.48" />`: Specifies the longitude of ascending node of the planet's orbit. (honestly no idea)
   - `<ArgumentOfPeriapsis Degrees="30.0015" />`: Specifies the argument of periapsis of the planet's orbit in degrees. (what?) 
+- `<Rotation DefinitionFrame="Ecliptic">`: Specifies rotation of the planet. `DefinitionFrame` sets the reference for rotation, `"Ecliptic"` _appears to be the only option._
+  - `<SiderealPeriod Hours="23.9344695944"/>`: Specifies the rotation period of the planet in hours.
+  - `<Tilt Degrees="23.441522" />`: Specifies the axial tilt of the planet in degrees.
+  - `<Azimuth Degrees="0.0363633" />`: Specifies the azimuth of the planet in degrees.
+  - `<InitialParentFacingLongitude Degrees="-118" />`: Specifies the initial rotation based on the degrees of the parent-facing longitude.
+- `<MeshCollection Id="EarthScale"/>`: Specifies the mesh to use for the planet. `Id` specifies the name of the mesh.
+- `<Terrain>`: Contains all planet terrain-related data.
+  - `<BiomeIDMap Id="EarthBiomeID" Path="Textures/Earth_Biome_ID.png"/>`: Biome map that specifies biome IDs. _It is unknown what the `Id` parameter is for._
+  - `<BiomeControlMap Id="EarthBiomeControl" Path="Textures/Earth_Biomes_Control.png"/>`: Biome control map for planet. (idk what this does)
+  - `<ProceduralModifiers>`: Contains all procedural terrain modifiers.
+    - `<Modifier Type="Erosion" Name="EarthErosion">`: Specifies a modifier to add to the terrain. (add more info here)
+      - `<Frequency Value="150" />`: Frequency of the modifier.
+      - `<Amplitude Value="100" />`: Amplitude of the modifier.
+      - `<Lacunarity Value="2" />`: Lacunarity of the modifier.
+      - `<GradientFalloff Value="0.1" />`: Gradient falloff multiplier of the modifier.
+      - `<Curvature Value="0.00035" />`: Curvature of the modifier.
+      - `<Seed Value="1" />`: Seed to use when generating the modifier.
+      - `<Octaves Value="6" />`: Octaves of the modifier.
+      - `<GenerateColor Value="false" />`: Specifies whether the noise uses color or default black-and-white color.
+      - `<ValleyColor R="0.0" G="0.0" B="0.0" A="0.0" />`: Valley color of the modifier.
+      - `<RidgeColor R="0.42" G="0.42" B="0.42" A="1.0" />`: Ridge color of the modifier.
+  - `<BiomeMaterials>`: Contains all biome materials for the planet.
+    - `<BlendStrength Value="2.25" />`: Controls how strong the gradient between two biomes is.
+    - `<DetailFadeInEnd Km="100" />`: Specifies at what altitude does detail stops fading in using kilometers.
+    - `<DetailFadeInStart Km="3000" />`: Specifies at what altitude does detail starts fading in using kilometers.
+    - `<BiomeMaterial Name="Poles">`: Specifies a biome material. _It is unknown what `Name` does._
+      - `<Diffuse Id="EarthPolesDiffuse" Path="Textures/texture.dds" Category="Terrain"/>`: Specifies the diffuse color texture for the biome material. _It is unknown what `Id` does._ `Path` specifies the relative path to the texture file, the file must be in the .dds format. _`Category` always seems to be `"Terrain"`._
