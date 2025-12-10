@@ -1,151 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/</loc>
+         <loc>https://ksamodding.wiki/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/advanced-internals/reverse-engineering/</loc>
+         <loc>https://ksamodding.wiki/advanced-internals/reverse-engineering/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/CopyTo/</loc>
+         <loc>https://ksamodding.wiki/advanced-internals/code-docs/Brutal/Numerics/bool2/CopyTo/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2/bool2/</loc>
+         <loc>https://ksamodding.wiki/advanced-internals/code-docs/Brutal/Numerics/bool2/bool2/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/advanced-internals/code-docs/KSA/Astronomical/Astronomical/</loc>
+         <loc>https://ksamodding.wiki/advanced-internals/code-docs/KSA/Astronomical/Astronomical/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/advanced-internals/code-docs/KSA/FlightComputer/FlightComputer/</loc>
+         <loc>https://ksamodding.wiki/advanced-internals/code-docs/KSA/FlightComputer/FlightComputer/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/advanced-internals/code-docs/KSA/Vehicle/Vehicle/</loc>
+         <loc>https://ksamodding.wiki/advanced-internals/code-docs/KSA/Vehicle/Vehicle/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/fundamentals/coordinates-and-units/</loc>
+         <loc>https://ksamodding.wiki/fundamentals/coordinates-and-units/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/fundamentals/data-formats-overview/</loc>
+         <loc>https://ksamodding.wiki/fundamentals/data-formats-overview/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/fundamentals/directories-and-files/</loc>
+         <loc>https://ksamodding.wiki/fundamentals/directories-and-files/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/getting-started/install-tools/</loc>
+         <loc>https://ksamodding.wiki/getting-started/install-tools/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/getting-started/installing-mods/</loc>
+         <loc>https://ksamodding.wiki/getting-started/installing-mods/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/getting-started/modding-etiquette/</loc>
+         <loc>https://ksamodding.wiki/getting-started/modding-etiquette/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/getting-started/overview/</loc>
+         <loc>https://ksamodding.wiki/getting-started/overview/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/ksa.dll/ksa_dll/</loc>
+         <loc>https://ksamodding.wiki/ksa.dll/ksa_dll/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/ksa.dll/classes/class_types/</loc>
+         <loc>https://ksamodding.wiki/ksa.dll/classes/class_types/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/ksa.dll/classes/implementing_classes/</loc>
+         <loc>https://ksamodding.wiki/ksa.dll/classes/implementing_classes/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/ksa.dll/classes/significant_classes/</loc>
+         <loc>https://ksamodding.wiki/ksa.dll/classes/significant_classes/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/ksa.dll/variables/units/</loc>
+         <loc>https://ksamodding.wiki/ksa.dll/variables/units/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/ksa.dll/variables/vessel/</loc>
+         <loc>https://ksamodding.wiki/ksa.dll/variables/vessel/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/meta/code-doc-guide/</loc>
+         <loc>https://ksamodding.wiki/meta/code-doc-guide/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/meta/style-guide/</loc>
+         <loc>https://ksamodding.wiki/meta/style-guide/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/meta/versioning-policy/</loc>
+         <loc>https://ksamodding.wiki/meta/versioning-policy/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/modding-guides/audio/</loc>
+         <loc>https://ksamodding.wiki/modding-guides/audio/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/modding-guides/parts/</loc>
+         <loc>https://ksamodding.wiki/modding-guides/parts/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/modding-guides/planet/</loc>
+         <loc>https://ksamodding.wiki/modding-guides/planet/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/modding-guides/star-binaries/</loc>
+         <loc>https://ksamodding.wiki/modding-guides/star-binaries/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/modding-guides/system/</loc>
+         <loc>https://ksamodding.wiki/modding-guides/system/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/modding-guides/code/first-steps/</loc>
+         <loc>https://ksamodding.wiki/modding-guides/code/first-steps/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/modding-guides/code/harmony/</loc>
+         <loc>https://ksamodding.wiki/modding-guides/code/harmony/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/modding-guides/code/gui/ImGuiText/ImGuiText/</loc>
+         <loc>https://ksamodding.wiki/modding-guides/code/gui/ImGuiText/ImGuiText/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/modding-guides/code/gui/getting-started/ImGuiAPI/</loc>
+         <loc>https://ksamodding.wiki/modding-guides/code/gui/getting-started/ImGuiAPI/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/modding-guides/code/input/keyboard-input/</loc>
+         <loc>https://ksamodding.wiki/modding-guides/code/input/keyboard-input/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/pipelines-tools/modeling-pipeline/</loc>
+         <loc>https://ksamodding.wiki/pipelines-tools/modeling-pipeline/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/pipelines-tools/texture-pipeline/</loc>
+         <loc>https://ksamodding.wiki/pipelines-tools/texture-pipeline/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/pipelines-tools/tools-index/</loc>
+         <loc>https://ksamodding.wiki/pipelines-tools/tools-index/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
     <url>
-         <loc>https://ksamodding.github.io/KSAModding/troubleshooting/logs-and-debugging/</loc>
+         <loc>https://ksamodding.wiki/troubleshooting/logs-and-debugging/</loc>
          <lastmod>2025-12-10</lastmod>
     </url>
 </urlset>
