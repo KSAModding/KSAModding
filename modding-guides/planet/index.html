@@ -940,6 +940,78 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#rotation-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rotation Specification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rotation Specification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#istidallylocked" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IsTidallyLocked
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#siderealperiod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SiderealPeriod
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tilt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tilt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azimuth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Azimuth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialparentfacinglongitude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        InitialParentFacingLongitude
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#body-specifications" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3144,6 +3216,78 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#rotation-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rotation Specification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rotation Specification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#istidallylocked" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IsTidallyLocked
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#siderealperiod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SiderealPeriod
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tilt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tilt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azimuth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Azimuth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialparentfacinglongitude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        InitialParentFacingLongitude
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#body-specifications" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3341,11 +3485,12 @@
 
 
 <h1 id="planets">Planets<a class="headerlink" href="#planets" title="Permanent link">&para;</a></h1>
+<p>Updated to version 2025.12.8.3030</p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>This guide explains how to add custom planets to the game.</p>
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
 <p>Requirements:
-- GIMP or any other image editing tool that can export .dds files in BC5 format</p>
+- GIMP or any other image editing tool that can export .dds files in BC5u and BC1 format</p>
 <h2 id="file-locations">File Locations<a class="headerlink" href="#file-locations" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Game Directory</strong>: <code>C:\Users\[YourName]\AppData\Local\Programs\Kitten Space Agency\</code></li>
@@ -3359,11 +3504,20 @@
 <p>Earth Template:
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nt">&lt;AtmosphericBody</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;Earth&quot;</span><span class="w"> </span><span class="na">Parent=</span><span class="s">&quot;Sol&quot;</span><span class="nt">&gt;</span>
 <span class="w">        </span><span class="nt">&lt;MeshCollection</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;EarthScale&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;SemiMajorAxis</span><span class="w"> </span><span class="na">Au=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;Inclination</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;0.00005&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;Eccentricity</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;0.0167&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;LongitudeOfAscendingNode</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;-11.261&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;ArgumentOfPeriapsis</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;114.207&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Orbit&gt;</span>
+<span class="w">            </span><span class="nt">&lt;SemiMajorAxis</span><span class="w"> </span><span class="na">Km=</span><span class="s">&quot;1.495396277103892E+08&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Inclination</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;4.495777668608611E-03&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Eccentricity</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;1.657443784940060E-02&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;LongitudeOfAscendingNode</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;2.001005464352027E+02&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;ArgumentOfPeriapsis</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;2.647204271842132E+02&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;TimeAtPeriapsis</span><span class="w"> </span><span class="na">Seconds=</span><span class="s">&quot;3155415.2731954656&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/Orbit&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Rotation</span><span class="w"> </span><span class="na">DefinitionFrame=</span><span class="s">&quot;Ecliptic&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;SiderealPeriod</span><span class="w"> </span><span class="na">Hours=</span><span class="s">&quot;23.9344695944&quot;</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Tilt</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;23.441522&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Azimuth</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;-0.363633&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;InitialParentFacingLongitude</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;-118&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/Rotation&gt;</span>
 <span class="w">        </span><span class="nt">&lt;Diffuse</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/Earth_Diffuse.dds&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Terrain&quot;</span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;Normal</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/Earth_Normal.dds&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Terrain&quot;</span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;Height</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/Earth_Height.ktx2&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Terrain&quot;</span><span class="nt">&gt;</span>
@@ -3378,9 +3532,6 @@
 <span class="w">        </span><span class="nt">&lt;MeanRadius</span><span class="w"> </span><span class="na">Km=</span><span class="s">&quot;6371&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;Mass</span><span class="w"> </span><span class="na">Earths=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;Color</span><span class="w"> </span><span class="na">R=</span><span class="s">&quot;0.11&quot;</span><span class="w"> </span><span class="na">G=</span><span class="s">&quot;0.31&quot;</span><span class="w"> </span><span class="na">B=</span><span class="s">&quot;0.415&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;Period</span><span class="w"> </span><span class="na">Days=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;AxialTilt</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;23.44&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;AxialAlignment</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;0&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;Atmosphere&gt;</span>
 <span class="w">            </span><span class="nt">&lt;Visual&gt;</span>
 <span class="w">                </span><span class="nt">&lt;RayleighScattering&gt;</span>
@@ -3718,19 +3869,26 @@
 Jupiter Template (for Gas Giants):
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nt">&lt;AtmosphericBody</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;Jupiter&quot;</span><span class="w"> </span><span class="na">Parent=</span><span class="s">&quot;Sol&quot;</span><span class="nt">&gt;</span><span class="w"> </span>
 <span class="w">        </span><span class="nt">&lt;MeshCollection</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;Default&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;SemiMajorAxis</span><span class="w"> </span><span class="na">Au=</span><span class="s">&quot;5.2044&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;Inclination</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;1.30530&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;Eccentricity</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;0.0489&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;LongitudeOfAscendingNode</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;100.464&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;ArgumentOfPeriapsis</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;273.867&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;MeanAnomalyAtEpoch</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;34.35152&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Orbit</span><span class="w"> </span><span class="na">DefinitionFrame=</span><span class="s">&quot;Ecliptic&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="cm">&lt;!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 --&gt;</span>
+<span class="w">            </span><span class="nt">&lt;SemiMajorAxis</span><span class="w"> </span><span class="na">Km=</span><span class="s">&quot;7.783184372433803E+08&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Inclination</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;1.303590359360468E+00&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Eccentricity</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;4.832479219312407E-02&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;LongitudeOfAscendingNode</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;1.005180387211400E+02&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;ArgumentOfPeriapsis</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;2.735957096173138E+02&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;TimeAtPeriapsis</span><span class="w"> </span><span class="na">Seconds=</span><span class="s">&quot;-90113548.8271415328&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/Orbit&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Rotation</span><span class="w"> </span><span class="na">DefinitionFrame=</span><span class="s">&quot;Ecliptic&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="cm">&lt;!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 --&gt;</span>
+<span class="w">            </span><span class="nt">&lt;SiderealPeriod</span><span class="w"> </span><span class="na">Hours=</span><span class="s">&quot;9&quot;</span><span class="w"> </span><span class="na">Minutes=</span><span class="s">&quot;55&quot;</span><span class="w"> </span><span class="na">Seconds=</span><span class="s">&quot;29.711&quot;</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Tilt</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;2.21503&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Azimuth</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;157.81684&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;InitialParentFacingLongitude</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;199.376786&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/Rotation&gt;</span>
 <span class="w">        </span><span class="nt">&lt;MeanRadius</span><span class="w"> </span><span class="na">Km=</span><span class="s">&quot;69911&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;Mass</span><span class="w"> </span><span class="na">Jupiters=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;Diffuse</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;JupiterDiffuse&quot;</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/Jupiter_Diffuse.dds&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Terrain&quot;</span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;Color</span><span class="w"> </span><span class="na">R=</span><span class="s">&quot;1.0&quot;</span><span class="w"> </span><span class="na">G=</span><span class="s">&quot;0.69&quot;</span><span class="w"> </span><span class="na">B=</span><span class="s">&quot;0.36&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;Period</span><span class="w"> </span><span class="na">Hours=</span><span class="s">&quot;9&quot;</span><span class="w"> </span><span class="na">Minutes=</span><span class="s">&quot;55&quot;</span><span class="w"> </span><span class="na">Seconds=</span><span class="s">&quot;30&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;AxialTilt</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;3.13&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;AxialAlignment</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;0&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;Atmosphere&gt;</span>
 <span class="w">            </span><span class="nt">&lt;Visual&gt;</span>
 <span class="w">                </span><span class="nt">&lt;RayleighScattering&gt;</span>
@@ -4242,12 +4400,14 @@ Jupiter Template (for Gas Giants):
 Pluto Template (for Small Terrestrail Bodies):
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nt">&lt;TerrestrialBody</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;Pluto&quot;</span><span class="w"> </span><span class="na">Parent=</span><span class="s">&quot;Sol&quot;</span><span class="nt">&gt;</span>
 <span class="w">        </span><span class="nt">&lt;MeshCollection</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;Asteroid&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;SemiMajorAxis</span><span class="w"> </span><span class="na">Km=</span><span class="s">&quot; 10000488.231&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;Inclination</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;Eccentricity</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;0&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;LongitudeOfAscendingNode</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;55&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;ArgumentOfPeriapsis</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;0&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;MeanAnomalyAtEpoch</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;0&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Orbit</span><span class="w"> </span><span class="na">DefinitionFrame=</span><span class="s">&quot;Ecliptic&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;SemiMajorAxis</span><span class="w"> </span><span class="na">Km=</span><span class="s">&quot;5.923845154796118E+09&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Inclination</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;1.701891625997185E+01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Eccentricity</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;2.471491415054861E-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;LongitudeOfAscendingNode</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;1.102120704382104E+02&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;ArgumentOfPeriapsis</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;1.149008997051256E+02&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;TimeAtPeriapsis</span><span class="w"> </span><span class="na">Seconds=</span><span class="s">&quot;-1131531650.253796608&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/Orbit&gt;</span>
 <span class="w">        </span><span class="nt">&lt;MeanRadius</span><span class="w"> </span><span class="na">Km=</span><span class="s">&quot;600&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;Mass</span><span class="w"> </span><span class="na">Kg=</span><span class="s">&quot;12166330000000000&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;Color</span><span class="w"> </span><span class="na">R=</span><span class="s">&quot;0.941176&quot;</span><span class="w"> </span><span class="na">G=</span><span class="s">&quot;0.901961&quot;</span><span class="w"> </span><span class="na">B=</span><span class="s">&quot;0.54902&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
@@ -4277,7 +4437,7 @@ Pluto Template (for Small Terrestrail Bodies):
 <li>Sol: The body the planet orbits</li>
 </ul>
 <h3 id="orbital-specifications">Orbital Specifications<a class="headerlink" href="#orbital-specifications" title="Permanent link">&para;</a></h3>
-<p>This defines how the object orbits its parent body</p>
+<p>This defines how the object orbits its parent body. Must be in the <code>&lt;Orbit&gt;</code> block in the planet's code</p>
 <h4 id="semimajoraxis">SemiMajorAxis<a class="headerlink" href="#semimajoraxis" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Supported Units (in Ascending Order): M, Km, Gm, Au, Ly</li>
@@ -4313,6 +4473,39 @@ Pluto Template (for Small Terrestrail Bodies):
 <li>Supported Units: Degrees</li>
 <li>Example: <code>&lt;MeanAnomalyAtEpoch Degrees="86.37" /&gt;</code></li>
 <li>The MeanAnomalyAtEpoch is the the position of an object in its orbit at a particular moment in time, known as the epoch</li>
+</ul>
+<h3 id="rotation-specification">Rotation Specification<a class="headerlink" href="#rotation-specification" title="Permanent link">&para;</a></h3>
+<h4 id="istidallylocked">IsTidallyLocked<a class="headerlink" href="#istidallylocked" title="Permanent link">&para;</a></h4>
+<ul>
+<li>True/False Boolian</li>
+<li>Overides Sidereal rotation</li>
+<li>Tidally locks the body (obviously)</li>
+<li>Example: <code>&lt;IsTidallyLocked Value="true" /&gt;</code></li>
+</ul>
+<h4 id="siderealperiod">SiderealPeriod<a class="headerlink" href="#siderealperiod" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Uses any unit of time</li>
+<li>Defines length of day</li>
+<li>Example: <code>&lt;SiderealPeriod Days="1.21759259259"/&gt;</code></li>
+</ul>
+<h4 id="tilt">Tilt<a class="headerlink" href="#tilt" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Uses Degrees</li>
+<li>Axial tilt, angle at which the rotating axis is tilted</li>
+<li>Example: <code>&lt;Tilt Degrees="0" /&gt;</code></li>
+</ul>
+<h4 id="azimuth">Azimuth<a class="headerlink" href="#azimuth" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Uses Degrees</li>
+<li>Rotates the body on the rotating axis depending on value</li>
+<li>Example: <code>&lt;Azimuth Degrees="0" /&gt;</code></li>
+</ul>
+<h4 id="initialparentfacinglongitude">InitialParentFacingLongitude<a class="headerlink" href="#initialparentfacinglongitude" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Uses Degrees</li>
+<li>Longitude that the body starts that is perpendicular to the parent body</li>
+<li>Only relevant with an object that has a tilt</li>
+<li>Example: <code>&lt;InitialParentFacingLongitude Degrees="0" /&gt;</code></li>
 </ul>
 <h3 id="body-specifications">Body Specifications<a class="headerlink" href="#body-specifications" title="Permanent link">&para;</a></h3>
 <p>This is defining how the object is shaped. Includes it's mass, radius, and height map</p>
