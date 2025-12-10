@@ -36,7 +36,7 @@ This is an example of an binary that creates one large blue star on the positive
 00000010   FF 00 00 FF                                      ....            
 
 ```
-![star-binary-structure](/KSAModding/assets/images/star-binary-structure.png)
+![star-binary-structure](/assets/images/star-binary-structure.png)
 
 ## Step 2: Register the star binaries file
 Edit the `mod.toml` file to include 
@@ -47,7 +47,7 @@ ATTENTION: every mod including core will stack their star binaries ontop of each
 
 
 ## Example
-![star-binary-example](/KSAModding/assets/images/star-binaries-example.png)
+![star-binary-example](/assets/images/star-binaries-example.png)
 
 ## Limitations
 
