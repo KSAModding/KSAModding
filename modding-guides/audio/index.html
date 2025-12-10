@@ -2788,7 +2788,7 @@ namespace MySoundMod
     }
 }
 </code></pre></div>
-Now build it and move the mod over to your mod folder, which should look something like this. <img alt="mod folder" src="/KSAModding/assets/images/modding-guides/code/FilePathReference.png" /></p>
+Now build it and move the mod over to your mod folder, which should look something like this. <img alt="mod folder" src="/assets/images/modding-guides/code/FilePathReference.png" /></p>
 <p>Note: Make sure to edit the Manifest to make sure your mod is being loaded!</p>
 <p>Now run it through StarMap and see what happens (if you hear anything it would be a slight stuttering). The audio doesn't play through because it's being called every frame, a simple check to see if it's playing can fix this issue.</p>
 <p><div class="highlight"><pre><span></span><code>using StarMap.API;

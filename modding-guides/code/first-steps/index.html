@@ -2886,7 +2886,7 @@
 <ol>
 <li>
 <p>Create a new visual studio project by pressing <code>Create a new project</code>.
-<img alt="Press create project" src="/KSAModding/assets/images/modding-guides/code/create-project.png" /></p>
+<img alt="Press create project" src="/assets/images/modding-guides/code/create-project.png" /></p>
 </li>
 <li>
 <p>Filter for the C# language</p>
@@ -2894,7 +2894,7 @@
 <li>Select <code>Class Library</code></li>
 <li>
 <p>Click next
-<img alt="Select Class Library under C#" src="/KSAModding/assets/images/modding-guides/code/project-type.png" /></p>
+<img alt="Select Class Library under C#" src="/assets/images/modding-guides/code/project-type.png" /></p>
 </li>
 <li>
 <p>Enter <code>FirstMod</code> as the name of the project</p>
@@ -2902,13 +2902,13 @@
 <li>Select a location</li>
 <li>
 <p>Press next
-<img alt="Enter FirstMod as the project name and chose a project location" src="/KSAModding/assets/images/modding-guides/code/project-details.png" /></p>
+<img alt="Enter FirstMod as the project name and chose a project location" src="/assets/images/modding-guides/code/project-details.png" /></p>
 </li>
 <li>
 <p>Select .NET version 10 (Long Term Support)</p>
 </li>
 <li>Press create
-<img alt="Select .NET version 10 (Long Term Support)" src="/KSAModding/assets/images/modding-guides/code/select-dotnet-version.png" /></li>
+<img alt="Select .NET version 10 (Long Term Support)" src="/assets/images/modding-guides/code/select-dotnet-version.png" /></li>
 </ol>
 <h3 id="setting-up-starmap">Setting up StarMap<a class="headerlink" href="#setting-up-starmap" title="Permanent link">&para;</a></h3>
 <p>Now that we have a working Visual Studio project it is time to setup StarMap. For this step you will need the <a href="#prerequisites">previously mentioned</a> github access key so make sure you have that ready.</p>
@@ -2917,11 +2917,11 @@
 <li>Right click the project</li>
 <li>
 <p>Select <code>Manage NuGet Packages</code>
-<img alt="Right click the project and select Manage NuGet Packages" src="/KSAModding/assets/images/modding-guides/code/manage-nugetpackages.png" /></p>
+<img alt="Right click the project and select Manage NuGet Packages" src="/assets/images/modding-guides/code/manage-nugetpackages.png" /></p>
 </li>
 <li>
 <p>Click the cogwheel
-<img alt="Select to cogwheel" src="/KSAModding/assets/images/modding-guides/code/edit-NuGet-settings.png" /></p>
+<img alt="Select to cogwheel" src="/assets/images/modding-guides/code/edit-NuGet-settings.png" /></p>
 </li>
 <li>
 <p>Under <code>NuGet Package Manager</code> Select <code>Package Sources</code></p>
@@ -2932,7 +2932,7 @@
 <li>Press Save</li>
 <li>
 <p>Close the options tab
-<img alt="Add new Package Source" src="/KSAModding/assets/images/modding-guides/code/add-package-source.png" /></p>
+<img alt="Add new Package Source" src="/assets/images/modding-guides/code/add-package-source.png" /></p>
 </li>
 <li>
 <p>Under Package Source Select <code>StarMap</code></p>
@@ -2943,14 +2943,14 @@
 <li>Instead of using your github password under password enter your Personal Access token.</li>
 <li>
 <p>Press <code>Ok</code>
-<img alt="Browse StarMap Source" src="/KSAModding/assets/images/modding-guides/code/browsing-starmap.png" /></p>
+<img alt="Browse StarMap Source" src="/assets/images/modding-guides/code/browsing-starmap.png" /></p>
 </li>
 <li>
 <p>Select <code>StarMap.API</code></p>
 </li>
 <li>Press <code>Install</code></li>
 <li>Complete the installation process
-<img alt="Install StarMap.API" src="/KSAModding/assets/images/modding-guides/code/install-starmap.png" /></li>
+<img alt="Install StarMap.API" src="/assets/images/modding-guides/code/install-starmap.png" /></li>
 <li>StarMap should be set up</li>
 </ol>
 <h3 id="setting-up-harmony">Setting up Harmony<a class="headerlink" href="#setting-up-harmony" title="Permanent link">&para;</a></h3>
@@ -2961,7 +2961,7 @@
 <li>Select <code>Lib.Harmony</code></li>
 <li>Press <code>Install</code></li>
 <li>Wait for the instal to finish
-<img alt="Install Lib.Harmony" src="/KSAModding/assets/images/modding-guides/code/install-harmony.png" /></li>
+<img alt="Install Lib.Harmony" src="/assets/images/modding-guides/code/install-harmony.png" /></li>
 </ol>
 <h2 id="step-2-adding-dependencies">Step 2: Adding dependencies<a class="headerlink" href="#step-2-adding-dependencies" title="Permanent link">&para;</a></h2>
 <p>When using StarMap to mod the game you will eventually need external resources from the game itself called assemblies or .dll files. For a basic mod you only need one dependency: KSA.dll. So this first-steps guide will do just that.</p>
@@ -2969,14 +2969,14 @@
 <li>Right click on dependencies</li>
 <li>
 <p>Press Add Project Reference
-<img alt="add project reference" src="/KSAModding/assets/images/modding-guides/code/add-project-reference.png" /></p>
+<img alt="add project reference" src="/assets/images/modding-guides/code/add-project-reference.png" /></p>
 </li>
 <li>
 <p>Press Browse</p>
 </li>
 <li>Now go to the KSA install directory (default: C:\Program Files\Kitten Space Agency) and find KSA.dll, Select it and click add</li>
 <li>Press OK
-<img alt="alt text" src="/KSAModding/assets/images/modding-guides/code/browse-for-reference.png" /></li>
+<img alt="alt text" src="/assets/images/modding-guides/code/browse-for-reference.png" /></li>
 </ol>
 <h2 id="step-3-creating-a-mod-class">Step 3: Creating a Mod class<a class="headerlink" href="#step-3-creating-a-mod-class" title="Permanent link">&para;</a></h2>
 <p>StarMap automatically loads the class with the same name as the .dll file and that has the <code>[StarMapMod]</code> attribute</p>
