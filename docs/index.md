@@ -1,4 +1,4 @@
-!!! info "IMPORTANT
+!!! info "IMPORTANT"
     The new Wiki is using [Wiki.js](https://js.wiki/), therefore the old wiki is depericated. New Wiki is available here at [ksamodding.wiki](https://ksamodding.wiki).
 
 # KSA Modding Wiki (Unofficial)
