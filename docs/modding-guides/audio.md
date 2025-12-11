@@ -100,7 +100,7 @@ namespace MySoundMod
 }
 
 ```
-Now build it and move the mod over to your mod folder, which should look something like this. ![mod folder](/KSAModding/assets/images/modding-guides/code/FilePathReference.png)
+Now build it and move the mod over to your mod folder, which should look something like this. ![mod folder](/assets/images/modding-guides/code/FilePathReference.png)
 
 Note: Make sure to edit the Manifest to make sure your mod is being loaded!
 

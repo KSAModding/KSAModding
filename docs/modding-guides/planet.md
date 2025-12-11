@@ -1,11 +1,12 @@
 # Planets
+Updated to version 2025.12.8.3030
 
 ## Overview
 This guide explains how to add custom planets to the game.
 
 ## Requirements
 Requirements:
-- GIMP or any other image editing tool that can export .dds files in BC5 format
+- GIMP or any other image editing tool that can export .dds files in BC5u and BC1 format
 
 ## File Locations
 - **Game Directory**: `C:\Users\[YourName]\AppData\Local\Programs\Kitten Space Agency\`
@@ -22,11 +23,20 @@ Earth Template:
 ```xml
     <AtmosphericBody Id="Earth" Parent="Sol">
         <MeshCollection Id="EarthScale"/>
-        <SemiMajorAxis Au="1" />
-        <Inclination Degrees="0.00005" />
-        <Eccentricity Value="0.0167" />
-        <LongitudeOfAscendingNode Degrees="-11.261" />
-        <ArgumentOfPeriapsis Degrees="114.207" />
+        <Orbit>
+            <SemiMajorAxis Km="1.495396277103892E+08" />
+            <Inclination Degrees="4.495777668608611E-03" />
+            <Eccentricity Value="1.657443784940060E-02" />
+            <LongitudeOfAscendingNode Degrees="2.001005464352027E+02" />
+            <ArgumentOfPeriapsis Degrees="2.647204271842132E+02" />
+            <TimeAtPeriapsis Seconds="3155415.2731954656" />
+        </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <SiderealPeriod Hours="23.9344695944"/>
+            <Tilt Degrees="23.441522" />
+            <Azimuth Degrees="-0.363633" />
+            <InitialParentFacingLongitude Degrees="-118" />
+        </Rotation>
         <Diffuse Path="Textures/Earth_Diffuse.dds" Category="Terrain"/>
         <Normal Path="Textures/Earth_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Earth_Height.ktx2" Category="Terrain">
@@ -41,9 +51,6 @@ Earth Template:
         <MeanRadius Km="6371" />
         <Mass Earths="1" />
         <Color R="0.11" G="0.31" B="0.415" />
-        <Period Days="1"/>
-        <AxialTilt Degrees="23.44" />
-        <AxialAlignment Degrees="0" />
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -382,19 +389,26 @@ Jupiter Template (for Gas Giants):
 ```xml
     <AtmosphericBody Id="Jupiter" Parent="Sol">	
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Au="5.2044" />
-        <Inclination Degrees="1.30530" />
-        <Eccentricity Value="0.0489" />
-        <LongitudeOfAscendingNode Degrees="100.464" />
-        <ArgumentOfPeriapsis Degrees="273.867" />
-        <MeanAnomalyAtEpoch Degrees="34.35152" />
+        <Orbit DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SemiMajorAxis Km="7.783184372433803E+08" />
+            <Inclination Degrees="1.303590359360468E+00" />
+            <Eccentricity Value="4.832479219312407E-02" />
+            <LongitudeOfAscendingNode Degrees="1.005180387211400E+02" />
+            <ArgumentOfPeriapsis Degrees="2.735957096173138E+02" />
+            <TimeAtPeriapsis Seconds="-90113548.8271415328" />
+        </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SiderealPeriod Hours="9" Minutes="55" Seconds="29.711"/>
+            <Tilt Degrees="2.21503" />
+            <Azimuth Degrees="157.81684" />
+            <InitialParentFacingLongitude Degrees="199.376786" />
+        </Rotation>
         <MeanRadius Km="69911" />
         <Mass Jupiters="1" />
         <Diffuse Id="JupiterDiffuse" Path="Textures/Jupiter_Diffuse.dds" Category="Terrain"/>
         <Color R="1.0" G="0.69" B="0.36" />
-        <Period Hours="9" Minutes="55" Seconds="30"/>
-        <AxialTilt Degrees="3.13" />
-        <AxialAlignment Degrees="0" />
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -907,12 +921,14 @@ Pluto Template (for Small Terrestrail Bodies):
 ```xml
     <TerrestrialBody Id="Pluto" Parent="Sol">
         <MeshCollection Id="Asteroid"/>
-        <SemiMajorAxis Km="	10000488.231" />
-        <Inclination Degrees="1" />
-        <Eccentricity Value="0" />
-        <LongitudeOfAscendingNode Degrees="55" />
-        <ArgumentOfPeriapsis Degrees="0" />
-        <MeanAnomalyAtEpoch Degrees="0" />
+        <Orbit DefinitionFrame="Ecliptic">
+            <SemiMajorAxis Km="5.923845154796118E+09" />
+            <Inclination Degrees="1.701891625997185E+01" />
+            <Eccentricity Value="2.471491415054861E-01" />
+            <LongitudeOfAscendingNode Degrees="1.102120704382104E+02" />
+            <ArgumentOfPeriapsis Degrees="1.149008997051256E+02" />
+            <TimeAtPeriapsis Seconds="-1131531650.253796608" />
+        </Orbit>
         <MeanRadius Km="600" />
         <Mass Kg="12166330000000000" />
         <Color R="0.941176" G="0.901961" B="0.54902" />
@@ -944,7 +960,7 @@ This defines what type of planet it is
  - Sol: The body the planet orbits
 
 ### Orbital Specifications
-This defines how the object orbits its parent body
+This defines how the object orbits its parent body. Must be in the ```<Orbit>``` block in the planet's code
 
 #### SemiMajorAxis
  - Supported Units (in Ascending Order): M, Km, Gm, Au, Ly
@@ -975,7 +991,29 @@ This defines how the object orbits its parent body
  - Supported Units: Degrees
  - Example: ```<MeanAnomalyAtEpoch Degrees="86.37" />```
  - The MeanAnomalyAtEpoch is the the position of an object in its orbit at a particular moment in time, known as the epoch
-
+### Rotation Specification
+#### IsTidallyLocked
+ - True/False Boolian
+ - Overides Sidereal rotation
+ - Tidally locks the body (obviously)
+ - Example: ```<IsTidallyLocked Value="true" />```
+#### SiderealPeriod
+ - Uses any unit of time
+ - Defines length of day
+ - Example: ```<SiderealPeriod Days="1.21759259259"/>```
+#### Tilt
+ - Uses Degrees
+ - Axial tilt, angle at which the rotating axis is tilted
+ - Example: ```<Tilt Degrees="0" />```
+#### Azimuth
+ - Uses Degrees
+ - Rotates the body on the rotating axis depending on value
+ - Example: ```<Azimuth Degrees="0" />```
+#### InitialParentFacingLongitude
+ - Uses Degrees
+ - Longitude that the body starts that is perpendicular to the parent body
+ - Only relevant with an object that has a tilt
+ - Example: ```<InitialParentFacingLongitude Degrees="0" />```
 ### Body Specifications
 This is defining how the object is shaped. Includes it's mass, radius, and height map
 

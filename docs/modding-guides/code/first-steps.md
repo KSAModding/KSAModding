@@ -24,21 +24,21 @@ Before starting this guide it is recommended to set up the example mod and runni
 
 ### Creating the Visual Studio project
 1. Create a new visual studio project by pressing `Create a new project`.
-![Press create project](/KSAModding/assets/images/modding-guides/code/create-project.png)
+![Press create project](/assets/images/modding-guides/code/create-project.png)
 
 1. Filter for the C# language
 2. Select `Class Library`
 3. Click next
-![Select Class Library under C#](/KSAModding/assets/images/modding-guides/code/project-type.png)
+![Select Class Library under C#](/assets/images/modding-guides/code/project-type.png)
 
 1. Enter `FirstMod` as the name of the project
 2. Select a location
 3. Press next
-![Enter FirstMod as the project name and chose a project location](/KSAModding/assets/images/modding-guides/code/project-details.png)
+![Enter FirstMod as the project name and chose a project location](/assets/images/modding-guides/code/project-details.png)
 
 1. Select .NET version 10 (Long Term Support)
 2. Press create
-![Select .NET version 10 (Long Term Support)](/KSAModding/assets/images/modding-guides/code/select-dotnet-version.png)
+![Select .NET version 10 (Long Term Support)](/assets/images/modding-guides/code/select-dotnet-version.png)
 
 ### Setting up StarMap
 Now that we have a working Visual Studio project it is time to setup StarMap. For this step you will need the [previously mentioned](#prerequisites) github access key so make sure you have that ready.
@@ -47,10 +47,10 @@ We will have to add a custom Package Source to nuget to be able to use StarMap
 
 1. Right click the project
 2. Select `Manage NuGet Packages`
-![Right click the project and select Manage NuGet Packages](/KSAModding/assets/images/modding-guides/code/manage-nugetpackages.png)
+![Right click the project and select Manage NuGet Packages](/assets/images/modding-guides/code/manage-nugetpackages.png)
 
 3. Click the cogwheel
-![Select to cogwheel](/KSAModding/assets/images/modding-guides/code/edit-NuGet-settings.png)
+![Select to cogwheel](/assets/images/modding-guides/code/edit-NuGet-settings.png)
 
 4. Under `NuGet Package Manager` Select `Package Sources`
 5. Press `Add`
@@ -58,7 +58,7 @@ We will have to add a custom Package Source to nuget to be able to use StarMap
 5. Under Source write `https://nuget.pkg.github.com/StarMapLoader/index.json`
 6. Press Save
 7. Close the options tab
-![Add new Package Source](/KSAModding/assets/images/modding-guides/code/add-package-source.png)
+![Add new Package Source](/assets/images/modding-guides/code/add-package-source.png)
 
 8. Under Package Source Select `StarMap`
 9. Open the Browse Tab
@@ -66,13 +66,13 @@ We will have to add a custom Package Source to nuget to be able to use StarMap
 11. Under username Select `Personal Access Token`
 12. Instead of using your github password under password enter your Personal Access token.
 13. Press `Ok`
-![Browse StarMap Source](/KSAModding/assets/images/modding-guides/code/browsing-starmap.png)
+![Browse StarMap Source](/assets/images/modding-guides/code/browsing-starmap.png)
 
 
 14. Select `StarMap.API`
 15. Press `Install`
 16. Complete the installation process
-![Install StarMap.API](/KSAModding/assets/images/modding-guides/code/install-starmap.png)
+![Install StarMap.API](/assets/images/modding-guides/code/install-starmap.png)
 17. StarMap should be set up
 
 ### Setting up Harmony
@@ -83,7 +83,7 @@ We will have to add a custom Package Source to nuget to be able to use StarMap
 4. Select `Lib.Harmony`
 5. Press `Install`
 6. Wait for the instal to finish
-![Install Lib.Harmony](/KSAModding/assets/images/modding-guides/code/install-harmony.png)
+![Install Lib.Harmony](/assets/images/modding-guides/code/install-harmony.png)
 
 ## Step 2: Adding dependencies
 
@@ -91,12 +91,12 @@ When using StarMap to mod the game you will eventually need external resources f
 
 1. Right click on dependencies
 2. Press Add Project Reference
-![add project reference](/KSAModding/assets/images/modding-guides/code/add-project-reference.png)
+![add project reference](/assets/images/modding-guides/code/add-project-reference.png)
 
 1. Press Browse
 2. Now go to the KSA install directory (default: C:\Program Files\Kitten Space Agency) and find KSA.dll, Select it and click add
 3. Press OK
-![alt text](/KSAModding/assets/images/modding-guides/code/browse-for-reference.png)
+![alt text](/assets/images/modding-guides/code/browse-for-reference.png)
 
 ## Step 3: Creating a Mod class
 

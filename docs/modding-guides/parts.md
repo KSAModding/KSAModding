@@ -1,3 +1,4 @@
+<sub><sup>Tested with: **KSA Version 2025.11.4.2791**</sup></sub>
 # Kitten Space Agency - Parts Modding Guide
 
 ## Overview

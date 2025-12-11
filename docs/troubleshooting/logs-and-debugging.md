@@ -52,19 +52,19 @@ Debugging your mod can be done by following these steps:
 
 ### For Visual Studio:
 1. Open Debug Properties:
-![Creating an executable configuration](/KSAModding/assets/images/troubleshooting/logs-and-debugging/vs-edit-debug-properties.png)
+![Creating an executable configuration](/assets/images/troubleshooting/logs-and-debugging/vs-edit-debug-properties.png)
 
 2. Create a new Executable Launch Profile and make it point to the StarMap.exe executable file (don't forget to set the working directory to the StarMap folder)
-![Creating an executable configuration](/KSAModding/assets/images/troubleshooting/logs-and-debugging/vs-create-executable-task.png)
+![Creating an executable configuration](/assets/images/troubleshooting/logs-and-debugging/vs-create-executable-task.png)
 
 And that's it! You can now set breakpoints in your mod code and run StarMap from Visual Studio to debug your mod.
 
 ### For JetBrains Rider:
 1. Open the Run/Debug Configurations dialog:
-![Creating an executable configuration](/KSAModding/assets/images/troubleshooting/logs-and-debugging/rider-edit-configurations.png)
+![Creating an executable configuration](/assets/images/troubleshooting/logs-and-debugging/rider-edit-configurations.png)
 
 2. Create a new Executable Launch Configuration and make it point to the StarMap.exe executable file (don't forget to set the working directory to the StarMap folder)
-![Creating an executable configuration](/KSAModding/assets/images/troubleshooting/logs-and-debugging/rider-run-executable.png)
+![Creating an executable configuration](/assets/images/troubleshooting/logs-and-debugging/rider-run-executable.png)
 
 You can now set breakpoints in your mod code and run StarMap from Rider to start debugging
 
@@ -73,4 +73,4 @@ You can now set breakpoints in your mod code and run StarMap from Rider to start
 In Rider you can setup a task that will output your binaries in the Content folder of your KSA installation automatically
 and then you can make this task run before launching the game, so whenever you hit debug, your latest code changes will be deployed to the mods folder.
 
-![Creating an executable configuration](/KSAModding/assets/images/troubleshooting/logs-and-debugging/rider-publish-to-folder-task.png)
+![Creating an executable configuration](/assets/images/troubleshooting/logs-and-debugging/rider-publish-to-folder-task.png)
