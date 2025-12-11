@@ -1,6 +1,5 @@
-# Important (Please read)
-
-The new Wiki is using [Wiki.js](https://js.wiki/), therefore the old wiki is depericated. If you wish to still visit **the old wiki** go to [old.ksamodding.wiki](https://old.ksamodding.wiki).
+> [!IMPORTANT]  
+> The new Wiki is using [Wiki.js](https://js.wiki/), therefore the old wiki is depericated. If you wish to still visit **the old wiki** go to [old.ksamodding.wiki](https://old.ksamodding.wiki).
 
 # KSA Modding Wiki (Unofficial)
 
