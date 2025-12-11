@@ -1,3 +1,7 @@
+# Important (Please read)
+
+The new Wiki is using [Wiki.js](https://js.wiki/), therefore the old wiki is depericated. If you wish to still visit it go to [old.ksamodding.wiki](https://old.ksamodding.wiki).
+
 # KSA Modding Wiki (Unofficial)
 
 This repository contains the source for an **unofficial, community-driven modding wiki** for _Kitten Space Agency (KSA)_.
