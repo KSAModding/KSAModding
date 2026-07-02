@@ -20,10 +20,12 @@ Where all the game assets live:
 - **KSA.dll** - Main game code (decompile with ILSpy)
 - **Brutal.dll** - Engine code
 
-## Logs and Saves Directory
+## User Data Directory
 
 **Location:** `C:\Users\[YourName]\Documents\My Games\Kitten Space Agency\`
 
 - **Logs** - `Brutal.log` and archived logs
 - **Saves** - Save game files
+- **mods/** - Local mods folder. Mods placed here are auto-discovered by the game and persist across game updates. See [Installing Mods](/KSAModding/getting-started/installing-mods/) for details.
+- **manifest.toml** - The local mod manifest that controls which mods are enabled.
  

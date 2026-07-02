@@ -19,15 +19,13 @@ First make sure you installed StarMap via this guide: [StarMap installation guid
         └── StarMap.ExampleMod.dll
         └── ...
     ```
-3. Put this folder inside of the game content files: `"KSAInstallLocation/Content/`, This folder should also contain the `Core` mod folder.
-4. Lastly the mod needs to be added to the manifest.toml in the `"KSAInstallLocation"/Content/` folder, the id needs to match the name of the folder, the .dll file, the name variable inside mod.toml.
+3. Put this folder in one of the two supported mod locations:
+    - **Local mods folder (recommended):** `Documents\My Games\Kitten Space Agency\mods\` - Mods here persist across game updates.
+    - **Game content folder:** `KSAInstallLocation\Content\` - This folder also contains the `Core` mod folder. Mods here may be lost when the game updates.
+4. The game auto-discovers new mods and prompts you to enable them on startup. Alternatively, you can manually edit the `manifest.toml` in `Documents\My Games\Kitten Space Agency\` to enable or disable mods. The id must match the folder name:
 ```
 [[mods]]
-id= "core"
-enabled = true
-
-[[mods]]
-id = "[mod name]"
+id = "[mod folder name]"
 enabled = true
 ```
 5. When now loading the game via `StarMap.exe` or `StarMapLoader.exe`, the mod should be loaded and run.
