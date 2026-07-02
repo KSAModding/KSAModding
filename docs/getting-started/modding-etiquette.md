@@ -24,7 +24,7 @@ All mods should follow similar standards with the format in creation to help imp
       - For example, to link to the Earth Normalmap, put the path to it as `..\Core\Textures\Earth_Normal.dds`
   - Mod Assets
     - You will end up having assets in your mods, these are things ranging from an `Astronomicals.xml`, to a custom system, to textures. Please follow some standard conventions for including these.
-      - All textures should be in a `Textures\` sub-folder. Please do not just paste them into your main folder I don't wnat to have to read through a giant conglomeration of png files to try and find the custom system in the mod.
+      - All textures should be in a `Textures\` sub-folder. Please do not just paste them into your main folder I don't want to have to read through a giant conglomeration of png files to try and find the custom system in the mod.
       - All assets should be named in an easy to understand format.
         - If its a custom `Astronomicals.xml` call it something like `ModnameAtronomicals.xml` or even just `Astronomicals.xml`
         - If its a custom system, maybe include "System" in the file name. (e.g. `Polar-Earth-Only-System.xml` or `StockSystem.xml`)
