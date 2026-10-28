@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -3246,7 +3246,7 @@
 <span class="w">        </span><span class="p">{</span>
 <span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">ShowWindow</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
 
-<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">"Text Window"</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="w">            </span><span class="p">{</span>
 <span class="w">                </span><span class="c1">// New ImGui code will go here</span>
 <span class="w">            </span><span class="p">}</span>
@@ -3264,9 +3264,9 @@
 </ul>
 <h3 id="adding-text">Adding Text<a class="headerlink" href="#adding-text" title="Permanent link">&para;</a></h3>
 <p>To add text to your window, all you need is <code>ImGui.Text()</code> inside the if-statement where your <code>ImGui.Begin()</code> is. Inside the <code>()</code> you put the text string you wish to display.</p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">"Text Window"</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="n">ImGui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
 </code></pre></div>
@@ -3277,10 +3277,10 @@
 <p>With <code>ImGui.Text()</code> you can also use formatted strings to display information as the code is executed every frame, so the formatted string values will also be updated.</p>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">KSA</span><span class="p">;</span>
 
-<span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
+<span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">"Text Window"</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">$&quot;Current Vehicle: {Program.ControlledVehicle.Id}&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">$"Current Vehicle: {Program.ControlledVehicle.Id}"</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="n">ImGui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
 </code></pre></div>
@@ -3296,10 +3296,10 @@
 <p>To add a little bit of style to your text, you can add color to it. This is possible by changing the <code>ImGui.Text()</code> statements to <code>ImGui.TextColored()</code>, and then putting in the color you wish the text to be.</p>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">Brutal.Numerics</span><span class="p">;</span>
 
-<span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
+<span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">"Text Window"</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">TextColored</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="n">Blue</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">TextColored</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="n">Green</span><span class="p">,</span><span class="w"> </span><span class="s">$&quot;Current Vehicle: {Program.ControlledVehicle.Id}&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">TextColored</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="n">Blue</span><span class="p">,</span><span class="w"> </span><span class="s">"Hello World!"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">TextColored</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="n">Green</span><span class="p">,</span><span class="w"> </span><span class="s">$"Current Vehicle: {Program.ControlledVehicle.Id}"</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="n">ImGui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
 </code></pre></div>
@@ -3323,10 +3323,10 @@
 </ul>
 <h3 id="wrapping-text">Wrapping Text<a class="headerlink" href="#wrapping-text" title="Permanent link">&para;</a></h3>
 <p>To start, we will add a wrapping text line. This line will wrap around the edge and start on the next line if the window is resized to no longer fit the text.</p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">"Text Window"</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">TextWrapped</span><span class="p">(</span><span class="s">&quot;This is a long text string to test TextWrapped.&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">TextWrapped</span><span class="p">(</span><span class="s">"This is a long text string to test TextWrapped."</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="n">ImGui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
 </code></pre></div>
@@ -3336,10 +3336,10 @@
 <p><img alt="alt text" src="../Wrapped.png" /></p>
 <h3 id="disabled-text">Disabled Text<a class="headerlink" href="#disabled-text" title="Permanent link">&para;</a></h3>
 <p>There is also a unique looking text called disabled text. It is a text style that is meant to show disabled options through text or subtext.</p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">"Text Window"</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">TextDisabled</span><span class="p">(</span><span class="s">&quot;You can&#39;t do this&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">TextDisabled</span><span class="p">(</span><span class="s">"You can't do this"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="n">ImGui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
 </code></pre></div>
@@ -3348,11 +3348,11 @@
 <p>The text appears a dark shade of grey, but has no other special properties.</p>
 <h3 id="bullet-text">Bullet Text<a class="headerlink" href="#bullet-text" title="Permanent link">&para;</a></h3>
 <p>There is also a way to make bullet points using text. These will automatically handle bullet point formatting.</p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">"Text Window"</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">BulletText</span><span class="p">(</span><span class="s">&quot;Do this 1st&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">BulletText</span><span class="p">(</span><span class="s">&quot;Do this 2nd&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">BulletText</span><span class="p">(</span><span class="s">"Do this 1st"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">BulletText</span><span class="p">(</span><span class="s">"Do this 2nd"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="n">ImGui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
 </code></pre></div>
@@ -3361,10 +3361,10 @@
 <p>You can now make a To-Do list and much more.</p>
 <h3 id="labeled-text">Labeled Text<a class="headerlink" href="#labeled-text" title="Permanent link">&para;</a></h3>
 <p>You can also have text have a label put before the text. By default, this will have the label locked to the right side of the window or container it is in, and the text locked to the left side. The middle will be empty space.</p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">"Text Window"</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">LabelText</span><span class="p">(</span><span class="s">&quot;Universe&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">KSA</span><span class="p">.</span><span class="n">Universe</span><span class="p">.</span><span class="n">CurrentSystem</span><span class="p">.</span><span class="n">Id</span><span class="p">);</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">LabelText</span><span class="p">(</span><span class="s">"Universe"</span><span class="p">,</span><span class="w"> </span><span class="n">KSA</span><span class="p">.</span><span class="n">Universe</span><span class="p">.</span><span class="n">CurrentSystem</span><span class="p">.</span><span class="n">Id</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="n">ImGui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
 </code></pre></div>
@@ -3387,14 +3387,14 @@
 <p>This type of text just looks like a link, however clicking on the text will not take you to a website as the text doesn't take in a URL. However, it does return <code>true</code> when clicked so you can use it as a pseudo button.</p>
 <div class="highlight"><pre><span></span><code><span class="k">private</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ShowHiddenText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 
-<span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
+<span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">"Text Window"</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">TextLink</span><span class="p">(</span><span class="s">&quot;This just looks like a link&quot;</span><span class="p">))</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">TextLink</span><span class="p">(</span><span class="s">"This just looks like a link"</span><span class="p">))</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="n">ShowHiddenText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ShowHiddenText</span><span class="p">)</span><span class="w"> </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;I was hidden&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ShowHiddenText</span><span class="p">)</span><span class="w"> </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"I was hidden"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="n">ImGui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
 </code></pre></div>
@@ -3406,14 +3406,14 @@
 <p>This next text element will let you put actual URL links into your window. The link does return <code>true</code> when clicked so you can also use it in logic once again.</p>
 <div class="highlight"><pre><span></span><code><span class="k">private</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ShowHiddenText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 
-<span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
+<span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">"Text Window"</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">TextLinkOpenURL</span><span class="p">(</span><span class="s">&quot;GitHub&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;https://github.com/KSAModding&quot;</span><span class="p">))</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">TextLinkOpenURL</span><span class="p">(</span><span class="s">"GitHub"</span><span class="p">,</span><span class="w"> </span><span class="s">"https://github.com/KSAModding"</span><span class="p">))</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="n">ShowHiddenText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ShowHiddenText</span><span class="p">)</span><span class="w"> </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;I was hidden&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ShowHiddenText</span><span class="p">)</span><span class="w"> </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"I was hidden"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="n">ImGui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
 </code></pre></div>
@@ -3436,11 +3436,11 @@
 <p>This separator just creates a thin horizontal line across the window or container.</p>
 <div class="highlight"><pre><span></span><code><span class="k">private</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ShowHiddenText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 
-<span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
+<span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">"Text Window"</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Above the Separator&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"Above the Separator"</span><span class="p">);</span>
 <span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Separator</span><span class="p">();</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Below the Separator&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"Below the Separator"</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="n">ImGui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
 </code></pre></div>
@@ -3451,11 +3451,11 @@
 <p>This separator is similar to the basic separator as it has a line across the middle. However, in the line there is text added to the separator.</p>
 <div class="highlight"><pre><span></span><code><span class="k">private</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ShowHiddenText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 
-<span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;Text Window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
+<span class="k">if</span><span class="p">(</span><span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">"Text Window"</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ShowWindow</span><span class="p">))</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Above the Separator&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">SeparatorText</span><span class="p">(</span><span class="s">&quot;You Shall Not Pass!!&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Below the Separator&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"Above the Separator"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">SeparatorText</span><span class="p">(</span><span class="s">"You Shall Not Pass!!"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"Below the Separator"</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="n">ImGui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
 </code></pre></div>
@@ -3521,10 +3521,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

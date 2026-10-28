@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -3486,94 +3486,94 @@
 <p><code>C:\Users\[YourName]\AppData\Local\Programs\Kitten Space Agency\Content\Core\Textures\</code></p>
 <h2 id="step-3-register-mesh-files">Step 3: Register Mesh Files<a class="headerlink" href="#step-3-register-mesh-files" title="Permanent link">&para;</a></h2>
 <p>Edit <code>PartAssets.xml</code> (lines 1-10 area):</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;MeshFile</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelMesh&quot;</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Meshes/your_model.glb&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;MeshFile</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourModelMesh"</span><span class="w"> </span><span class="na">Path=</span><span class="s">"Meshes/your_model.glb"</span><span class="w"> </span><span class="na">Category=</span><span class="s">"Vessel"</span><span class="nt">/&gt;</span>
 </code></pre></div>
 <p>If you have multiple parts:
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;MeshFile</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodyMesh&quot;</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Meshes/your_body.glb&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;MeshFile</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadMesh&quot;</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Meshes/your_head.glb&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;MeshFile</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourLegsMesh&quot;</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Meshes/your_legs.glb&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;MeshFile</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourBodyMesh"</span><span class="w"> </span><span class="na">Path=</span><span class="s">"Meshes/your_body.glb"</span><span class="w"> </span><span class="na">Category=</span><span class="s">"Vessel"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;MeshFile</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourHeadMesh"</span><span class="w"> </span><span class="na">Path=</span><span class="s">"Meshes/your_head.glb"</span><span class="w"> </span><span class="na">Category=</span><span class="s">"Vessel"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;MeshFile</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourLegsMesh"</span><span class="w"> </span><span class="na">Path=</span><span class="s">"Meshes/your_legs.glb"</span><span class="w"> </span><span class="na">Category=</span><span class="s">"Vessel"</span><span class="nt">/&gt;</span>
 </code></pre></div></p>
 <h2 id="step-4-create-materials">Step 4: Create Materials<a class="headerlink" href="#step-4-create-materials" title="Permanent link">&para;</a></h2>
 <p>In <code>PartAssets.xml</code> (after mesh definitions):</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;PbrMaterial</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelMat&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Diffuse</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/your_model_diffuse.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Normal</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/your_model_normal.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;RoughMetalAo</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/your_model_roughmetalao.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;PbrMaterial</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourModelMat"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Diffuse</span><span class="w"> </span><span class="na">Path=</span><span class="s">"Textures/your_model_diffuse.png"</span><span class="w"> </span><span class="na">Category=</span><span class="s">"Vessel"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Normal</span><span class="w"> </span><span class="na">Path=</span><span class="s">"Textures/your_model_normal.png"</span><span class="w"> </span><span class="na">Category=</span><span class="s">"Vessel"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;RoughMetalAo</span><span class="w"> </span><span class="na">Path=</span><span class="s">"Textures/your_model_roughmetalao.png"</span><span class="w"> </span><span class="na">Category=</span><span class="s">"Vessel"</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/PbrMaterial&gt;</span>
 </code></pre></div>
 <p>For multiple parts with different textures, create multiple materials:
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;PbrMaterial</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodyMat&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Diffuse</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/your_body_diffuse.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Normal</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/flat_normal.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;RoughMetalAo</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/neutral_roughmetalao.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;PbrMaterial</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourBodyMat"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Diffuse</span><span class="w"> </span><span class="na">Path=</span><span class="s">"Textures/your_body_diffuse.png"</span><span class="w"> </span><span class="na">Category=</span><span class="s">"Vessel"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Normal</span><span class="w"> </span><span class="na">Path=</span><span class="s">"Textures/flat_normal.png"</span><span class="w"> </span><span class="na">Category=</span><span class="s">"Vessel"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;RoughMetalAo</span><span class="w"> </span><span class="na">Path=</span><span class="s">"Textures/neutral_roughmetalao.png"</span><span class="w"> </span><span class="na">Category=</span><span class="s">"Vessel"</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/PbrMaterial&gt;</span>
 
-<span class="nt">&lt;PbrMaterial</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadMat&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Diffuse</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/your_head_diffuse.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Normal</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/flat_normal.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;RoughMetalAo</span><span class="w"> </span><span class="na">Path=</span><span class="s">&quot;Textures/neutral_roughmetalao.png&quot;</span><span class="w"> </span><span class="na">Category=</span><span class="s">&quot;Vessel&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;PbrMaterial</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourHeadMat"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Diffuse</span><span class="w"> </span><span class="na">Path=</span><span class="s">"Textures/your_head_diffuse.png"</span><span class="w"> </span><span class="na">Category=</span><span class="s">"Vessel"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Normal</span><span class="w"> </span><span class="na">Path=</span><span class="s">"Textures/flat_normal.png"</span><span class="w"> </span><span class="na">Category=</span><span class="s">"Vessel"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;RoughMetalAo</span><span class="w"> </span><span class="na">Path=</span><span class="s">"Textures/neutral_roughmetalao.png"</span><span class="w"> </span><span class="na">Category=</span><span class="s">"Vessel"</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/PbrMaterial&gt;</span>
 </code></pre></div></p>
 <h2 id="step-5-define-parts">Step 5: Define Parts<a class="headerlink" href="#step-5-define-parts" title="Permanent link">&para;</a></h2>
 <p>In <code>PartAssets.xml</code> (search for other <code>&lt;Part Id=</code> definitions as reference):</p>
 <h3 id="simple-single-part-vehicle">Simple Single-Part Vehicle<a class="headerlink" href="#simple-single-part-vehicle" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelPart&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelSubPart&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelSubPartModel&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelMesh&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelMat&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourModelPart"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourModelSubPart"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourModelSubPartModel"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourModelMesh"</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourModelMat"</span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;/SubPartModel&gt;</span>
 <span class="w">    </span><span class="nt">&lt;/SubPart&gt;</span>
 <span class="nt">&lt;/Part&gt;</span>
 </code></pre></div>
 <h3 id="multi-part-vehicle-body-head-legs-example">Multi-Part Vehicle (Body + Head + Legs example)<a class="headerlink" href="#multi-part-vehicle-body-head-legs-example" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodyPart&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodySubPart&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodyModel&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodyMesh&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodyMat&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourBodyPart"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourBodySubPart"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourBodyModel"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourBodyMesh"</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourBodyMat"</span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;/SubPartModel&gt;</span>
 <span class="w">    </span><span class="nt">&lt;/SubPart&gt;</span>
 <span class="nt">&lt;/Part&gt;</span>
 
-<span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadPart&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadSubPart&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadModel&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadMesh&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadMat&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourHeadPart"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourHeadSubPart"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourHeadModel"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourHeadMesh"</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourHeadMat"</span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;/SubPartModel&gt;</span>
 <span class="w">    </span><span class="nt">&lt;/SubPart&gt;</span>
 <span class="nt">&lt;/Part&gt;</span>
 
-<span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourLegsPart&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourLegsSubPart&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourLegsModel&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourLegsMesh&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourLegsMat&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourLegsPart"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourLegsSubPart"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourLegsModel"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourLegsMesh"</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourLegsMat"</span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;/SubPartModel&gt;</span>
 <span class="w">    </span><span class="nt">&lt;/SubPart&gt;</span>
 <span class="nt">&lt;/Part&gt;</span>
 </code></pre></div>
 <h2 id="step-6-add-rcs-thrusters-optional">Step 6: Add RCS Thrusters (Optional)<a class="headerlink" href="#step-6-add-rcs-thrusters-optional" title="Permanent link">&para;</a></h2>
 <p>Add thrusters to any <code>&lt;SubPart&gt;</code> section for attitude control:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelPart&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelSubPart&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelSubPartModel&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelMesh&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelMat&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourModelPart"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourModelSubPart"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourModelSubPartModel"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourModelMesh"</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourModelMat"</span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;/SubPartModel&gt;</span>
 
 <span class="w">        </span><span class="cm">&lt;!-- Rotation Control --&gt;</span>
-<span class="w">        </span><span class="nt">&lt;Thruster</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YawLeft&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;Location</span><span class="w"> </span><span class="na">X=</span><span class="s">&quot;-0.2&quot;</span><span class="w"> </span><span class="na">Y=</span><span class="s">&quot;-0.15&quot;</span><span class="w"> </span><span class="na">Z=</span><span class="s">&quot;0.0&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;ExhaustDirection</span><span class="w"> </span><span class="na">X=</span><span class="s">&quot;0.0&quot;</span><span class="w"> </span><span class="na">Y=</span><span class="s">&quot;1.0&quot;</span><span class="w"> </span><span class="na">Z=</span><span class="s">&quot;0.0&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;ControlMap</span><span class="w"> </span><span class="na">CSV=</span><span class="s">&quot;YawLeft&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;Thrust</span><span class="w"> </span><span class="na">N=</span><span class="s">&quot;150&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;SpecificImpulse</span><span class="w"> </span><span class="na">Seconds=</span><span class="s">&quot;220&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;MinimumPulseTime</span><span class="w"> </span><span class="na">Seconds=</span><span class="s">&quot;0.008&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;VolumetricExhaust</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;MmuRcsVac&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;SoundEvent</span><span class="w"> </span><span class="na">Action=</span><span class="s">&quot;On&quot;</span><span class="w"> </span><span class="na">SoundId=</span><span class="s">&quot;DefaultRcsThruster&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;ThrusterLight</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;false&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Thruster</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YawLeft"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Location</span><span class="w"> </span><span class="na">X=</span><span class="s">"-0.2"</span><span class="w"> </span><span class="na">Y=</span><span class="s">"-0.15"</span><span class="w"> </span><span class="na">Z=</span><span class="s">"0.0"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;ExhaustDirection</span><span class="w"> </span><span class="na">X=</span><span class="s">"0.0"</span><span class="w"> </span><span class="na">Y=</span><span class="s">"1.0"</span><span class="w"> </span><span class="na">Z=</span><span class="s">"0.0"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;ControlMap</span><span class="w"> </span><span class="na">CSV=</span><span class="s">"YawLeft"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Thrust</span><span class="w"> </span><span class="na">N=</span><span class="s">"150"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;SpecificImpulse</span><span class="w"> </span><span class="na">Seconds=</span><span class="s">"220"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;MinimumPulseTime</span><span class="w"> </span><span class="na">Seconds=</span><span class="s">"0.008"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;VolumetricExhaust</span><span class="w"> </span><span class="na">Id=</span><span class="s">"MmuRcsVac"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;SoundEvent</span><span class="w"> </span><span class="na">Action=</span><span class="s">"On"</span><span class="w"> </span><span class="na">SoundId=</span><span class="s">"DefaultRcsThruster"</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;ThrusterLight</span><span class="w"> </span><span class="na">Value=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;/Thruster&gt;</span>
 
 <span class="w">        </span><span class="cm">&lt;!-- Add more thrusters for full 6-DOF control --&gt;</span>
@@ -3602,43 +3602,43 @@
 <h2 id="step-7-create-vehicle-definition">Step 7: Create Vehicle Definition<a class="headerlink" href="#step-7-create-vehicle-definition" title="Permanent link">&para;</a></h2>
 <p>Edit <code>Astronomicals.xml</code> (find similar vehicle definitions as reference):</p>
 <h3 id="single-part-vehicle">Single-Part Vehicle<a class="headerlink" href="#single-part-vehicle" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;Vehicle</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourVehicle&quot;</span><span class="w"> </span><span class="na">Parent=</span><span class="s">&quot;Earth&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;Navball&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;Altitude&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;GameTime&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;PitchYawRoll&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;AutopilotSettings&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;BurnControl&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;RendezvousControl&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;WindSound</span><span class="w"> </span><span class="na">SoundId=</span><span class="s">&quot;AtmosphericMovement&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;Vehicle</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourVehicle"</span><span class="w"> </span><span class="na">Parent=</span><span class="s">"Earth"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">"Navball"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">"Altitude"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">"GameTime"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">"PitchYawRoll"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">"AutopilotSettings"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">"BurnControl"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Canvas</span><span class="w"> </span><span class="na">Id=</span><span class="s">"RendezvousControl"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;WindSound</span><span class="w"> </span><span class="na">SoundId=</span><span class="s">"AtmosphericMovement"</span><span class="nt">/&gt;</span>
 
-<span class="w">    </span><span class="nt">&lt;RootPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModelPart&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;RootPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourModelPart"</span><span class="nt">/&gt;</span>
 
 <span class="w">    </span><span class="cm">&lt;!-- Orbital Parameters --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;SemiMajorAxis</span><span class="w"> </span><span class="na">Km=</span><span class="s">&quot;6713&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Inclination</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;28.87&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Eccentricity</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;0.0077&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;LongitudeOfAscendingNode</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;65&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;ArgumentOfPeriapsis</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">&quot;35&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SemiMajorAxis</span><span class="w"> </span><span class="na">Km=</span><span class="s">"6713"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Inclination</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">"28.87"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Eccentricity</span><span class="w"> </span><span class="na">Value=</span><span class="s">"0.0077"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;LongitudeOfAscendingNode</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">"65"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ArgumentOfPeriapsis</span><span class="w"> </span><span class="na">Degrees=</span><span class="s">"35"</span><span class="w"> </span><span class="nt">/&gt;</span>
 
 <span class="w">    </span><span class="cm">&lt;!-- Physical Properties --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;MeanRadius</span><span class="w"> </span><span class="na">M=</span><span class="s">&quot;2.0&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;MassSpecificPMI</span><span class="w"> </span><span class="na">X=</span><span class="s">&quot;1.5&quot;</span><span class="w"> </span><span class="na">Y=</span><span class="s">&quot;3.0&quot;</span><span class="w"> </span><span class="na">Z=</span><span class="s">&quot;3.0&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Mass</span><span class="w"> </span><span class="na">Kg=</span><span class="s">&quot;5000&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;PropellantMass</span><span class="w"> </span><span class="na">Kg=</span><span class="s">&quot;500&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Color</span><span class="w"> </span><span class="na">R=</span><span class="s">&quot;0.95&quot;</span><span class="w"> </span><span class="na">G=</span><span class="s">&quot;0.33&quot;</span><span class="w"> </span><span class="na">B=</span><span class="s">&quot;0.33&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;MeanRadius</span><span class="w"> </span><span class="na">M=</span><span class="s">"2.0"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;MassSpecificPMI</span><span class="w"> </span><span class="na">X=</span><span class="s">"1.5"</span><span class="w"> </span><span class="na">Y=</span><span class="s">"3.0"</span><span class="w"> </span><span class="na">Z=</span><span class="s">"3.0"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Mass</span><span class="w"> </span><span class="na">Kg=</span><span class="s">"5000"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;PropellantMass</span><span class="w"> </span><span class="na">Kg=</span><span class="s">"500"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Color</span><span class="w"> </span><span class="na">R=</span><span class="s">"0.95"</span><span class="w"> </span><span class="na">G=</span><span class="s">"0.33"</span><span class="w"> </span><span class="na">B=</span><span class="s">"0.33"</span><span class="w"> </span><span class="nt">/&gt;</span>
 
 <span class="w">    </span><span class="cm">&lt;!-- RCS Sound (if you added thrusters) --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;SoundEvent</span><span class="w"> </span><span class="na">Action=</span><span class="s">&quot;Rcs&quot;</span><span class="w"> </span><span class="na">SoundId=</span><span class="s">&quot;DefaultRcsThruster&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SoundEvent</span><span class="w"> </span><span class="na">Action=</span><span class="s">"Rcs"</span><span class="w"> </span><span class="na">SoundId=</span><span class="s">"DefaultRcsThruster"</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/Vehicle&gt;</span>
 </code></pre></div>
 <h3 id="multi-part-vehicle">Multi-Part Vehicle<a class="headerlink" href="#multi-part-vehicle" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;Vehicle</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourVehicle&quot;</span><span class="w"> </span><span class="na">Parent=</span><span class="s">&quot;Earth&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;Vehicle</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourVehicle"</span><span class="w"> </span><span class="na">Parent=</span><span class="s">"Earth"</span><span class="nt">&gt;</span>
 <span class="w">    </span><span class="cm">&lt;!-- ... same canvases and settings ... --&gt;</span>
 
-<span class="w">    </span><span class="nt">&lt;RootPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourBodyPart&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourHeadPart&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourLegsPart&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;RootPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourBodyPart"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourHeadPart"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourLegsPart"</span><span class="nt">/&gt;</span>
 <span class="w">    </span><span class="nt">&lt;/RootPart&gt;</span>
 
 <span class="w">    </span><span class="cm">&lt;!-- ... orbital and physical parameters ... --&gt;</span>
@@ -3647,11 +3647,11 @@
 <h2 id="step-8-add-vehicle-to-system">Step 8: Add Vehicle to System<a class="headerlink" href="#step-8-add-vehicle-to-system" title="Permanent link">&para;</a></h2>
 <h3 id="for-earthonly-system">For EarthOnly System<a class="headerlink" href="#for-earthonly-system" title="Permanent link">&para;</a></h3>
 <p>Edit <code>EarthOnly.xml</code>, add before <code>&lt;/System&gt;</code>:
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;LoadFromLibrary</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourVehicle&quot;</span><span class="w"> </span><span class="na">Parent=</span><span class="s">&quot;Earth&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;LoadFromLibrary</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourVehicle"</span><span class="w"> </span><span class="na">Parent=</span><span class="s">"Earth"</span><span class="w"> </span><span class="nt">/&gt;</span>
 </code></pre></div></p>
 <h3 id="for-solar-system">For Solar System<a class="headerlink" href="#for-solar-system" title="Permanent link">&para;</a></h3>
 <p>Edit <code>SolSystem.xml</code>, add near other Earth vehicles:
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;LoadFromLibrary</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourVehicle&quot;</span><span class="w"> </span><span class="na">Parent=</span><span class="s">&quot;Earth&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;LoadFromLibrary</span><span class="w"> </span><span class="na">Id=</span><span class="s">"YourVehicle"</span><span class="w"> </span><span class="na">Parent=</span><span class="s">"Earth"</span><span class="w"> </span><span class="nt">/&gt;</span>
 </code></pre></div></p>
 <h2 id="step-9-test">Step 9: Test<a class="headerlink" href="#step-9-test" title="Permanent link">&para;</a></h2>
 <ol>
@@ -3743,10 +3743,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

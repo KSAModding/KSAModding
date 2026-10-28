@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -2708,21 +2708,21 @@
 </ul>
 <h3 id="setting-up-yourmodassetsxml">Setting Up YourModAssets.xml<a class="headerlink" href="#setting-up-yourmodassetsxml" title="Permanent link">&para;</a></h3>
 <p>Create a new folder in the Kitten Space Agency Content folder, name this folder "MySoundMod". Then in any text editor enter in,
-<div class="highlight"><pre><span></span><code>&lt;?xml version=&quot;1.0&quot; ?&gt;
+<div class="highlight"><pre><span></span><code>&lt;?xml version="1.0" ?&gt;
 </code></pre></div></p>
 <p>and save the file as "YourModAssets.xml" inside of the MySoundMod folder you just made. This will create a completely blank new xml file that will house all of your mod assets, including audio as this example will show. Next, we will structure it so that "Assets" becomes the main XML root element of the file.
-<div class="highlight"><pre><span></span><code>&lt;?xml version=&quot;1.0&quot; ?&gt;
+<div class="highlight"><pre><span></span><code>&lt;?xml version="1.0" ?&gt;
 &lt;Assets&gt; &lt;!--This is an element, and because it will house other elements it is called the root element.--&gt;
 &lt;!--I am a comment!--&gt;
 &lt;/Assets&gt;
 </code></pre></div></p>
 <p>Now that we have the basics built let's incorporate a <code>&lt;Sound&gt;</code> element, along with some its attributes.
-<div class="highlight"><pre><span></span><code>&lt;?xml version=&quot;1.0&quot; ?&gt;
+<div class="highlight"><pre><span></span><code>&lt;?xml version="1.0" ?&gt;
 &lt;Assets&gt; 
-&lt;Sound Id=&quot;TestSound&quot; SimSpeed=&quot;Ignore&quot; Channel=&quot;Music&quot;&gt; &lt;!--Element Attributes go between the end of the element name and the ending &#39;/&gt;&#39; --&gt;
-&lt;SoundFile Path=&quot;..\Core\Music\00_Drifting.ogg&quot; TwoD=&quot;true&quot; StreamFromDisk=&quot;true&quot; Volume=&quot;0.2&quot;&gt;
+&lt;Sound Id="TestSound" SimSpeed="Ignore" Channel="Music"&gt; &lt;!--Element Attributes go between the end of the element name and the ending '/&gt;' --&gt;
+&lt;SoundFile Path="..\Core\Music\00_Drifting.ogg" TwoD="true" StreamFromDisk="true" Volume="0.2"&gt;
 &lt;Loop&gt;
-&lt;Start Value=&quot;0&quot; Unit=&quot;Ms&quot;/&gt;
+&lt;Start Value="0" Unit="Ms"/&gt;
 &lt;/Loop&gt;
 &lt;/SoundFile&gt;
 &lt;/Sound&gt;
@@ -2752,14 +2752,14 @@ namespace MySoundMod
         public void OnBeforeUi(double dt)
         {
             UiThisFrame = false;
-    //we will play our audio in here so it will update every frame, you can run it wherever you want but make sure it&#39;s after the mod is loaded
+    //we will play our audio in here so it will update every frame, you can run it wherever you want but make sure it's after the mod is loaded
         }
     }
 }
 </code></pre></div>
 Also edit the mod.toml to include a line to load in your xml file;
-<div class="highlight"><pre><span></span><code>name = &quot;MySoundMod&quot;
-assets = [&quot;YourModAssets.xml&quot;]
+<div class="highlight"><pre><span></span><code>name = "MySoundMod"
+assets = ["YourModAssets.xml"]
 </code></pre></div>
 To play the audio we will be using SoundReference.Play(SpatialAudio, Volume, Channel, StartPaused)
 Fortunately, it can accept SpatialAudio and Channel variables that have nothing assigned to them, so we can create those variables quickly. For the SoundReference variable we will have to find where the mod's assets are stored and then reference the sound we want with its Id="" attribute.
@@ -2781,7 +2781,7 @@ namespace MySoundMod
         {
             UiThisFrame = false;
 
-        SoundReference MySound = ModLibrary.Get&lt;SoundReference&gt;(&quot;TestSound&quot;); //The &quot;TestSound&quot; here is the &lt;Sound Id=&quot;TestSound&quot;/&gt; that we made earlier
+        SoundReference MySound = ModLibrary.Get&lt;SoundReference&gt;("TestSound"); //The "TestSound" here is the &lt;Sound Id="TestSound"/&gt; that we made earlier
         MySound.Play(spatial, 1, out IChannel? channel, false); //there is no stop command specifically so to stop an audio related to a Sound Id we can run it again but replace the false with true
 
         }
@@ -2809,7 +2809,7 @@ namespace MySoundMod
         {
             UiThisFrame = false;
 
-        SoundReference MySound = ModLibrary.Get&lt;SoundReference&gt;(&quot;TestSound&quot;); //The &quot;TestSound&quot; here is the &lt;Sound Id=&quot;TestSound&quot;/&gt; that we made earlier
+        SoundReference MySound = ModLibrary.Get&lt;SoundReference&gt;("TestSound"); //The "TestSound" here is the &lt;Sound Id="TestSound"/&gt; that we made earlier
     if(Playing == false)
     {
         Playing = true;
@@ -2872,10 +2872,10 @@ This new code should now have the audio playing on loop, and it will keep loopin
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>
